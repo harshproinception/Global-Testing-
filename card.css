@@ -1,0 +1,136 @@
+div[name="Table"]:has([name="Cell notification"]) {
+    padding: 0px 32px 24px 32px !important;
+    border-spacing: 0 !important;
+    width: 100% !important;
+    border: none !important;
+    margin: 0 !important;
+}
+
+.custom-banner-container {
+    background-color: #8D624B !important;
+    border-radius: 16px !important;
+    padding: 24px 32px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    margin-bottom: 24px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+
+.banner-left-group {
+    display: flex !important;
+    align-items: center !important;
+    gap: 20px !important;
+}
+
+.banner-icon-wrapper {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    border-radius: 12px !important;
+    width: 48px !important;
+    height: 48px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.banner-text-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 4px !important;
+}
+
+.banner-title {
+    display: flex !important;
+    align-items: center !important;
+    color: #FFFFFF !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+
+.banner-title span {
+    color: #FFFFFF !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+
+span[name="NotificationDesc_label"] {
+    color: #EBDCD5 !important;
+    font-size: 14px !important;
+    font-weight: 400 !important;
+}
+
+.custom-btn {
+    background-color: #FFFFFF !important;
+    color: #333333 !important;
+    border: none !important;
+    border-radius: 0px !important;
+    padding: 10px 20px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    display: flex !important;
+    align-items: center !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+    transition: all 0.2s ease !important;
+}
+
+.custom-btn:hover {
+    background-color: #F0F0F0 !important;
+}
+
+.custom-cards-table {
+    display: flex !important;
+    gap: 24px !important;
+    width: 100% !important;
+}
+
+.custom-card {
+    background-color: #FFFFFF !important;
+    border-radius: 12px !important;
+    padding: 24px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 1 !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03) !important;
+    box-sizing: border-box !important;
+}
+
+.card-icon-wrapper {
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 8px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-bottom: 24px !important;
+}
+
+.bg-gray {
+    background-color: #F3F3F3 !important;
+}
+
+.bg-orange {
+    background-color: #FEF4EB !important;
+}
+
+.bg-green {
+    background-color: #EAF4EC !important;
+}
+
+.card-number {
+    font-family: 'Times New Roman', Times, serif !important;
+    font-size: 32px !important;
+    font-weight: 700 !important;
+    color: #1A1A1A !important;
+    margin-bottom: 8px !important;
+    display: block !important;
+}
+
+.card-label {
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    color: #8C8C8C !important;
+    display: block !important;
+}
