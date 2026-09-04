@@ -1,0 +1,396 @@
+.view:has(span[name="Projects_tab_List_dlb"]) .grid {
+    width: 100% !important;
+    background: #ffffff !important;
+    border: 1px solid #EAEAEA !important;
+    border-radius: 12px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05) !important;
+    overflow: hidden !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-toolbars {
+    background: #ffffff !important;
+    padding: 20px 24px !important;
+    border-bottom: none !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-toolbars .toolbar-wrapper .input-control.select-box {
+    background-color: #FFFFFF !important;
+    border: 1px solid #EAEAEA !important;
+    border-radius: 6px !important;
+    height: 38px !important;
+    box-shadow: none !important;
+    min-width: 180px !important;
+    transition: border-color 0.2s ease !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-toolbars .toolbar-wrapper .input-control.select-box.active,
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-toolbars .toolbar-wrapper .input-control.select-box:focus-within {
+    border-color: #A96F52 !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-toolbars .toolbar-wrapper .input-control.select-box .styling-font {
+    color: #1F2937 !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .drop-menu {
+    border: 1px solid #EAEAEA !important;
+    border-radius: 6px !important;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+    background-color: #FFFFFF !important;
+    padding: 4px 0 !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .drop-menu .drop-menu-wrapper ul.drop-menu li {
+    padding: 0 !important;
+    margin: 0 !important;
+    background: transparent !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .drop-menu .drop-menu-wrapper ul.drop-menu li a {
+    padding: 10px 16px !important;
+    color: #1F2937 !important;
+    font-size: 14px !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    display: block !important;
+    text-decoration: none !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .drop-menu .drop-menu-wrapper ul.drop-menu li.hover a,
+.view:has(span[name="Projects_tab_List_dlb"]) .drop-menu .drop-menu-wrapper ul.drop-menu li.selected a {
+    background-color: #6B6B6B !important;
+    color: #FFFFFF !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-toolbars .toolbar-wrapper td {
+    padding-right: 16px !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-headers,
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-headers-wrapper,
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-header-table,
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-content-table {
+    width: 100% !important;
+    table-layout: fixed !important;
+    border-collapse: collapse !important;
+    box-sizing: border-box !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-headers,
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-headers-wrapper,
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-header-table {
+    background-color: #F8F3EE !important;
+    border: none !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-header-table td {
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid #EAEAEA !important;
+    white-space: nowrap !important;
+    box-sizing: border-box !important;
+    vertical-align: middle !important;
+    padding: 14px 12px !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-header-cell {
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    width: 100% !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-header-text {
+    color: #8C7C70 !important;
+    font-size: 11px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    white-space: nowrap !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-header-divider {
+    display: none !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-content-table tbody tr {
+    height: 64px !important;
+    background-color: #FFFFFF !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-content-table tbody tr:nth-child(even) {
+    background-color: #FFFFFF !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-content-table tbody tr:hover {
+    background-color: #FDFBFA !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-content-table tbody td {
+    padding: 0 12px !important;
+    border-bottom: 1px solid #F0F0F0 !important;
+    border-top: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    font-size: 13px !important;
+    color: #1F2937 !important;
+    font-weight: 500 !important;
+    white-space: nowrap !important;
+    box-sizing: border-box !important;
+    vertical-align: middle !important;
+    overflow: visible !important;
+    text-overflow: unset !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-content-cell-wrapper,
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-content-cell-wrapper * {
+    overflow: visible !important;
+    text-overflow: unset !important;
+    white-space: nowrap !important;
+    max-width: none !important;
+    box-sizing: border-box !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-header-table col:nth-child(1),
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-content-table col:nth-child(1),
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-header-table td:nth-child(1),
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-content-table tbody td:nth-child(1) {
+    width: 16% !important;
+    text-align: left !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-header-table col:nth-child(2),
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-content-table col:nth-child(2),
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-header-table td:nth-child(2),
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-content-table tbody td:nth-child(2) {
+    width: 19% !important;
+    text-align: left !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-header-table col:nth-child(3),
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-content-table col:nth-child(3),
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-header-table td:nth-child(3),
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-content-table tbody td:nth-child(3) {
+    width: 8% !important;
+    text-align: left !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-header-table col:nth-child(4),
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-content-table col:nth-child(4),
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-header-table td:nth-child(4),
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-content-table tbody td:nth-child(4) {
+    width: 9% !important;
+    text-align: left !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-header-table col:nth-child(5),
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-content-table col:nth-child(5),
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-header-table td:nth-child(5),
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-content-table tbody td:nth-child(5) {
+    width: 8% !important;
+    text-align: center !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-header-table col:nth-child(6),
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-content-table col:nth-child(6),
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-header-table td:nth-child(6),
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-content-table tbody td:nth-child(6) {
+    width: 6% !important;
+    text-align: left !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-header-table col:nth-child(7),
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-content-table col:nth-child(7),
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-header-table td:nth-child(7),
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-content-table tbody td:nth-child(7) {
+    width: 10% !important;
+    text-align: left !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-header-table col:nth-child(8),
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-content-table col:nth-child(8),
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-header-table td:nth-child(8),
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-content-table tbody td:nth-child(8) {
+    width: 11% !important;
+    text-align: left !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-header-table col:nth-child(9),
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-content-table col:nth-child(9),
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-header-table td:nth-child(9),
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-content-table tbody td:nth-child(9) {
+    width: 13% !important;
+    text-align: center !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .cell-align-center,
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-header-table td.cell-align-center {
+    text-align: center !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-header-table td.cell-align-center .grid-column-header-cell {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    margin: 0 auto !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-column-header-table td.cell-align-center .grid-column-header-text {
+    text-align: center !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-content-table tbody td.cell-align-center {
+    text-align: center !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-content-table tbody td.cell-align-center .grid-content-cell-wrapper {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+    width: 100% !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .unit-pill {
+    background-color: #FAEEE5 !important;
+    color: #B87B41 !important;
+    padding: 4px 10px !important;
+    border-radius: 6px !important;
+    font-weight: 700 !important;
+    font-size: 12px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: max-content !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+    box-sizing: border-box !important;
+    margin: 0 auto !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .status-pill {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: max-content !important;
+    gap: 6px !important;
+    padding: 4px 10px !important;
+    border-radius: 16px !important;
+    font-weight: 600 !important;
+    font-size: 12px !important;
+    line-height: 1.2 !important;
+    white-space: nowrap !important;
+    box-sizing: border-box !important;
+    margin: 0 auto !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .status-dot {
+    width: 6px !important;
+    height: 6px !important;
+    border-radius: 50% !important;
+    display: inline-block !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .status-available {
+    background-color: #EAF4EC !important;
+    color: #4D8147 !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .status-available .status-dot {
+    background-color: #4D8147 !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .status-reserved {
+    background-color: #FAEEE5 !important;
+    color: #B87B41 !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .status-reserved .status-dot {
+    background-color: #B87B41 !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .status-sold {
+    background-color: #FCE8E8 !important;
+    color: #C04A4A !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .status-sold .status-dot {
+    background-color: #C04A4A !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-footer {
+    background-color: #F8F3EE !important;
+    border-top: 1px solid #F0F0F0 !important;
+    padding: 12px 24px !important;
+    height: auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-footer .toolbar {
+    background-color: transparent !important;
+    border: none !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-footer .toolbar-wrapper {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 16px !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-footer .toolbar-button {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 24px !important;
+    height: 24px !important;
+    background: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+    --toolbar-button-icon-base-color: #8C7C70 !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-footer .toolbar-button.disabled {
+    --toolbar-button-icon-base-color: #D3C9C1 !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-footer .toolbar-button .button-text {
+    display: none !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-paging-control {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-paging-control-text {
+    color: #8C7C70 !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-paging-control .input-control {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    color: #8C7C70 !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    text-align: center !important;
+    width: 30px !important;
+}
+
+.view:has(span[name="Projects_tab_List_dlb"]) .grid-paging-control .input-control:disabled {
+    color: #8C7C70 !important;
+    opacity: 1 !important;
+    -webkit-text-fill-color: #8C7C70 !important;
+}

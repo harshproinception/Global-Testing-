@@ -1,0 +1,271 @@
+.form>.row:has(span[name="MyCustomer_List_Style_dlb"]),
+.view:has(span[name="MyCustomer_List_Style_dlb"]) {
+    box-sizing: border-box !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    width: 100% !important;
+}
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid {
+    width: 100% !important;
+    background: #ffffff !important;
+    border: 1px solid #e5ddd7 !important;
+    border-radius: 16px !important;
+    box-shadow: 0 3px 12px rgba(60, 40, 30, 0.04) !important;
+    overflow: hidden !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    box-sizing: border-box !important;
+}
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-toolbars {
+    background: #ffffff !important;
+    padding: 16px 20px 16px 0px !important;
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    gap: 8px !important;
+    margin-left: 0 !important;
+}
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-toolbars>* {
+    float: none !important;
+}
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) a.SourceCode-Forms-Controls-Web-Button,
+.view:has(span[name="MyCustomer_List_Style_dlb"]) a.toolbar-button,
+.view:has(span[name="MyCustomer_List_Style_dlb"]) a.Edit-row,
+.view:has(span[name="MyCustomer_List_Style_dlb"]) input[type="button"],
+.view:has(span[name="MyCustomer_List_Style_dlb"]) input[type="submit"] {
+    cursor: pointer !important;
+    pointer-events: auto !important;
+}
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) input[name="Text Box Search"] {
+    width: 240px !important;
+    height: 38px !important;
+    padding: 0 12px !important;
+    background: #ffffff !important;
+    border: 1px solid #ddd4ce !important;
+    border-radius: 4px !important;
+    color: #3f3732 !important;
+    font-size: 13px !important;
+    outline: none !important;
+    box-sizing: border-box !important;
+    pointer-events: auto !important;
+    vertical-align: middle !important;
+    margin-left: 0 !important;
+}
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="ToolBarButton_Search"] {
+    height: 38px !important;
+    padding: 0 14px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #a96f52 !important;
+    border: none !important;
+    border-radius: 0px !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    box-sizing: border-box !important;
+    white-space: nowrap !important;
+    vertical-align: middle !important;
+}
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="ToolBarButton_Search"]:hover {
+    background: #956047 !important;
+}
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button All"],
+.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button In Progress"],
+.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button Need attention"],
+.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button Completed"] {
+    height: 38px !important;
+    padding: 0 14px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #ffffff !important;
+    color: #967d6e !important;
+    border: 1px solid #e4d9d2 !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    box-sizing: border-box !important;
+    vertical-align: middle !important;
+}
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button All"] {
+    border-radius: 20px 0 0 20px !important;
+}
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button Completed"] {
+    border-radius: 0 20px 20px 0 !important;
+}
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button All"].active,
+.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button In Progress"].active,
+.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button Need attention"].active,
+.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button Completed"].active {
+    background: #a96f52 !important;
+    color: #ffffff !important;
+}
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="ToolBar Button Add a customer"] {
+    height: 38px !important;
+    padding: 0 16px !important;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #a96f52 !important;
+    border: none !important;
+    border-radius: 0px !important;
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-weight: 700 !important;
+    font-size: 13px !important;
+    box-sizing: border-box !important;
+    white-space: nowrap !important;
+    vertical-align: middle !important;
+}
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-toolbars:has(a[name="ToolBar Button Add a customer"]) {
+    display: flex !important;
+    justify-content: flex-start !important;
+}
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="ToolBar Button Add a customer"]:hover {
+    background: #956047 !important;
+}
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-table,
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table,
+.view:has(span[name="MyCustomer_List_Style_dlb"]) table.grid-content-table,
+.view:has(span[name="MyCustomer_List_Style_dlb"]) table.grid-header-table {
+    width: 100% !important;
+    table-layout: fixed !important;
+    border-collapse: collapse !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-header-table th,
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-header-table td,
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid thead th,
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-header-cell {
+    padding: 14px 16px 14px 0px !important;
+    text-align: left !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    color: #8C8C8C !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    box-sizing: border-box !important;
+    vertical-align: middle !important;
+}
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-header-table th>*,
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-header-cell>*,
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-header-cell-content,
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-header-cell-label,
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-header-cell-text {
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    text-align: left !important;
+    display: inline-flex !important;
+    align-items: center !important;
+}
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody tr {
+    height: 54px !important;
+    background: #ffffff !important;
+}
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody tr:nth-child(even) {
+    background: #fbf7f4 !important;
+}
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody tr:hover {
+    background: #f4ece7 !important;
+}
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody td {
+    padding: 0 16px 0 0px !important;
+    border-bottom: 1px solid #ebe3de !important;
+    font-size: 13px !important;
+    color: #1F2937 !important;
+    text-align: left !important;
+    vertical-align: middle !important;
+    box-sizing: border-box !important;
+}
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody td>*,
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody td .SourceCode-Forms-Controls-Web-DataLabel,
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody td .SourceCode-Forms-Controls-Web-Label,
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody td .grid-content-cell-wrapper {
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+    text-align: left !important;
+    display: inline-block !important;
+    box-sizing: border-box !important;
+}
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-header-table th:first-child,
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-header-cell:first-child,
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody td:first-child {
+    padding-left: 0px !important;
+}
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody td:last-child,
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-header-table th:last-child {
+    text-align: center !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .unit-pill {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 3px 10px !important;
+    background-color: #F8F1EB !important;
+    color: #A96F52 !important;
+    border-radius: 4px !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.3px !important;
+}
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .days-urgent {
+    color: #D9381E !important;
+    font-weight: 700 !important;
+    font-size: 13px !important;
+}
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .days-pill-completed {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 3px 12px !important;
+    background-color: #EAF4EC !important;
+    color: #43884D !important;
+    border-radius: 12px !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+}
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .days-muted {
+    color: #8C8C8C !important;
+    font-size: 13px !important;
+    font-weight: 400 !important;
+}
