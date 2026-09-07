@@ -16,7 +16,7 @@ function initializeRetalGlobalLayout() {
             activeButtonName = "Add custm btn";
         } else if (currentUrl.indexOf("my") !== -1 && currentUrl.indexOf("customer" ) !==-1 || currentUrl.indexOf("all") !== -1 && currentUrl.indexOf("customer") !== -1    ) {
             activeButtonName = "My custm btn";
-        } else if (currentUrl.indexOf("project") !== -1  ) {
+        } else if (currentUrl.indexOf("projects") !== -1  ) {
             activeButtonName = "Project btn";
         } else if (currentUrl.indexOf("configuration") !== -1 ){
             activeButtonName = "Configuration btn";
@@ -27,7 +27,8 @@ function initializeRetalGlobalLayout() {
         $buttons.removeClass('active-nav');
         $sidebarRow.find('a[name="' + activeButtonName + '"]').addClass('active-nav');
     }
-}
+} 
+
 
 $(document).ready(function () {
     initializeRetalGlobalLayout();
