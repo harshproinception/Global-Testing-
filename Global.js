@@ -14,15 +14,18 @@ function initializeRetalGlobalLayout() {
 
         if (currentUrl.indexOf("customer") !== -1 && currentUrl.indexOf("add") !== -1) {
             activeButtonName = "Add custm btn";
-        } else if (currentUrl.indexOf("my") !== -1 && currentUrl.indexOf("customer" ) !==-1 || currentUrl.indexOf("all") !== -1 && currentUrl.indexOf("customer") !== -1    ) {
-            activeButtonName = "My custm btn";
-        } else if (currentUrl.indexOf("projects") !== -1  ) {
+        } else if (currentUrl.indexOf("projects") !== -1) {
             activeButtonName = "Project btn";
-        } else if (currentUrl.indexOf("configuration") !== -1 ){
+        } else if (currentUrl.indexOf("configuration") !== -1) {
             activeButtonName = "Configuration btn";
-        }  else if (currentUrl.indexOf("worklist") !== -1 ){
+        } else if (currentUrl.indexOf("worklist") !== -1) {
             activeButtonName = "Worklist btn";
+        } else if ((currentUrl.indexOf("my") !== -1 && currentUrl.indexOf("customer") !== -1) || 
+                (currentUrl.indexOf("all") !== -1 && currentUrl.indexOf("customer") !== -1)) {
+            activeButtonName = "My custm btn";
+            
         }
+
 
         $buttons.removeClass('active-nav');
         $sidebarRow.find('a[name="' + activeButtonName + '"]').addClass('active-nav');
