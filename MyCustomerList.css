@@ -1,8 +1,8 @@
 .form>.row:has(span[name="MyCustomer_List_Style_dlb"]),
 .view:has(span[name="MyCustomer_List_Style_dlb"]) {
     box-sizing: border-box !important;
-    padding-left: 24px !important;
-    padding-right: 24px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
     width: 100% !important;
 }
 
@@ -262,10 +262,12 @@
     border-radius: 12px !important;
     font-size: 12px !important;
     font-weight: 600 !important;
+    
 }
 
 .view:has(span[name="MyCustomer_List_Style_dlb"]) .days-muted {
     color: #8C8C8C !important;
     font-size: 13px !important;
     font-weight: 400 !important;
+
 }
