@@ -39,11 +39,12 @@ body,
     margin: 0 !important;
 }
 
+
 .form .row:has(.retal-custom-header-layout) {
     position: fixed !important;
     top: 0 !important;
-    left: 0 !important;
-    width: 100vw !important;
+    inset-inline-start: 0 !important;
+    width: 100% !important;
     height: 90px !important;
     z-index: 2000 !important;
     background: #FFFFFF !important;
@@ -53,7 +54,7 @@ body,
     box-sizing: border-box !important;
 }
 
-.form .row:has(.retal-custom-header-layout)>.view {
+.form .row:has(.retal-custom-header-layout) > .view {
     width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -70,34 +71,34 @@ div.retal-custom-header-layout {
     margin: 0 !important;
     min-height: 90px !important;
     height: 90px !important;
+    gap: 16px !important;
 }
 
-div.retal-custom-header-layout>span[name="Cell logo"] {
+div.retal-custom-header-layout > span[name="Cell logo"] {
     display: flex !important;
     align-items: center !important;
-    margin-right: 40px !important;
+    margin-inline-end: 24px !important;
 }
 
-div.retal-custom-header-layout>span[name="Cell logo"] img {
+div.retal-custom-header-layout > span[name="Cell logo"] img {
     height: 38px !important;
     width: auto !important;
 }
 
-div.retal-custom-header-layout>span[name="Cell Cell2"] {
+div.retal-custom-header-layout > span[name="Cell Cell2"] {
     display: flex !important;
     flex-direction: column !important;
     flex-grow: 1 !important;
     justify-content: center !important;
 }
 
-div.retal-custom-header-layout>span[name="Cell header2"] {
+div.retal-custom-header-layout > span[name="Cell header2"] {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    margin-right: 15px !important;
 }
 
-div.retal-custom-header-layout>span[name="Cell header3"] {
+div.retal-custom-header-layout > span[name="Cell header3"] {
     display: flex !important;
     flex-direction: column !important;
     align-items: flex-start !important;
@@ -108,7 +109,6 @@ span[name="header_name_dlb"] {
     font-size: 20px !important;
     font-weight: 700 !important;
     color: #1a1a1a !important;
-    font-family: 'Plus Jakarta Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
     line-height: 1.1 !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -117,7 +117,6 @@ span[name="header_name_dlb"] {
 span[name="header_desc_dlb"] {
     font-size: 13px !important;
     color: #a0a0a0 !important;
-    font-family: 'Plus Jakarta Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
     margin-top: 2px !important;
     margin-bottom: 0 !important;
 }
@@ -133,40 +132,32 @@ span[name="profile_tag_dlb"] {
     justify-content: center !important;
     font-weight: 600 !important;
     font-size: 14px !important;
-    font-family: 'Plus Jakarta Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
 }
 
-span[name="profile_name_dlb"],
-span[name="company_dlb"],
-span[name="Company_dlb"],
-span[name="company dlb"],
-span[name="Company dlb"],
-span[name="company_dlb" i],
-span[name="company dlb" i] {
+span[name*="company" i],
+span[name="profile_name_dlb"] {
     font-size: 14px !important;
     font-weight: 700 !important;
     color: #1a1a1a !important;
-    font-family: 'Plus Jakarta Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
     margin: 0 !important;
 }
 
 span[name="profile_desc_label"] {
     font-size: 12px !important;
     color: #a0a0a0 !important;
-    font-family: 'Plus Jakarta Sans', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
-    margin-top: 0px !important;
-    margin-bottom: 0 !important;
+    margin: 0 !important;
 }
 
-div.retal-custom-header-layout>span.empty,
-div.retal-custom-header-layout>span:not([id]) {
+div.retal-custom-header-layout > span.empty,
+div.retal-custom-header-layout > span:not([id]) {
     display: none !important;
 }
+
 
 .form .row:has(a[name="Home btn"]) {
     position: fixed !important;
     top: 90px !important;
-    left: 0 !important;
+    inset-inline-start: 0 !important;
     width: 250px !important;
     height: calc(100vh - 90px) !important;
     background-color: #383838 !important;
@@ -178,32 +169,24 @@ div.retal-custom-header-layout>span:not([id]) {
     margin: 0 !important;
 }
 
-.form .row:has(a[name="Home btn"])>.view {
+.form .row:has(a[name="Home btn"]) > .view {
     width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
     background: transparent !important;
 }
 
+
 .form .row:not(:has(.retal-custom-header-layout)):not(:has(a[name="Home btn"])) {
-    margin-top: 90px !important;
-    margin-left: 250px !important;
-    width: calc(100% - 250px) !important;
-    box-sizing: border-box !important;
-    padding: 24px 24px 24px 0px !important;
+        margin-inline-start: 250px !important;
+        width: calc(100% - 250px) !important;
+        box-sizing: border-box !important;
+        padding: 24px !important;
+        margin-top: 90px !important;
 }
 
-.form .row:not(:has(.retal-custom-header-layout)):not(:has(a[name="Home btn"]))>.view {
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    padding-left: 0 !important;
-    width: 100% !important;
-    max-width: 100% !important;
-}
-
-.form .row:not(:has(.retal-custom-header-layout)):not(:has(a[name="Home btn"])) .innerpanel {
-    margin-left: 0 !important;
-    padding-left: 0 !important;
+.form .row:not(:has(.retal-custom-header-layout)):not(:has(a[name="Home btn"])) ~ .row:not(:has(.retal-custom-header-layout)):not(:has(a[name="Home btn"])) {
+        margin-top: 0px !important;
 }
 
 .form .row:has(a[name="Home btn"]) .root-table {
@@ -230,10 +213,12 @@ img[name="Retal_logo"] {
     display: none !important;
 }
 
+
 .form .row:has(a[name="Home btn"]) a.SourceCode-Forms-Controls-Web-Button {
     display: flex !important;
     align-items: center !important;
     justify-content: flex-start !important;
+    gap: 14px !important; /* Replaces margin-right for clean RTL flipping */
     width: 100% !important;
     height: 48px !important;
     padding: 0 16px !important;
@@ -249,7 +234,7 @@ img[name="Retal_logo"] {
     text-decoration: none !important;
     transition: all 0.2s ease !important;
     cursor: pointer !important;
-    text-align: left !important;
+    text-align: start !important;
 }
 
 .form .row:has(a[name="Home btn"]) a.SourceCode-Forms-Controls-Web-Button:hover {
@@ -269,13 +254,13 @@ img[name="Retal_logo"] {
     width: 20px !important;
     height: 20px !important;
     min-width: 20px !important;
-    margin-right: 14px !important;
     background-size: contain !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
     flex-shrink: 0 !important;
 }
 
+/* Icons */
 a[name="Home btn"]::before {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C2C6CC' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6'/%3E%3C/svg%3E") !important;
 }
@@ -306,4 +291,22 @@ a[name="Project btn"]::before {
 
 a[name="Project btn"].active-nav::before {
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23FFFFFF' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M4 6h16M4 10h16M4 14h16M4 18h16'/%3E%3C/svg%3E") !important;
+}
+
+
+a[name="Worklist btn"]::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C2C6CC' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M9 11l3 3L22 4M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11'/%3E%3C/svg%3E") !important;
+}
+
+a[name="Worklist btn"].active-nav::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23FFFFFF' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M9 11l3 3L22 4M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11'/%3E%3C/svg%3E") !important;
+}
+
+
+a[name="Configuration btn"]::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23C2C6CC' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z'/%3E%3Ccircle cx='12' cy='12' r='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
+}
+
+a[name="Configuration btn"].active-nav::before {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%23FFFFFF' stroke-width='2'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z'/%3E%3Ccircle cx='12' cy='12' r='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") !important;
 }
