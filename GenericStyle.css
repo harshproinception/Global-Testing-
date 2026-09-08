@@ -393,7 +393,7 @@
     align-items: center !important;
     justify-content: center !important;
     min-height: 28px !important;
-    padding: 4px 10px !important;
+    padding: 4px 11px !important;
     border-radius: var(--radius-pill) !important;
     background: var(--color-secondary) !important;
     color: var(--color-text) !important;
@@ -401,34 +401,39 @@
     font-weight: 600 !important;
     line-height: 1 !important;
     white-space: nowrap !important;
+    gap: 7px !important;
 }
 
 .theme-entry .pill.success,
 .theme-entry .status-pill.success,
-.theme-entry .badge.success {
+.theme-entry .badge.success,
+.theme-entry .status-available {
     background: var(--color-success-light) !important;
     color: var(--color-success) !important;
 }
 
 .theme-entry .pill.warning,
 .theme-entry .status-pill.warning,
-.theme-entry .badge.warning {
+.theme-entry .badge.warning,
+.theme-entry .status-reserved {
     background: var(--color-warning-light) !important;
     color: var(--color-warning) !important;
 }
 
 .theme-entry .pill.danger,
 .theme-entry .status-pill.danger,
-.theme-entry .badge.danger {
+.theme-entry .badge.danger,
+.theme-entry .status-sold {
     background: var(--color-danger-light) !important;
     color: var(--color-danger) !important;
 }
 
 .theme-entry .pill.primary,
 .theme-entry .status-pill.primary,
-.theme-entry .badge.primary {
-    background: var(--color-primary-light) !important;
-    color: var(--color-primary) !important;
+.theme-entry .badge.primary,
+.theme-entry .status-completed {
+    background: var(--color-success-light) !important;
+    color: var(--color-success) !important;
 }
 
 .theme-entry .pill.active,
@@ -450,6 +455,23 @@
 .theme-entry .badge.neutral {
     background: #F1EFED !important;
     color: var(--color-text-secondary) !important;
+}
+
+.theme-entry .status-available::before,
+.theme-entry .status-reserved::before,
+.theme-entry .status-sold::before {
+    content: "" !important;
+    width: 8px !important;
+    height: 8px !important;
+    min-width: 8px !important;
+    border-radius: 50% !important;
+    background: currentColor !important;
+    display: inline-block !important;
+}
+
+.theme-entry .status-completed {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
 }
 
 .theme-entry .SourceCode-Forms-Controls-Web-ListView {
