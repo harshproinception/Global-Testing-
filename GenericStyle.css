@@ -68,9 +68,6 @@
     color: var(--color-primary-hover);
 }
 
-
-/* TEXTBOX */
-
 .theme-entry input.SFC.SourceCode-Forms-Controls-Web-TextBox,
 .theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox,
 .theme-entry .SFC.SourceCode-Forms-Controls-Web-Control-SpinBox {
@@ -95,9 +92,6 @@
 .theme-entry .SFC.SourceCode-Forms-Controls-Web-Control-SpinBox:focus {
     border-color: var(--color-primary) !important;
 }
-
-
-/* TEXTAREA */
 
 .theme-entry textarea {
     width: 100% !important;
@@ -126,9 +120,6 @@
     padding: 0 !important;
     box-shadow: none !important;
 }
-
-
-/* DROPDOWN */
 
 .theme-entry .dropdown-box {
     width: 100% !important;
@@ -175,9 +166,6 @@
 .theme-entry .dropdown-box .border-left-only {
     border-left: none !important;
 }
-
-
-/* DATE PICKER */
 
 .theme-entry .calendar-control {
     width: 100% !important;
@@ -227,9 +215,6 @@
     border-left: none !important;
 }
 
-
-/* LABELS */
-
 .theme-entry .SFC.SourceCode-Forms-Controls-Web-Label:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
     display: block !important;
     margin-bottom: 8px !important;
@@ -238,9 +223,6 @@
     font-weight: 600 !important;
     line-height: 1.4 !important;
 }
-
-
-/* HEADINGS */
 
 .theme-entry h1,
 .theme-entry h2,
@@ -273,17 +255,14 @@
     font-weight: 600 !important;
 }
 
-
-/* BUTTON BASE */
-
 .theme-entry a.SourceCode-Forms-Controls-Web-Button,
 .theme-entry .SourceCode-Forms-Controls-Web-Button {
     min-height: 40px !important;
     padding: 9px 18px !important;
     border: 1px solid var(--color-primary) !important;
     border-radius: var(--radius-lg) !important;
-    background: var(--color-primary) !important;
-    color: #FFFFFF !important;
+    background: var(--color-surface) !important;
+    color: var(--color-primary) !important;
     font-size: 14px !important;
     font-weight: 600 !important;
     line-height: 1.2 !important;
@@ -299,76 +278,53 @@
 
 .theme-entry a.SourceCode-Forms-Controls-Web-Button:hover,
 .theme-entry .SourceCode-Forms-Controls-Web-Button:hover {
+    background: var(--color-primary-light) !important;
+    border-color: var(--color-primary) !important;
+    color: var(--color-primary-hover) !important;
+}
+
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-primary,
+.theme-entry .SourceCode-Forms-Controls-Web-Button.button-primary {
+    background: var(--color-primary) !important;
+    border-color: var(--color-primary) !important;
+    color: #FFFFFF !important;
+}
+
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-primary:hover,
+.theme-entry .SourceCode-Forms-Controls-Web-Button.button-primary:hover {
     background: var(--color-primary-hover) !important;
     border-color: var(--color-primary-hover) !important;
+    color: #FFFFFF !important;
 }
 
-.theme-entry a.SourceCode-Forms-Controls-Web-Button:active,
-.theme-entry .SourceCode-Forms-Controls-Web-Button:active {
-    transform: translateY(1px);
-}
-
-
-/* SECONDARY BUTTON */
-
-.theme-entry a.SourceCode-Forms-Controls-Web-Button.secondary-action,
-.theme-entry .SourceCode-Forms-Controls-Web-Button.secondary-action {
-    background: var(--color-secondary) !important;
-    border-color: var(--color-border) !important;
-    color: var(--color-text) !important;
-}
-
-.theme-entry a.SourceCode-Forms-Controls-Web-Button.secondary-action:hover,
-.theme-entry .SourceCode-Forms-Controls-Web-Button.secondary-action:hover {
-    background: var(--color-secondary-hover) !important;
-    border-color: var(--color-border-hover) !important;
-}
-
-
-/* QUIET ACTION */
-
-.theme-entry a.SourceCode-Forms-Controls-Web-Button.quiet-action,
-.theme-entry .SourceCode-Forms-Controls-Web-Button.quiet-action {
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-quiet,
+.theme-entry .SourceCode-Forms-Controls-Web-Button.button-quiet {
     background: transparent !important;
     border-color: transparent !important;
     color: var(--color-primary) !important;
     box-shadow: none !important;
 }
 
-.theme-entry a.SourceCode-Forms-Controls-Web-Button.quiet-action:hover,
-.theme-entry .SourceCode-Forms-Controls-Web-Button.quiet-action:hover {
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-quiet:hover,
+.theme-entry .SourceCode-Forms-Controls-Web-Button.button-quiet:hover {
     background: var(--color-primary-light) !important;
     border-color: transparent !important;
+    color: var(--color-primary-hover) !important;
 }
 
-
-/* DANGER BUTTON */
-
-.theme-entry a.SourceCode-Forms-Controls-Web-Button.danger-action,
-.theme-entry .SourceCode-Forms-Controls-Web-Button.danger-action {
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-destructive,
+.theme-entry .SourceCode-Forms-Controls-Web-Button.button-destructive {
     background: var(--color-danger) !important;
     border-color: var(--color-danger) !important;
     color: #FFFFFF !important;
 }
 
-.theme-entry a.SourceCode-Forms-Controls-Web-Button.danger-action:hover,
-.theme-entry .SourceCode-Forms-Controls-Web-Button.danger-action:hover {
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.button-destructive:hover,
+.theme-entry .SourceCode-Forms-Controls-Web-Button.button-destructive:hover {
     background: #A93333 !important;
     border-color: #A93333 !important;
-}
-
-
-/* SUCCESS BUTTON */
-
-.theme-entry a.SourceCode-Forms-Controls-Web-Button.success-action,
-.theme-entry .SourceCode-Forms-Controls-Web-Button.success-action {
-    background: var(--color-success) !important;
-    border-color: var(--color-success) !important;
     color: #FFFFFF !important;
 }
-
-
-/* DISABLED */
 
 .theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled,
 .theme-entry a.SourceCode-Forms-Controls-Web-Button[disabled],
@@ -378,9 +334,6 @@
     cursor: not-allowed !important;
     pointer-events: none !important;
 }
-
-
-/* CHECKBOX */
 
 .theme-entry input[type="checkbox"] {
     accent-color: var(--color-primary) !important;
@@ -396,9 +349,6 @@
     font-size: 14px !important;
 }
 
-
-/* RADIO */
-
 .theme-entry input[type="radio"] {
     accent-color: var(--color-primary) !important;
 }
@@ -412,9 +362,6 @@
     font-size: 14px !important;
 }
 
-
-/* LINKS */
-
 .theme-entry a:not(.SourceCode-Forms-Controls-Web-Button) {
     color: var(--color-primary) !important;
     text-decoration: none !important;
@@ -426,12 +373,8 @@
     text-decoration: underline !important;
 }
 
-
-/* CARDS */
-
 .theme-entry .card,
-.theme-entry .k2-card,
-.theme-entry [class*="card"] {
+.theme-entry .k2-card {
     background: var(--color-surface) !important;
     border: 1px solid var(--color-border) !important;
     border-radius: var(--radius-lg) !important;
@@ -442,9 +385,6 @@
 .theme-entry .k2-card:hover {
     box-shadow: var(--shadow-md) !important;
 }
-
-
-/* PILLS */
 
 .theme-entry .pill,
 .theme-entry .status-pill,
@@ -462,9 +402,6 @@
     line-height: 1 !important;
     white-space: nowrap !important;
 }
-
-
-/* STATUS PILLS */
 
 .theme-entry .pill.success,
 .theme-entry .status-pill.success,
@@ -494,8 +431,26 @@
     color: var(--color-primary) !important;
 }
 
+.theme-entry .pill.active,
+.theme-entry .status-pill.active,
+.theme-entry .badge.active {
+    background: var(--color-primary) !important;
+    color: #FFFFFF !important;
+}
 
-/* LIST VIEW */
+.theme-entry .pill.inactive,
+.theme-entry .status-pill.inactive,
+.theme-entry .badge.inactive {
+    background: var(--color-secondary) !important;
+    color: var(--color-text-muted) !important;
+}
+
+.theme-entry .pill.neutral,
+.theme-entry .status-pill.neutral,
+.theme-entry .badge.neutral {
+    background: #F1EFED !important;
+    color: var(--color-text-secondary) !important;
+}
 
 .theme-entry .SourceCode-Forms-Controls-Web-ListView {
     border: 1px solid var(--color-border) !important;
@@ -535,9 +490,6 @@
     border-bottom: none !important;
 }
 
-
-/* GRID */
-
 .theme-entry .grid,
 .theme-entry .grid-table,
 .theme-entry table.grid {
@@ -567,9 +519,6 @@
     font-size: 13px !important;
 }
 
-
-/* TABS */
-
 .theme-entry .form-tabs {
     border: none !important;
     background: transparent !important;
@@ -593,9 +542,6 @@
     color: var(--color-primary) !important;
     border-bottom: 2px solid var(--color-primary) !important;
 }
-
-
-/* PROGRESS */
 
 .theme-entry [name="Progress"] .container.metro {
     display: flex !important;
@@ -637,9 +583,6 @@
     color: var(--color-primary) !important;
 }
 
-
-/* TABLE */
-
 .theme-entry table {
     border-color: var(--color-border) !important;
 }
@@ -652,9 +595,6 @@
 .theme-entry table td {
     color: var(--color-text) !important;
 }
-
-
-/* VALIDATION */
 
 .theme-entry .input-control.invalid,
 .theme-entry .input-control.invalid.watermark,
@@ -674,17 +614,11 @@
     color: var(--color-danger) !important;
 }
 
-
-/* REQUIRED */
-
 .theme-entry .validation-error {
     color: var(--color-danger) !important;
     font-size: 12px !important;
     margin-top: 5px !important;
 }
-
-
-/* POPUP */
 
 .theme-entry .popup.dialog {
     border-radius: var(--radius-lg) !important;
@@ -703,9 +637,6 @@
     background: var(--color-surface) !important;
 }
 
-
-/* TOOLTIP */
-
 .theme-entry .tooltip {
     padding: 7px 10px !important;
     border-radius: var(--radius-md) !important;
@@ -713,9 +644,6 @@
     color: #FFFFFF !important;
     font-size: 12px !important;
 }
-
-
-/* ICON BUTTON */
 
 .theme-entry a.SourceCode-Forms-Controls-Web-Button.icon-button,
 .theme-entry .SourceCode-Forms-Controls-Web-Button.icon-button {
@@ -726,17 +654,11 @@
     border-radius: 50% !important;
 }
 
-
-/* CONTAINER SPACING */
-
 .theme-entry .panel,
 .theme-entry .view,
 .theme-entry .section {
     box-sizing: border-box !important;
 }
-
-
-/* MOBILE */
 
 @media (max-width: 860px) {
 
