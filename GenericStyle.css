@@ -1,0 +1,779 @@
+:root {
+    --font-body: "Inter", Arial, sans-serif;
+
+    --color-primary: #99614D;
+    --color-primary-hover: #7F4F3E;
+    --color-primary-light: #F5EBE7;
+
+    --color-secondary: #F4F1EF;
+    --color-secondary-hover: #E8E1DD;
+
+    --color-success: #3F7D4A;
+    --color-success-light: #EAF4EC;
+
+    --color-warning: #A8751A;
+    --color-warning-light: #FFF5DD;
+
+    --color-danger: #C34242;
+    --color-danger-light: #FBECEC;
+
+    --color-text: #272829;
+    --color-text-secondary: #666666;
+    --color-text-muted: #8A8A8A;
+
+    --color-border: #E6DEDB;
+    --color-border-hover: #CBBDB6;
+
+    --color-background: #F7F5F3;
+    --color-surface: #FFFFFF;
+
+    --radius-sm: 6px;
+    --radius-md: 9px;
+    --radius-lg: 11px;
+    --radius-pill: 999px;
+
+    --control-height: 44px;
+
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.06);
+    --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.08);
+
+    --transition: 0.15s ease-in-out;
+}
+
+.theme-entry,
+.theme-entry * {
+    box-sizing: border-box;
+}
+
+.theme-entry {
+    font-family: var(--font-body), Arial, sans-serif !important;
+    color: var(--color-text) !important;
+}
+
+.theme-entry input,
+.theme-entry textarea,
+.theme-entry select,
+.theme-entry button,
+.theme-entry a,
+.theme-entry span,
+.theme-entry div {
+    font-family: var(--font-body), Arial, sans-serif;
+}
+
+.theme-entry a {
+    color: var(--color-primary);
+}
+
+.theme-entry a:hover {
+    color: var(--color-primary-hover);
+}
+
+
+/* TEXTBOX */
+
+.theme-entry input.SFC.SourceCode-Forms-Controls-Web-TextBox,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-Control-SpinBox {
+    width: 100% !important;
+    height: var(--control-height) !important;
+    padding: 0 13px !important;
+    border: 1px solid var(--color-border) !important;
+    border-radius: var(--radius-lg) !important;
+    background: var(--color-surface) !important;
+    color: var(--color-text) !important;
+    font-size: 14px !important;
+    outline: none !important;
+    box-shadow: none !important;
+    transition: all var(--transition) !important;
+}
+
+.theme-entry input.SFC.SourceCode-Forms-Controls-Web-TextBox:hover,
+.theme-entry input.SFC.SourceCode-Forms-Controls-Web-TextBox:focus,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox:hover,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox:focus,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-Control-SpinBox:hover,
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-Control-SpinBox:focus {
+    border-color: var(--color-primary) !important;
+}
+
+
+/* TEXTAREA */
+
+.theme-entry textarea {
+    width: 100% !important;
+    min-height: 90px !important;
+    padding: 12px 13px !important;
+    border: 1px solid var(--color-border) !important;
+    border-radius: var(--radius-lg) !important;
+    background: var(--color-surface) !important;
+    color: var(--color-text) !important;
+    font-size: 14px !important;
+    outline: none !important;
+    box-shadow: none !important;
+    resize: vertical !important;
+    transition: all var(--transition) !important;
+}
+
+.theme-entry textarea:hover,
+.theme-entry textarea:focus {
+    border-color: var(--color-primary) !important;
+}
+
+.theme-entry .input-control.textarea,
+.theme-entry .input-control:has(textarea) {
+    border: none !important;
+    background: transparent !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+
+
+/* DROPDOWN */
+
+.theme-entry .dropdown-box {
+    width: 100% !important;
+    height: var(--control-height) !important;
+    border: 1px solid var(--color-border) !important;
+    border-radius: var(--radius-lg) !important;
+    background: var(--color-surface) !important;
+    overflow: hidden !important;
+    transition: all var(--transition) !important;
+}
+
+.theme-entry .dropdown-box:hover,
+.theme-entry .dropdown-box.active {
+    border-color: var(--color-primary) !important;
+}
+
+.theme-entry .dropdown-box .input-control-t,
+.theme-entry .dropdown-box .input-control-b {
+    display: none !important;
+}
+
+.theme-entry .dropdown-box .input-control-body,
+.theme-entry .dropdown-box .input-control-m-c,
+.theme-entry .dropdown-box .input-control-m,
+.theme-entry .dropdown-box .styling-outer-wrapper {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.theme-entry .dropdown-box .input-control-wrapper {
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    padding-left: 13px !important;
+}
+
+.theme-entry .dropdown-box a.input-control,
+.theme-entry .dropdown-box a.input-control span {
+    font-size: 14px !important;
+    color: var(--color-text) !important;
+}
+
+.theme-entry .dropdown-box .border-left-only {
+    border-left: none !important;
+}
+
+
+/* DATE PICKER */
+
+.theme-entry .calendar-control {
+    width: 100% !important;
+    height: var(--control-height) !important;
+    border: 1px solid var(--color-border) !important;
+    border-radius: var(--radius-lg) !important;
+    background: var(--color-surface) !important;
+    overflow: hidden !important;
+    transition: all var(--transition) !important;
+}
+
+.theme-entry .calendar-control:hover,
+.theme-entry .calendar-control.active {
+    border-color: var(--color-primary) !important;
+}
+
+.theme-entry .calendar-control .input-control-t,
+.theme-entry .calendar-control .input-control-b {
+    display: none !important;
+}
+
+.theme-entry .calendar-control .input-control-body,
+.theme-entry .calendar-control .input-control-m-c,
+.theme-entry .calendar-control .input-control-m,
+.theme-entry .calendar-control .styling-outer-wrapper {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.theme-entry .calendar-control .input-control-wrapper {
+    height: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    padding-left: 13px !important;
+}
+
+.theme-entry .calendar-control input.input-control {
+    border: none !important;
+    background: transparent !important;
+    color: var(--color-text) !important;
+    font-size: 14px !important;
+    outline: none !important;
+}
+
+.theme-entry .calendar-control .border-left-only {
+    border-left: none !important;
+}
+
+
+/* LABELS */
+
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-Label:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+    display: block !important;
+    margin-bottom: 8px !important;
+    color: var(--color-text) !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 1.4 !important;
+}
+
+
+/* HEADINGS */
+
+.theme-entry h1,
+.theme-entry h2,
+.theme-entry h3,
+.theme-entry h4,
+.theme-entry h5,
+.theme-entry h6 {
+    margin-top: 0 !important;
+    color: var(--color-text) !important;
+    font-family: var(--font-body), Arial, sans-serif !important;
+}
+
+.theme-entry h1 {
+    font-size: 26px !important;
+    font-weight: 700 !important;
+}
+
+.theme-entry h2 {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+}
+
+.theme-entry h3 {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+
+.theme-entry h4 {
+    font-size: 16px !important;
+    font-weight: 600 !important;
+}
+
+
+/* BUTTON BASE */
+
+.theme-entry a.SourceCode-Forms-Controls-Web-Button,
+.theme-entry .SourceCode-Forms-Controls-Web-Button {
+    min-height: 40px !important;
+    padding: 9px 18px !important;
+    border: 1px solid var(--color-primary) !important;
+    border-radius: var(--radius-lg) !important;
+    background: var(--color-primary) !important;
+    color: #FFFFFF !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    line-height: 1.2 !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 8px !important;
+    cursor: pointer !important;
+    box-shadow: none !important;
+    transition: all var(--transition) !important;
+}
+
+.theme-entry a.SourceCode-Forms-Controls-Web-Button:hover,
+.theme-entry .SourceCode-Forms-Controls-Web-Button:hover {
+    background: var(--color-primary-hover) !important;
+    border-color: var(--color-primary-hover) !important;
+}
+
+.theme-entry a.SourceCode-Forms-Controls-Web-Button:active,
+.theme-entry .SourceCode-Forms-Controls-Web-Button:active {
+    transform: translateY(1px);
+}
+
+
+/* SECONDARY BUTTON */
+
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.secondary-action,
+.theme-entry .SourceCode-Forms-Controls-Web-Button.secondary-action {
+    background: var(--color-secondary) !important;
+    border-color: var(--color-border) !important;
+    color: var(--color-text) !important;
+}
+
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.secondary-action:hover,
+.theme-entry .SourceCode-Forms-Controls-Web-Button.secondary-action:hover {
+    background: var(--color-secondary-hover) !important;
+    border-color: var(--color-border-hover) !important;
+}
+
+
+/* QUIET ACTION */
+
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.quiet-action,
+.theme-entry .SourceCode-Forms-Controls-Web-Button.quiet-action {
+    background: transparent !important;
+    border-color: transparent !important;
+    color: var(--color-primary) !important;
+    box-shadow: none !important;
+}
+
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.quiet-action:hover,
+.theme-entry .SourceCode-Forms-Controls-Web-Button.quiet-action:hover {
+    background: var(--color-primary-light) !important;
+    border-color: transparent !important;
+}
+
+
+/* DANGER BUTTON */
+
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.danger-action,
+.theme-entry .SourceCode-Forms-Controls-Web-Button.danger-action {
+    background: var(--color-danger) !important;
+    border-color: var(--color-danger) !important;
+    color: #FFFFFF !important;
+}
+
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.danger-action:hover,
+.theme-entry .SourceCode-Forms-Controls-Web-Button.danger-action:hover {
+    background: #A93333 !important;
+    border-color: #A93333 !important;
+}
+
+
+/* SUCCESS BUTTON */
+
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.success-action,
+.theme-entry .SourceCode-Forms-Controls-Web-Button.success-action {
+    background: var(--color-success) !important;
+    border-color: var(--color-success) !important;
+    color: #FFFFFF !important;
+}
+
+
+/* DISABLED */
+
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.disabled,
+.theme-entry a.SourceCode-Forms-Controls-Web-Button[disabled],
+.theme-entry .SourceCode-Forms-Controls-Web-Button.disabled,
+.theme-entry .SourceCode-Forms-Controls-Web-Button[disabled] {
+    opacity: 0.5 !important;
+    cursor: not-allowed !important;
+    pointer-events: none !important;
+}
+
+
+/* CHECKBOX */
+
+.theme-entry input[type="checkbox"] {
+    accent-color: var(--color-primary) !important;
+}
+
+.theme-entry .checkbox {
+    cursor: pointer !important;
+}
+
+.theme-entry .checkbox-label,
+.theme-entry label {
+    color: var(--color-text) !important;
+    font-size: 14px !important;
+}
+
+
+/* RADIO */
+
+.theme-entry input[type="radio"] {
+    accent-color: var(--color-primary) !important;
+}
+
+.theme-entry .radio {
+    cursor: pointer !important;
+}
+
+.theme-entry .radio-label {
+    color: var(--color-text) !important;
+    font-size: 14px !important;
+}
+
+
+/* LINKS */
+
+.theme-entry a:not(.SourceCode-Forms-Controls-Web-Button) {
+    color: var(--color-primary) !important;
+    text-decoration: none !important;
+    transition: color var(--transition) !important;
+}
+
+.theme-entry a:not(.SourceCode-Forms-Controls-Web-Button):hover {
+    color: var(--color-primary-hover) !important;
+    text-decoration: underline !important;
+}
+
+
+/* CARDS */
+
+.theme-entry .card,
+.theme-entry .k2-card,
+.theme-entry [class*="card"] {
+    background: var(--color-surface) !important;
+    border: 1px solid var(--color-border) !important;
+    border-radius: var(--radius-lg) !important;
+    box-shadow: var(--shadow-sm) !important;
+}
+
+.theme-entry .card:hover,
+.theme-entry .k2-card:hover {
+    box-shadow: var(--shadow-md) !important;
+}
+
+
+/* PILLS */
+
+.theme-entry .pill,
+.theme-entry .status-pill,
+.theme-entry .badge {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 28px !important;
+    padding: 4px 10px !important;
+    border-radius: var(--radius-pill) !important;
+    background: var(--color-secondary) !important;
+    color: var(--color-text) !important;
+    font-size: 12px !important;
+    font-weight: 600 !important;
+    line-height: 1 !important;
+    white-space: nowrap !important;
+}
+
+
+/* STATUS PILLS */
+
+.theme-entry .pill.success,
+.theme-entry .status-pill.success,
+.theme-entry .badge.success {
+    background: var(--color-success-light) !important;
+    color: var(--color-success) !important;
+}
+
+.theme-entry .pill.warning,
+.theme-entry .status-pill.warning,
+.theme-entry .badge.warning {
+    background: var(--color-warning-light) !important;
+    color: var(--color-warning) !important;
+}
+
+.theme-entry .pill.danger,
+.theme-entry .status-pill.danger,
+.theme-entry .badge.danger {
+    background: var(--color-danger-light) !important;
+    color: var(--color-danger) !important;
+}
+
+.theme-entry .pill.primary,
+.theme-entry .status-pill.primary,
+.theme-entry .badge.primary {
+    background: var(--color-primary-light) !important;
+    color: var(--color-primary) !important;
+}
+
+
+/* LIST VIEW */
+
+.theme-entry .SourceCode-Forms-Controls-Web-ListView {
+    border: 1px solid var(--color-border) !important;
+    border-radius: var(--radius-lg) !important;
+    background: var(--color-surface) !important;
+    overflow: hidden !important;
+    box-shadow: var(--shadow-sm) !important;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ListView table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ListView th {
+    padding: 13px 15px !important;
+    background: #F7F4F2 !important;
+    border-bottom: 1px solid var(--color-border) !important;
+    color: var(--color-text-secondary) !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    text-align: left !important;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ListView td {
+    padding: 13px 15px !important;
+    border-bottom: 1px solid #F0ECEA !important;
+    color: var(--color-text) !important;
+    font-size: 13px !important;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ListView tbody tr:hover {
+    background: #FCFAF9 !important;
+}
+
+.theme-entry .SourceCode-Forms-Controls-Web-ListView tbody tr:last-child td {
+    border-bottom: none !important;
+}
+
+
+/* GRID */
+
+.theme-entry .grid,
+.theme-entry .grid-table,
+.theme-entry table.grid {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    background: var(--color-surface) !important;
+}
+
+.theme-entry .grid th,
+.theme-entry .grid-table th,
+.theme-entry table.grid th {
+    padding: 12px !important;
+    background: #F7F4F2 !important;
+    border-bottom: 1px solid var(--color-border) !important;
+    color: var(--color-text-secondary) !important;
+    font-size: 12px !important;
+    font-weight: 700 !important;
+    text-align: left !important;
+}
+
+.theme-entry .grid td,
+.theme-entry .grid-table td,
+.theme-entry table.grid td {
+    padding: 12px !important;
+    border-bottom: 1px solid #F0ECEA !important;
+    color: var(--color-text) !important;
+    font-size: 13px !important;
+}
+
+
+/* TABS */
+
+.theme-entry .form-tabs {
+    border: none !important;
+    background: transparent !important;
+}
+
+.theme-entry .form-tabs .tab-box-tab {
+    border: none !important;
+    background: transparent !important;
+    color: var(--color-text-secondary) !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    transition: all var(--transition) !important;
+}
+
+.theme-entry .form-tabs .tab-box-tab:hover {
+    color: var(--color-primary) !important;
+}
+
+.theme-entry .form-tabs .tab-box-tab.selected,
+.theme-entry .form-tabs .tab-box-tab.active {
+    color: var(--color-primary) !important;
+    border-bottom: 2px solid var(--color-primary) !important;
+}
+
+
+/* PROGRESS */
+
+.theme-entry [name="Progress"] .container.metro {
+    display: flex !important;
+    width: 100% !important;
+}
+
+.theme-entry [name="Progress"] .step {
+    border-radius: 50% !important;
+    background: #D9D2CE !important;
+}
+
+.theme-entry [name="Progress"] .step-title {
+    color: var(--color-text-muted) !important;
+    font-size: 12px !important;
+}
+
+.theme-entry [name="Progress"] .connector-left,
+.theme-entry [name="Progress"] .connector-right {
+    background: #D9D2CE !important;
+}
+
+.theme-entry [name="Progress"] .completed .step,
+.theme-entry [name="Progress"] .last-completed .step {
+    background: var(--color-success) !important;
+}
+
+.theme-entry [name="Progress"] .completed .step-title,
+.theme-entry [name="Progress"] .last-completed .step-title {
+    color: var(--color-success) !important;
+}
+
+.theme-entry [name="Progress"] .inprogress .step,
+.theme-entry [name="Progress"] .selected .step {
+    background: var(--color-primary) !important;
+}
+
+.theme-entry [name="Progress"] .inprogress .step-title,
+.theme-entry [name="Progress"] .selected .step-title {
+    color: var(--color-primary) !important;
+}
+
+
+/* TABLE */
+
+.theme-entry table {
+    border-color: var(--color-border) !important;
+}
+
+.theme-entry table th {
+    color: var(--color-text-secondary) !important;
+    font-weight: 600 !important;
+}
+
+.theme-entry table td {
+    color: var(--color-text) !important;
+}
+
+
+/* VALIDATION */
+
+.theme-entry .input-control.invalid,
+.theme-entry .input-control.invalid.watermark,
+.theme-entry input.invalid,
+.theme-entry textarea.invalid {
+    border-color: var(--color-danger) !important;
+}
+
+.theme-entry .input-control.invalid a.input-control,
+.theme-entry .input-control.invalid a.input-control span,
+.theme-entry input.invalid,
+.theme-entry textarea.invalid {
+    color: var(--color-danger) !important;
+}
+
+.theme-entry .input-control.invalid .input-control-watermark {
+    color: var(--color-danger) !important;
+}
+
+
+/* REQUIRED */
+
+.theme-entry .validation-error {
+    color: var(--color-danger) !important;
+    font-size: 12px !important;
+    margin-top: 5px !important;
+}
+
+
+/* POPUP */
+
+.theme-entry .popup.dialog {
+    border-radius: var(--radius-lg) !important;
+    overflow: hidden !important;
+    box-shadow: var(--shadow-md) !important;
+}
+
+.theme-entry .popup.dialog .dialog-header,
+.theme-entry .popup.dialog .popup-header {
+    background: var(--color-surface) !important;
+    border-bottom: 1px solid var(--color-border) !important;
+}
+
+.theme-entry .popup.dialog .dialog-content,
+.theme-entry .popup.dialog .popup-content {
+    background: var(--color-surface) !important;
+}
+
+
+/* TOOLTIP */
+
+.theme-entry .tooltip {
+    padding: 7px 10px !important;
+    border-radius: var(--radius-md) !important;
+    background: #272829 !important;
+    color: #FFFFFF !important;
+    font-size: 12px !important;
+}
+
+
+/* ICON BUTTON */
+
+.theme-entry a.SourceCode-Forms-Controls-Web-Button.icon-button,
+.theme-entry .SourceCode-Forms-Controls-Web-Button.icon-button {
+    width: 40px !important;
+    min-width: 40px !important;
+    height: 40px !important;
+    padding: 0 !important;
+    border-radius: 50% !important;
+}
+
+
+/* CONTAINER SPACING */
+
+.theme-entry .panel,
+.theme-entry .view,
+.theme-entry .section {
+    box-sizing: border-box !important;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 860px) {
+
+    .theme-entry a.SourceCode-Forms-Controls-Web-Button,
+    .theme-entry .SourceCode-Forms-Controls-Web-Button {
+        min-height: 40px !important;
+        padding: 9px 14px !important;
+    }
+
+    .theme-entry .SourceCode-Forms-Controls-Web-ListView {
+        overflow-x: auto !important;
+    }
+
+    .theme-entry .form-tabs .tab-box-tab {
+        font-size: 13px !important;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+    .theme-entry [name="Progress"] .container.metro {
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 14px !important;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .theme-entry input.SFC.SourceCode-Forms-Controls-Web-TextBox,
+    .theme-entry .SFC.SourceCode-Forms-Controls-Web-Control-SpinBox,
+    .theme-entry .dropdown-box,
+    .theme-entry .calendar-control {
+        height: 42px !important;
+    }
+
+    .theme-entry a.SourceCode-Forms-Controls-Web-Button,
+    .theme-entry .SourceCode-Forms-Controls-Web-Button {
+        width: 100% !important;
+    }
+}
