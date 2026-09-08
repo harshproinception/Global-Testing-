@@ -27,9 +27,9 @@
     --color-background: #F7F5F3;
     --color-surface: #FFFFFF;
 
-    --radius-sm: 6px;
-    --radius-md: 9px;
-    --radius-lg: 11px;
+    --radius-sm: 0;
+    --radius-md: 0;
+    --radius-lg: 0;
     --radius-pill: 999px;
 
     --control-height: 44px;
@@ -75,7 +75,7 @@
     height: var(--control-height) !important;
     padding: 0 13px !important;
     border: 1px solid var(--color-border) !important;
-    border-radius: var(--radius-lg) !important;
+    border-radius: 0 !important;
     background: var(--color-surface) !important;
     color: var(--color-text) !important;
     font-size: 14px !important;
@@ -98,7 +98,7 @@
     min-height: 90px !important;
     padding: 12px 13px !important;
     border: 1px solid var(--color-border) !important;
-    border-radius: var(--radius-lg) !important;
+    border-radius: 0 !important;
     background: var(--color-surface) !important;
     color: var(--color-text) !important;
     font-size: 14px !important;
@@ -125,7 +125,7 @@
     width: 100% !important;
     height: var(--control-height) !important;
     border: 1px solid var(--color-border) !important;
-    border-radius: var(--radius-lg) !important;
+    border-radius: 0 !important;
     background: var(--color-surface) !important;
     overflow: hidden !important;
     transition: all var(--transition) !important;
@@ -171,7 +171,7 @@
     width: 100% !important;
     height: var(--control-height) !important;
     border: 1px solid var(--color-border) !important;
-    border-radius: var(--radius-lg) !important;
+    border-radius: 0 !important;
     background: var(--color-surface) !important;
     overflow: hidden !important;
     transition: all var(--transition) !important;
@@ -260,7 +260,7 @@
     min-height: 40px !important;
     padding: 9px 18px !important;
     border: 1px solid var(--color-primary) !important;
-    border-radius: var(--radius-lg) !important;
+    border-radius: 0 !important;
     background: var(--color-surface) !important;
     color: var(--color-primary) !important;
     font-size: 14px !important;
@@ -377,7 +377,7 @@
 .theme-entry .k2-card {
     background: var(--color-surface) !important;
     border: 1px solid var(--color-border) !important;
-    border-radius: var(--radius-lg) !important;
+    border-radius: 0 !important;
     box-shadow: var(--shadow-sm) !important;
 }
 
@@ -454,7 +454,7 @@
 
 .theme-entry .SourceCode-Forms-Controls-Web-ListView {
     border: 1px solid var(--color-border) !important;
-    border-radius: var(--radius-lg) !important;
+    border-radius: 0 !important;
     background: var(--color-surface) !important;
     overflow: hidden !important;
     box-shadow: var(--shadow-sm) !important;
@@ -621,7 +621,7 @@
 }
 
 .theme-entry .popup.dialog {
-    border-radius: var(--radius-lg) !important;
+    border-radius: 0 !important;
     overflow: hidden !important;
     box-shadow: var(--shadow-md) !important;
 }
@@ -639,7 +639,7 @@
 
 .theme-entry .tooltip {
     padding: 7px 10px !important;
-    border-radius: var(--radius-md) !important;
+    border-radius: 0 !important;
     background: #272829 !important;
     color: #FFFFFF !important;
     font-size: 12px !important;
