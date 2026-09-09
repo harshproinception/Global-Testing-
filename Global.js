@@ -20,8 +20,12 @@ function initializeRetalGlobalLayout() {
             activeButtonName = "Configuration btn";
         } else if (currentUrl.indexOf("worklist") !== -1) {
             activeButtonName = "Worklist btn";
-        } else if ((currentUrl.indexOf("my") !== -1 && currentUrl.indexOf("customer") !== -1) || 
-                (currentUrl.indexOf("all") !== -1 && currentUrl.indexOf("customer") !== -1)) {
+        } else if (currentUrl.indexOf("MyCustomersLead") !== -1) {
+            activeButtonName = "My cust lead btn";
+        }else if ((currentUrl.indexOf("my") !== -1 && currentUrl.indexOf("customer") !== -1) || 
+                (currentUrl.indexOf("all") !== -1 && currentUrl.indexOf("customer") !== -1) ||
+                (currentUrl.indexOf("CustomerDetailsREGA") !== -1 ) ||
+                (currentUrl.indexOf("BrokerCustomerDetails") !== -1 )) {
             activeButtonName = "My custm btn";
             
         }
