@@ -215,14 +215,14 @@
     border-left: none !important;
 }
 
-.theme-entry .SFC.SourceCode-Forms-Controls-Web-Label:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
+/* .theme-entry .SFC.SourceCode-Forms-Controls-Web-Label:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) {
     display: block !important;
     margin-bottom: 8px !important;
     color: var(--color-text) !important;
     font-size: 14px !important;
     font-weight: 600 !important;
     line-height: 1.4 !important;
-}
+} */
 
 .theme-entry h1,
 .theme-entry h2,
