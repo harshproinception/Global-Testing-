@@ -1,3 +1,28 @@
+.theme-entry .form .row {
+    margin: 0 !important;
+}
+
+.theme-entry .form .row > .view > * {
+    margin: 0 !important;
+}
+
+.theme-entry .form .view {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.runtime-content {
+    margin-top: -18px !important;
+}
+
+body, .theme-entry, .runtime-content, .runtime-view, .panel, .panel-body, .panel-body-wrapper, .scroll-contents {
+    background-color: #F8F6F2 !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif !important;
+}
+
 div[name="Table"]:has([name="Cell notification"]) {
     padding: 0px 32px 24px 32px !important;
     border-spacing: 0 !important;
@@ -43,6 +68,7 @@ div[name="Table"]:has([name="Cell notification"]) {
 .banner-title {
     display: flex !important;
     align-items: center !important;
+    gap: 6px !important;
     color: #FFFFFF !important;
     font-size: 18px !important;
     font-weight: 700 !important;
@@ -72,7 +98,7 @@ span[name="NotificationDesc_label"] {
     align-items: center !important;
     cursor: pointer !important;
     text-decoration: none !important;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05) !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important;
     transition: all 0.2s ease !important;
 }
 
@@ -93,7 +119,7 @@ span[name="NotificationDesc_label"] {
     display: flex !important;
     flex-direction: column !important;
     flex: 1 !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03) !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.03) !important;
     box-sizing: border-box !important;
 }
 
