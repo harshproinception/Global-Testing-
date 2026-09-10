@@ -122,7 +122,7 @@
 }
 
 .theme-entry .dropdown-box {
-    width: 100% !important;
+    /*width: 100% !important;*/
     height: var(--control-height) !important;
     border: 1px solid var(--color-border) !important;
     border-radius: 0 !important;
