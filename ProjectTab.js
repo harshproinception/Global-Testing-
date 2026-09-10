@@ -44,7 +44,7 @@ $(document).ready(function () {
                     else if (l === 'reserved') c = 'status-reserved';
                     else if (l === 'sold') c = 'status-sold';
                     if (c !== '') {
-                        $wrapper.html('<span class="status-pill ' + c + '"><span class="status-dot"></span>' + t + '</span>');
+                        $wrapper.html('<span class="status-pill ' + c + '">' + t + '</span>');
                     }
                 }
             });
