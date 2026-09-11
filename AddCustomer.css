@@ -580,7 +580,7 @@ a[name="Review Button"]:not(.hidden):hover {
 .form .row:not(:has(.retal-custom-header-layout)):not(:has(a[name="Home btn"])) > .view:not(.hidden) {
     width: 100% !important;
     max-width: 900px !important;
-    margin: 20px auto !important;
+    margin: 8px auto !important;
     background: #FFFFFF !important;
     border-radius: 12px !important;
     border: 1px solid #EBE7E2 !important;
