@@ -4,20 +4,48 @@
     background: #f6f3f1 !important;
 }
 
+
 .theme-entry .main-customer-form .form {
     background: #ffffff !important;
 }
 
-.theme-entry .main-customer-form .form .row:not(:has(.retal-custom-header-layout)):not(:has(a[name="Home btn"])) {
+.theme-entry .main-customer-form .form > .row {
+    display: block !important;
     width: 100% !important;
     max-width: none !important;
-    margin-inline-start: 0 !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
+    margin-inline-start: 0 !important;
     margin-top: 0 !important;
     margin-bottom: 0 !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
+    box-sizing: border-box !important;
+}
+
+.theme-entry .main-customer-form .form > .row:not(.retal-global-header-row):not(.retal-customer-header-row) > .view:not(.hidden) {
+    display: block !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    box-sizing: border-box !important;
+}
+
+.theme-entry .main-customer-form .form > .retal-global-header-row > .view,
+.theme-entry .main-customer-form .form > .retal-customer-header-row > .view {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: 0 !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
     box-sizing: border-box !important;
 }
 
@@ -32,37 +60,6 @@
     max-width: none !important;
     margin-left: 0 !important;
     margin-right: 0 !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    box-sizing: border-box !important;
-}
-
-.theme-entry .main-customer-form .tab-box-body {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-}
-
-.theme-entry .main-customer-form .form > .retal-customer-header-row:not(:has(.retal-custom-header-layout)):not(:has(a[name="Home btn"])) {
-    width: 100% !important;
-    max-width: none !important;
-    margin-inline-start: 0 !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-    box-sizing: border-box !important;
-}
-
-.theme-entry .main-customer-form .tab-box-body .form .row:not(:has(.retal-custom-header-layout)):not(:has(a[name="Home btn"])) {
-    width: 100% !important;
-    max-width: none !important;
-    margin-inline-start: 0 !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
     box-sizing: border-box !important;
