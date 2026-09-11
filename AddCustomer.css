@@ -594,3 +594,12 @@ a[name="Review Button"]:not(.hidden):hover {
     width: 100% !important;
     box-sizing: border-box !important;
 }
+
+/* --- Collapse Gap Between Wizard Card and Button Bar --- */
+.form .row:has(.view:not(.hidden) a[name="Continue Button"]) {
+    margin-top: -10px !important;
+}
+
+.form .row:has(.view:not(.hidden) a[name="Continue Button"]) > .view:not(.hidden) {
+    margin-top: 0 !important;
+}
