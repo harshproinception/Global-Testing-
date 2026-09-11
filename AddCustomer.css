@@ -575,3 +575,22 @@ a[name="Review Button"]:not(.hidden):hover {
     border-color: #874A37 !important;
     transform: translateY(-1px) !important;
 }
+
+/* --- Add Customer Wizard: Card Container & Centering Layout --- */
+.form .row:not(:has(.retal-custom-header-layout)):not(:has(a[name="Home btn"])) > .view:not(.hidden) {
+    width: 100% !important;
+    max-width: 900px !important;
+    margin: 20px auto !important;
+    background: #FFFFFF !important;
+    border-radius: 12px !important;
+    border: 1px solid #EBE7E2 !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03) !important;
+    padding: 24px 32px !important;
+    box-sizing: border-box !important;
+}
+
+/* Ensure inner layout tables fill the centered container cleanly */
+.form .row:not(:has(.retal-custom-header-layout)):not(:has(a[name="Home btn"])) > .view:not(.hidden) .root-table {
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
