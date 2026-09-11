@@ -886,3 +886,60 @@
         padding: 9px 12px !important;
     }
 }
+
+
+/* Below is the code for the tables (it is moved from the lead but the js to handle table is in lead.js  */
+
+.theme-entry .detail-table {
+    width: 100% !important;
+    border-collapse: separate !important;
+    border-spacing: 0 !important;
+    background: #ffffff !important;
+    border: 1px solid #e3d9d4 !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+}
+
+.theme-entry .detail-table > .editor-cell {
+    min-height: 38px !important;
+    height: 38px !important;
+    padding: 8px 14px !important;
+    margin: 0 !important;
+    border-bottom: 1px solid #eee8e5 !important;
+    box-sizing: border-box !important;
+    background: #ffffff !important;
+}
+
+.theme-entry .detail-table > .editor-cell:nth-last-child(-n + 2) {
+    border-bottom: 0 !important;
+}
+
+.theme-entry .detail-table > .editor-cell > .SFC.SourceCode-Forms-Controls-Web-Label {
+    color: #765c4e !important;
+    font-weight: 600 !important;
+    font-size: 13px !important;
+    line-height: 1.2 !important;
+}
+
+.theme-entry .detail-table > .editor-cell > .SFC.SourceCode-Forms-Controls-Web-DataLabel {
+    color: #302724 !important;
+    font-weight: 500 !important;
+    font-size: 13px !important;
+    line-height: 1.2 !important;
+}
+
+.theme-entry .detail-table > .editor-cell:first-child {
+    grid-column: 1 / -1 !important;
+    min-height: 40px !important;
+    height: 40px !important;
+    padding: 10px 14px !important;
+    background: #f3efed !important;
+    border-bottom: 1px solid #e3d9d4 !important;
+}
+
+.theme-entry .detail-table > .editor-cell:first-child .SFC.SourceCode-Forms-Controls-Web-Label {
+    color: #765c4e !important;
+    font-size: 14px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.3px !important;
+}
