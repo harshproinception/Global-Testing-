@@ -1,15 +1,15 @@
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) {
     font-family: Arial, Helvetica, sans-serif !important;
     color: #2d2522 !important;
     background: #f6f3f1 !important;
 }
 
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .form {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .form {
     background: #ffffff !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .form > .row {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .form > .row {
     display: block !important;
     width: 100% !important;
     max-width: none !important;
@@ -23,7 +23,7 @@
     box-sizing: border-box !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .form > .row:not(.retal-global-header-row):not(.retal-customer-header-row) > .view:not(.hidden) {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .form > .row:not(.retal-global-header-row):not(.retal-customer-header-row) > .view:not(.hidden) {
     display: block !important;
     width: 100% !important;
     max-width: none !important;
@@ -36,8 +36,8 @@
     box-sizing: border-box !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .form > .retal-global-header-row > .view,
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .form > .retal-customer-header-row > .view {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .form > .retal-global-header-row > .view,
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .form > .retal-customer-header-row > .view {
     width: 100% !important;
     max-width: none !important;
     margin: 0 !important;
@@ -49,13 +49,13 @@
     box-sizing: border-box !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .tab-box-body,
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .tab-box-body-m,
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .tab-box-body-m-c,
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .tab-box-body-wrapper,
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .scroll-wrapper,
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .formpanel,
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .formpanel > .form {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .tab-box-body,
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .tab-box-body-m,
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .tab-box-body-m-c,
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .tab-box-body-wrapper,
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .scroll-wrapper,
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .formpanel,
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .formpanel > .form {
     width: 100% !important;
     max-width: none !important;
     margin-left: 0 !important;
@@ -65,7 +65,7 @@
     box-sizing: border-box !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .form-tabs {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .form-tabs {
     display: block !important;
     width: 100% !important;
     min-height: 0 !important;
@@ -75,7 +75,7 @@
     background: #ffffff !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .tab-box-tabs {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .tab-box-tabs {
     display: flex !important;
     flex-direction: row !important;
     align-items: stretch !important;
@@ -93,7 +93,7 @@
     list-style: none !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .tab-box-tabs>li {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .tab-box-tabs>li {
     display: block !important;
     float: none !important;
     width: auto !important;
@@ -103,7 +103,7 @@
     padding: 0 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .tab-box-tabs>li>a.tab {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .tab-box-tabs>li>a.tab {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -121,12 +121,12 @@
     text-decoration: none !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .tab-box-tabs>li>a.tab:hover {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .tab-box-tabs>li>a.tab:hover {
     background: #ffffff !important;
     color: #9d5945 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .tab-box-tabs>li>a.tab.selected {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .tab-box-tabs>li>a.tab.selected {
     background: #ffffff !important;
     color: #8f503d !important;
     font-weight: 700 !important;
@@ -134,8 +134,8 @@
     border-right: 1px solid #e3d9d4 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .tab-box-tabs>li>a.tab .tab-wrapper,
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .tab-box-tabs>li>a.tab .tab-text {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .tab-box-tabs>li>a.tab .tab-wrapper,
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .tab-box-tabs>li>a.tab .tab-text {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -145,7 +145,7 @@
     white-space: nowrap !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .tab-box-body {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .tab-box-body {
     width: 100% !important;
     background: #ffffff !important;
     border: 1px solid #e3d9d4 !important;
@@ -153,51 +153,51 @@
     border-radius: 0 0 5px 5px !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .tab-box-body-wrapper,
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .scroll-wrapper,
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .formpanel {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .tab-box-body-wrapper,
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .scroll-wrapper,
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .formpanel {
     width: 100% !important;
     background: #ffffff !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .formpanel>.form {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .formpanel>.form {
     width: 100% !important;
     padding: 0 !important;
     background: #ffffff !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .retal-global-header-row {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .retal-global-header-row {
     width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .retal-customer-header-row {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .retal-customer-header-row {
     width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .SFC.SourceCode-Forms-Controls-Web-Label,
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .SFC.SourceCode-Forms-Controls-Web-DataLabel {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .SFC.SourceCode-Forms-Controls-Web-Label,
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .SFC.SourceCode-Forms-Controls-Web-DataLabel {
     font-family: Arial, Helvetica, sans-serif !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .SFC.SourceCode-Forms-Controls-Web-Label {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .SFC.SourceCode-Forms-Controls-Web-Label {
     color: #765c4e !important;
     font-size: 13px !important;
     font-weight: 600 !important;
     line-height: 1.3 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .SFC.SourceCode-Forms-Controls-Web-DataLabel {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .SFC.SourceCode-Forms-Controls-Web-DataLabel {
     color: #302724 !important;
     font-size: 13px !important;
     font-weight: 600 !important;
     line-height: 1.3 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view {
     width: calc(100% - 28px) !important;
     margin: 12px 14px 10px !important;
     padding: 0 !important;
@@ -208,12 +208,12 @@
     overflow: hidden !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .progress-table {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .progress-table {
     width: 100% !important;
     background: #ffffff !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .progress-title-cell {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .progress-title-cell {
     display: flex !important;
     align-items: center !important;
     visibility: visible !important;
@@ -225,7 +225,7 @@
     border-bottom: 1px solid #e3d9d4 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .progress-title-cell .SFC.SourceCode-Forms-Controls-Web-Label {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .progress-title-cell .SFC.SourceCode-Forms-Controls-Web-Label {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
@@ -238,7 +238,7 @@
     text-transform: uppercase !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .progress-description-cell {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .progress-description-cell {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
@@ -249,7 +249,7 @@
     border: 0 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .progress-description-cell .SFC.SourceCode-Forms-Controls-Web-DataLabel {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .progress-description-cell .SFC.SourceCode-Forms-Controls-Web-DataLabel {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
@@ -261,7 +261,7 @@
     line-height: 1.35 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .progress-host {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .progress-host {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
@@ -272,7 +272,7 @@
     border: 0 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .progress-host .SourceCode-Forms-Controls-Web-ControlPack-ProgressControl {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .progress-host .SourceCode-Forms-Controls-Web-ControlPack-ProgressControl {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
@@ -284,7 +284,7 @@
     background: transparent !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .progress-host .stylewrapper {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .progress-host .stylewrapper {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
@@ -295,7 +295,7 @@
     background: transparent !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .container.metro {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .container.metro {
     display: flex !important;
     visibility: visible !important;
     opacity: 1 !important;
@@ -309,7 +309,7 @@
     background: transparent !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .step-container {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .step-container {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
@@ -320,7 +320,7 @@
     padding: 0 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .step-area {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .step-area {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
@@ -330,7 +330,7 @@
     text-decoration: none !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .step-item {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .step-item {
     display: flex !important;
     align-items: center !important;
     width: 100% !important;
@@ -341,8 +341,8 @@
     opacity: 1 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .connector-left,
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .connector-right {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .connector-left,
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .connector-right {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
@@ -353,7 +353,7 @@
     background: #d5d0cd !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .step {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .step {
     position: relative !important;
     z-index: 3 !important;
     display: flex !important;
@@ -370,12 +370,12 @@
     box-shadow: 0 0 0 3px #ffffff !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .step svg {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .step svg {
     width: 10px !important;
     height: 10px !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .step-title {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .step-title {
     display: block !important;
     visibility: visible !important;
     opacity: 1 !important;
@@ -384,7 +384,7 @@
     text-align: center !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .step-title .title {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .step-title .title {
     display: inline-block !important;
     visibility: visible !important;
     opacity: 1 !important;
@@ -397,37 +397,37 @@
     white-space: nowrap !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .step-container.completed .step,
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .step-container.last-completed .step {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .step-container.completed .step,
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .step-container.last-completed .step {
     background: #5d9255 !important;
     border-color: #5d9255 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .step-container.completed .connector-left,
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .step-container.completed .connector-right,
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .step-container.last-completed .connector-left,
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .step-container.last-completed .connector-right {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .step-container.completed .connector-left,
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .step-container.completed .connector-right,
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .step-container.last-completed .connector-left,
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .step-container.last-completed .connector-right {
     background: #5d9255 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .step-container.completed .step-title .title,
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .step-container.last-completed .step-title .title {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .step-container.completed .step-title .title,
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .step-container.last-completed .step-title .title {
     color: #5d9255 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .step-container.selected .step,
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .step-container.inprogress .step {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .step-container.selected .step,
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .step-container.inprogress .step {
     background: #a96e55 !important;
     border-color: #a96e55 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .step-container.selected .step-title .title,
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .step-container.inprogress .step-title .title {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .step-container.selected .step-title .title,
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .step-container.inprogress .step-title .title {
     color: #a96e55 !important;
     font-weight: 600 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .progress-status-cell {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .progress-status-cell {
     display: flex !important;
     align-items: center !important;
     visibility: visible !important;
@@ -439,7 +439,7 @@
     border: 0 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .progress-status-cell .SFC.SourceCode-Forms-Controls-Web-Label {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .progress-status-cell .SFC.SourceCode-Forms-Controls-Web-Label {
     margin: 0 !important;
     padding: 0 !important;
     color: #795f50 !important;
@@ -447,7 +447,7 @@
     font-weight: 600 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .detail-view-row {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .detail-view-row {
     display: flex !important;
     align-items: stretch !important;
     width: 100% !important;
@@ -456,14 +456,14 @@
     padding: 0 10px !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .detail-view-row>.view {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .detail-view-row>.view {
     width: calc(50% - 6px) !important;
     flex: 1 1 0 !important;
     margin: 0 !important;
     padding: 0 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .detail-view {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .detail-view {
     width: 100% !important;
     height: 100% !important;
     margin: 0 !important;
@@ -473,15 +473,15 @@
     box-shadow: none !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .detail-view .panel-body,
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .detail-view .panel-body-wrapper {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .detail-view .panel-body,
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .detail-view .panel-body-wrapper {
     margin: 0 !important;
     padding: 0 !important;
     background: #ffffff !important;
     border: 0 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .detail-table {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .detail-table {
     width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -491,7 +491,7 @@
     overflow: hidden !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .detail-table>.editor-cell {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .detail-table>.editor-cell {
     min-height: 38px !important;
     height: 38px !important;
     margin: 0 !important;
@@ -501,7 +501,7 @@
     vertical-align: middle !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .detail-table>.editor-cell:first-child {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .detail-table>.editor-cell:first-child {
     min-height: 40px !important;
     height: 40px !important;
     padding: 9px 14px !important;
@@ -509,11 +509,11 @@
     border-bottom: 1px solid #e3d9d4 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .detail-table>.editor-cell:last-child {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .detail-table>.editor-cell:last-child {
     border-bottom: 0 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .detail-table .SFC.SourceCode-Forms-Controls-Web-Label {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .detail-table .SFC.SourceCode-Forms-Controls-Web-Label {
     margin: 0 !important;
     padding: 0 !important;
     color: #765c4e !important;
@@ -522,7 +522,7 @@
     line-height: 1.2 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .detail-table .SFC.SourceCode-Forms-Controls-Web-DataLabel {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .detail-table .SFC.SourceCode-Forms-Controls-Web-DataLabel {
     margin: 0 !important;
     padding: 0 !important;
     color: #302724 !important;
@@ -531,7 +531,7 @@
     line-height: 1.2 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .detail-table>.editor-cell:first-child .SFC.SourceCode-Forms-Controls-Web-Label {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .detail-table>.editor-cell:first-child .SFC.SourceCode-Forms-Controls-Web-Label {
     color: #765c4e !important;
     font-size: 13px !important;
     font-weight: 700 !important;
@@ -539,57 +539,57 @@
     text-transform: uppercase !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .detail-table>.editor-cell[style*="grid-column-start:1"] {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .detail-table>.editor-cell[style*="grid-column-start:1"] {
     background: #fcfaf9 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .detail-table>.editor-cell[style*="grid-column-start:2"] {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .detail-table>.editor-cell[style*="grid-column-start:2"] {
     background: #ffffff !important;
     border-left: 1px solid #e3d9d4 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .single-detail-view {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .single-detail-view {
     width: 100% !important;
     margin-top: 10px !important;
     padding: 0 10px !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .grid {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .grid {
     background: #ffffff !important;
     border: 1px solid #e3d9d4 !important;
     border-radius: 4px !important;
     overflow: hidden !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .grid-column-headers-wrapper {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .grid-column-headers-wrapper {
     background: #f3efed !important;
     border-bottom: 1px solid #e3d9d4 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .grid-column-header-table {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .grid-column-header-table {
     width: 100% !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .grid-column-header-table td {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .grid-column-header-table td {
     height: 40px !important;
     padding: 0 14px !important;
     border-bottom: 1px solid #e3d9d4 !important;
     background: #f3efed !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .grid-column-header-text {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .grid-column-header-text {
     color: #765c4e !important;
     font-size: 12px !important;
     font-weight: 700 !important;
     letter-spacing: 1px !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .grid-content-table {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .grid-content-table {
     width: 100% !important;
     border-collapse: collapse !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .grid-content-table td {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .grid-content-table td {
     height: 48px !important;
     padding: 0 14px !important;
     border-bottom: 1px solid #e8dfdb !important;
@@ -599,77 +599,77 @@
     vertical-align: middle !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .grid-content-table tr:hover td {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .grid-content-table tr:hover td {
     background: #fbf7f5 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .grid-footer {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .grid-footer {
     background: #f5f0ed !important;
     border-top: 0 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .input-control.invalid,
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .input-control.invalid.watermark,
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form input.invalid,
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form textarea.invalid {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .input-control.invalid,
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .input-control.invalid.watermark,
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) input.invalid,
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) textarea.invalid {
     border-color: #c34242 !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .validation-error {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .validation-error {
     margin-top: 5px !important;
     color: #c34242 !important;
     font-size: 12px !important;
 }
 
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form.cj-popup-open .progress-view,
-.theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form.cj-popup-open .detail-view-row {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]).cj-popup-open .progress-view,
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]).cj-popup-open .detail-view-row {
     visibility: hidden !important;
 }
 
 @media (max-width: 900px) {
-    .theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .detail-view-row {
+    .theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .detail-view-row {
         display: block !important;
         padding: 0 10px !important;
     }
 
-    .theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .detail-view-row>.view {
+    .theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .detail-view-row>.view {
         width: 100% !important;
         margin-bottom: 10px !important;
     }
 
-    .theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view {
+    .theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view {
         width: calc(100% - 20px) !important;
         margin-left: 10px !important;
         margin-right: 10px !important;
     }
 
-    .theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .container.metro {
+    .theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .container.metro {
         padding-left: 8px !important;
         padding-right: 8px !important;
     }
 
-    .theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .step-title .title {
+    .theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .step-title .title {
         font-size: 10px !important;
     }
 }
 
 @media (max-width: 600px) {
-    .theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .tab-box-tabs>li>a.tab {
+    .theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .tab-box-tabs>li>a.tab {
         min-width: 80px !important;
         padding: 0 12px !important;
         font-size: 13px !important;
     }
 
-    .theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .container.metro {
+    .theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .container.metro {
         padding-left: 2px !important;
         padding-right: 2px !important;
     }
 
-    .theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .progress-view .step-title .title {
+    .theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .progress-view .step-title .title {
         font-size: 9px !important;
     }
 
-    .theme-entry form#form1[action*="CustomerJourney.CustomerLeadDetails.Form"] .runtime-form .detail-table>.editor-cell {
+    .theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .detail-table>.editor-cell {
         padding-left: 10px !important;
         padding-right: 10px !important;
     }
