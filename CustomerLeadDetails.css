@@ -385,6 +385,10 @@
     visibility: hidden !important;
 }
 
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) [name="Full Name Data Label"] {
+    font-size: 18px !important;
+}
+
 @media (max-width: 900px) {
     .theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .detail-view-row {
         display: block !important;
