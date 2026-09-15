@@ -395,6 +395,10 @@
     box-sizing: border-box !important;
 }
 
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) [name="profile_tag_dlb"] {
+    color: #ffffff !important;
+}
+
 @media (max-width: 900px) {
     .theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .detail-view-row {
         display: block !important;
