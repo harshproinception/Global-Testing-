@@ -973,8 +973,4 @@
     overflow-wrap: anywhere !important;
     box-sizing: border-box !important;
 }
-.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) div[name="Customer Detail Table"] {
-    border: 1px solid #e3d9d4 !important;
-    border-radius: 8px !important;
-    box-sizing: border-box !important;
-}
+
