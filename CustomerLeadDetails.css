@@ -395,7 +395,7 @@
     box-sizing: border-box !important;
 }
 
-.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) [name="profile_tag_dlb"] {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .retal-custom-header-layout span.SFC.SourceCode-Forms-Controls-Web-DataLabel[name="profile_tag_dlb"] {
     color: #ffffff !important;
 }
 
