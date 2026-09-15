@@ -399,7 +399,7 @@
     color: #ffffff !important;
 }
 
-.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .retal-custom-header-layout span.SFC.SourceCode-Forms-Controls-Web-DataLabel[name="Full Name Data Label"] {
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .SFC.SourceCode-Forms-Controls-Web-DataLabel[name="Full Name Data Label"] {
     font-size: 18px !important;
 }
 
