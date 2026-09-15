@@ -65,7 +65,7 @@ body,
     align-items: center !important;
     width: 100% !important;
     background-color: #ffffff !important;
-    padding: 0 24px !important;
+    padding: 0 0px !important;
     box-sizing: border-box !important;
     border-bottom: none !important;
     margin: 0 !important;
@@ -77,7 +77,7 @@ body,
 .theme-entry div.retal-custom-header-layout > span[name="Cell logo"] {
     display: flex !important;
     align-items: center !important;
-    margin-inline-end: 24px !important;
+    margin-inline-end: 0px !important;
 }
 
 .theme-entry div.retal-custom-header-layout > span[name="Cell logo"] img {
