@@ -1,10 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
-
-.hidden, .hidden *, [style*="display:none"], [style*="display: none"], .SFC.hidden, a.SFC.hidden, .panel.hidden, .view.hidden, div.hidden, span.hidden, p.hidden, input.hidden, select.hidden {
-    display: none !important;
-}
-
-html, body, .theme-entry, .runtime-form, .runtime-content, #form1 {
+body:has([name="Add_cust_style_dlb"]),
+.runtime-form:has([name="Add_cust_style_dlb"]),
+.runtime-content:has([name="Add_cust_style_dlb"]),
+#form1:has([name="Add_cust_style_dlb"]) {
     font-family: 'Plus Jakarta Sans', 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif !important;
     background-color: #F8F5F2 !important;
     background: #F8F5F2 !important;
@@ -16,12 +13,28 @@ html, body, .theme-entry, .runtime-form, .runtime-content, #form1 {
     overflow-x: hidden !important;
 }
 
-.runtime-content {
+:has([name="Add_cust_style_dlb"]) .hidden,
+:has([name="Add_cust_style_dlb"]) .hidden *,
+:has([name="Add_cust_style_dlb"]) [style*="display:none"],
+:has([name="Add_cust_style_dlb"]) [style*="display: none"],
+:has([name="Add_cust_style_dlb"]) .SFC.hidden,
+:has([name="Add_cust_style_dlb"]) a.SFC.hidden,
+:has([name="Add_cust_style_dlb"]) .panel.hidden,
+:has([name="Add_cust_style_dlb"]) .view.hidden,
+:has([name="Add_cust_style_dlb"]) div.hidden,
+:has([name="Add_cust_style_dlb"]) span.hidden,
+:has([name="Add_cust_style_dlb"]) p.hidden,
+:has([name="Add_cust_style_dlb"]) input.hidden,
+:has([name="Add_cust_style_dlb"]) select.hidden {
+    display: none !important;
+}
+
+:has([name="Add_cust_style_dlb"]) .runtime-content {
     margin: 0 !important;
     padding: 0 !important;
 }
 
-.theme-entry .form {
+:has([name="Add_cust_style_dlb"]) .theme-entry .form {
     width: 100% !important;
     max-width: 100% !important;
     margin: 0 !important;
@@ -31,7 +44,10 @@ html, body, .theme-entry, .runtime-form, .runtime-content, #form1 {
     box-shadow: none !important;
 }
 
-.theme-entry .panel, .theme-entry .panel-body, .theme-entry .panel-body-wrapper, .theme-entry .innerpanel {
+:has([name="Add_cust_style_dlb"]) .theme-entry .panel,
+:has([name="Add_cust_style_dlb"]) .theme-entry .panel-body,
+:has([name="Add_cust_style_dlb"]) .theme-entry .panel-body-wrapper,
+:has([name="Add_cust_style_dlb"]) .theme-entry .innerpanel {
     background: transparent !important;
     border: none !important;
     box-shadow: none !important;
@@ -39,72 +55,75 @@ html, body, .theme-entry, .runtime-form, .runtime-content, #form1 {
     margin: 0 !important;
 }
 
-.form .row {
+:has([name="Add_cust_style_dlb"]) .form .row {
     display: flex !important;
     width: 100% !important;
     margin: 0 !important;
 }
 
-.form .row > .formcontrol:has(.empty) {
+:has([name="Add_cust_style_dlb"]) .form .row > .formcontrol:has(.empty) {
     display: none !important;
 }
 
-[name="CustomerJourney.AddCustomer.Form Area Item3"] {
+:has([name="Add_cust_style_dlb"]) [name="CustomerJourney.AddCustomer.Form Area Item3"] {
     margin-top: 4px !important;
     padding-top: 10px !important;
     border-top: 1px solid #F4F4F5 !important;
     width: 100% !important;
 }
 
-[name="CustomerJourney.AddCustomer.Form Area Item3"] .root-table {
+:has([name="Add_cust_style_dlb"]) [name="CustomerJourney.AddCustomer.Form Area Item3"] .root-table {
     display: flex !important;
     justify-content: space-between !important;
     align-items: center !important;
     width: 100% !important;
 }
 
-[name="CustomerJourney.AddCustomer.Form Area Item3"] [name="Cell Cell7"] {
+:has([name="Add_cust_style_dlb"]) [name="CustomerJourney.AddCustomer.Form Area Item3"] [name="Cell Cell7"] {
     display: flex !important;
     gap: 8px !important;
     justify-content: flex-start !important;
 }
 
-[name="CustomerJourney.AddCustomer.Form Area Item3"] [name="Cell Cell11"] {
+:has([name="Add_cust_style_dlb"]) [name="CustomerJourney.AddCustomer.Form Area Item3"] [name="Cell Cell11"] {
     display: flex !important;
     gap: 8px !important;
     justify-content: flex-end !important;
 }
 
-[name="CustomerJourney.AddCustomer.Form Area Item"] .root-table {
+:has([name="Add_cust_style_dlb"]) [name="CustomerJourney.AddCustomer.Form Area Item"] .root-table {
     grid-template-columns: 1fr 1fr !important;
     width: 100% !important;
 }
 
-[name="Cell Cell50"], [name="Cell Cell160"], [name="Cell Cell45"] {
+:has([name="Add_cust_style_dlb"]) [name="Cell Cell50"],
+:has([name="Add_cust_style_dlb"]) [name="Cell Cell160"],
+:has([name="Add_cust_style_dlb"]) [name="Cell Cell45"] {
     grid-column: 1 / 3 !important;
     width: 100% !important;
     box-sizing: border-box !important;
     padding-right: 0 !important;
 }
 
-[name="Cell Cell44"] {
+:has([name="Add_cust_style_dlb"]) [name="Cell Cell44"] {
     grid-column: 1 / 2 !important;
     padding-right: 12px !important;
     box-sizing: border-box !important;
 }
 
-[name="Cell Cell145"] {
+:has([name="Add_cust_style_dlb"]) [name="Cell Cell145"] {
     grid-column: 2 / 3 !important;
     box-sizing: border-box !important;
 }
 
-[name="Cell Cell108"] {
+:has([name="Add_cust_style_dlb"]) [name="Cell Cell108"] {
     grid-column: 1 / 2 !important;
     padding-right: 12px !important;
     box-sizing: border-box !important;
 }
 
-[name="CustomerProgress"], .SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl {
+:has([name="Add_cust_style_dlb"]) [name="CustomerProgress"],
+:has([name="Add_cust_style_dlb"]) .SFC.SourceCode-Forms-Controls-Web-ControlPack-ProgressControl {
     margin-top: 4px !important;
     margin-bottom: 14px !important;
     padding-top: 4px !important;
@@ -114,7 +133,8 @@ html, body, .theme-entry, .runtime-form, .runtime-content, #form1 {
     overflow: visible !important;
 }
 
-.stylewrapper.runtime, .container.metro {
+:has([name="Add_cust_style_dlb"]) .stylewrapper.runtime,
+:has([name="Add_cust_style_dlb"]) .container.metro {
     display: flex !important;
     width: 100% !important;
     position: relative !important;
@@ -126,7 +146,7 @@ html, body, .theme-entry, .runtime-form, .runtime-content, #form1 {
     overflow: visible !important;
 }
 
-.container.metro li.step-container {
+:has([name="Add_cust_style_dlb"]) .container.metro li.step-container {
     flex: 1 !important;
     position: relative !important;
     display: flex !important;
@@ -135,7 +155,7 @@ html, body, .theme-entry, .runtime-form, .runtime-content, #form1 {
     overflow: visible !important;
 }
 
-.container.metro .step-area {
+:has([name="Add_cust_style_dlb"]) .container.metro .step-area {
     width: 100% !important;
     display: flex !important;
     flex-direction: column !important;
@@ -144,7 +164,7 @@ html, body, .theme-entry, .runtime-form, .runtime-content, #form1 {
     overflow: visible !important;
 }
 
-.container.metro .step-item {
+:has([name="Add_cust_style_dlb"]) .container.metro .step-item {
     width: 100% !important;
     position: relative !important;
     display: flex !important;
@@ -154,7 +174,7 @@ html, body, .theme-entry, .runtime-form, .runtime-content, #form1 {
     overflow: visible !important;
 }
 
-.container.metro .step-item .connector-left {
+:has([name="Add_cust_style_dlb"]) .container.metro .step-item .connector-left {
     position: absolute !important;
     top: 15px !important;
     left: 0 !important;
@@ -164,7 +184,7 @@ html, body, .theme-entry, .runtime-form, .runtime-content, #form1 {
     z-index: 1 !important;
 }
 
-.container.metro .step-item .connector-right {
+:has([name="Add_cust_style_dlb"]) .container.metro .step-item .connector-right {
     position: absolute !important;
     top: 15px !important;
     right: 0 !important;
@@ -174,21 +194,21 @@ html, body, .theme-entry, .runtime-form, .runtime-content, #form1 {
     z-index: 1 !important;
 }
 
-.container.metro li.step-container.first .connector-left {
+:has([name="Add_cust_style_dlb"]) .container.metro li.step-container.first .connector-left {
     display: none !important;
 }
 
-.container.metro li.step-container.last .connector-right {
+:has([name="Add_cust_style_dlb"]) .container.metro li.step-container.last .connector-right {
     display: none !important;
 }
 
-.container.metro li.step-container.completed .connector-left, 
-.container.metro li.step-container.completed .connector-right, 
-.container.metro li.step-container.last-completed .connector-left {
+:has([name="Add_cust_style_dlb"]) .container.metro li.step-container.completed .connector-left,
+:has([name="Add_cust_style_dlb"]) .container.metro li.step-container.completed .connector-right,
+:has([name="Add_cust_style_dlb"]) .container.metro li.step-container.last-completed .connector-left {
     background-color: #3B6E52 !important;
 }
 
-.container.metro .step-item .step {
+:has([name="Add_cust_style_dlb"]) .container.metro .step-item .step {
     width: 28px !important;
     height: 28px !important;
     border-radius: 50% !important;
@@ -201,34 +221,34 @@ html, body, .theme-entry, .runtime-form, .runtime-content, #form1 {
     z-index: 2 !important;
 }
 
-.container.metro .step-item .step svg {
+:has([name="Add_cust_style_dlb"]) .container.metro .step-item .step svg {
     width: 12px !important;
     height: 12px !important;
 }
 
-.container.metro li.step-container.completed .step, 
-.container.metro li.step-container.last-completed .step {
+:has([name="Add_cust_style_dlb"]) .container.metro li.step-container.completed .step,
+:has([name="Add_cust_style_dlb"]) .container.metro li.step-container.last-completed .step {
     background-color: #3B6E52 !important;
     border-color: #3B6E52 !important;
 }
 
-.container.metro li.step-container.completed .step svg, 
-.container.metro li.step-container.last-completed .step svg {
+:has([name="Add_cust_style_dlb"]) .container.metro li.step-container.completed .step svg,
+:has([name="Add_cust_style_dlb"]) .container.metro li.step-container.last-completed .step svg {
     fill: #FFFFFF !important;
 }
 
-.container.metro li.step-container.selected .step, 
-.container.metro li.step-container.inprogress .step {
+:has([name="Add_cust_style_dlb"]) .container.metro li.step-container.selected .step,
+:has([name="Add_cust_style_dlb"]) .container.metro li.step-container.inprogress .step {
     background-color: #9E5A44 !important;
     border-color: #9E5A44 !important;
 }
 
-.container.metro li.step-container.selected .step svg, 
-.container.metro li.step-container.inprogress .step svg {
+:has([name="Add_cust_style_dlb"]) .container.metro li.step-container.selected .step svg,
+:has([name="Add_cust_style_dlb"]) .container.metro li.step-container.inprogress .step svg {
     fill: #FFFFFF !important;
 }
 
-.container.metro .step-title .title {
+:has([name="Add_cust_style_dlb"]) .container.metro .step-title .title {
     font-size: 12.5px !important;
     font-weight: 500 !important;
     color: #9CA3AF !important;
@@ -237,17 +257,17 @@ html, body, .theme-entry, .runtime-form, .runtime-content, #form1 {
     white-space: nowrap !important;
 }
 
-.container.metro li.step-container.selected .step-title .title, 
-.container.metro li.step-container.inprogress .step-title .title, 
-.container.metro li.step-container.completed .step-title .title {
+:has([name="Add_cust_style_dlb"]) .container.metro li.step-container.selected .step-title .title,
+:has([name="Add_cust_style_dlb"]) .container.metro li.step-container.inprogress .step-title .title,
+:has([name="Add_cust_style_dlb"]) .container.metro li.step-container.completed .step-title .title {
     color: #111827 !important;
     font-weight: 600 !important;
 }
 
-h4[name="Saudi National ID Or Iqama Label"]:not(.hidden), 
-h4[name="Customer details Label"]:not(.hidden), 
-h4[name="Check and finish Label"]:not(.hidden), 
-.theme-entry h4.SFC:not(.hidden) {
+:has([name="Add_cust_style_dlb"]) h4[name="Saudi National ID Or Iqama Label"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) h4[name="Customer details Label"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) h4[name="Check and finish Label"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) .theme-entry h4.SFC:not(.hidden) {
     font-size: 17px !important;
     font-weight: 700 !important;
     color: #18181B !important;
@@ -259,9 +279,9 @@ h4[name="Check and finish Label"]:not(.hidden),
     word-break: normal !important;
 }
 
-p[name="Decision Info Label"]:not(.hidden), 
-p[name="Info Label"]:not(.hidden), 
-p.description.SFC:not(.hidden) {
+:has([name="Add_cust_style_dlb"]) p[name="Decision Info Label"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) p[name="Info Label"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) p.description.SFC:not(.hidden) {
     font-size: 13px !important;
     color: #71717A !important;
     margin: 0 0 14px 0 !important;
@@ -272,20 +292,25 @@ p.description.SFC:not(.hidden) {
     text-overflow: unset !important;
 }
 
-.control-group-container, .control-group-container *, .input-control.control-group-container .input-control-m-c, .input-control.control-group-container .input-control-m, .input-control.control-group-container .input-control-t, .input-control.control-group-container .input-control-b {
+:has([name="Add_cust_style_dlb"]) .control-group-container,
+:has([name="Add_cust_style_dlb"]) .control-group-container *,
+:has([name="Add_cust_style_dlb"]) .input-control.control-group-container .input-control-m-c,
+:has([name="Add_cust_style_dlb"]) .input-control.control-group-container .input-control-m,
+:has([name="Add_cust_style_dlb"]) .input-control.control-group-container .input-control-t,
+:has([name="Add_cust_style_dlb"]) .input-control.control-group-container .input-control-b {
     border: none !important;
     border-width: 0 !important;
     background: transparent !important;
     box-shadow: none !important;
 }
 
-.control-group-container {
+:has([name="Add_cust_style_dlb"]) .control-group-container {
     width: 100% !important;
     max-width: 100% !important;
     box-sizing: border-box !important;
 }
 
-.multi-select-outer-panel {
+:has([name="Add_cust_style_dlb"]) .multi-select-outer-panel {
     border: none !important;
     background: transparent !important;
     padding: 0 !important;
@@ -294,19 +319,20 @@ p.description.SFC:not(.hidden) {
     box-sizing: border-box !important;
 }
 
-.stack-container, .stack {
+:has([name="Add_cust_style_dlb"]) .stack-container,
+:has([name="Add_cust_style_dlb"]) .stack {
     width: 100% !important;
     box-sizing: border-box !important;
 }
 
-.multi-select-box-list-item {
+:has([name="Add_cust_style_dlb"]) .multi-select-box-list-item {
     margin-bottom: 8px !important;
     width: 100% !important;
     box-sizing: border-box !important;
     padding: 0 !important;
 }
 
-.multi-select-box-list-item label.radio {
+:has([name="Add_cust_style_dlb"]) .multi-select-box-list-item label.radio {
     display: flex !important;
     align-items: flex-start !important;
     padding: 12px 16px !important;
@@ -320,17 +346,17 @@ p.description.SFC:not(.hidden) {
     margin: 0 !important;
 }
 
-.multi-select-box-list-item label.radio:hover {
+:has([name="Add_cust_style_dlb"]) .multi-select-box-list-item label.radio:hover {
     border-color: #C8A99B !important;
     background-color: #FCFAF8 !important;
 }
 
-.multi-select-box-list-item label.radio:has(input:checked) {
+:has([name="Add_cust_style_dlb"]) .multi-select-box-list-item label.radio:has(input:checked) {
     border-color: #9E5A44 !important;
     background-color: #FBF4F0 !important;
 }
 
-.multi-select-box-list-item label.radio svg {
+:has([name="Add_cust_style_dlb"]) .multi-select-box-list-item label.radio svg {
     margin-top: 2px !important;
     margin-right: 10px !important;
     flex-shrink: 0 !important;
@@ -338,15 +364,15 @@ p.description.SFC:not(.hidden) {
     height: 16px !important;
 }
 
-.multi-select-box-list-item label.radio:has(input:checked) .svg-radio-btn-circle {
+:has([name="Add_cust_style_dlb"]) .multi-select-box-list-item label.radio:has(input:checked) .svg-radio-btn-circle {
     stroke: #9E5A44 !important;
 }
 
-.multi-select-box-list-item label.radio:has(input:checked) .svg-radio-btn-checked {
+:has([name="Add_cust_style_dlb"]) .multi-select-box-list-item label.radio:has(input:checked) .svg-radio-btn-checked {
     fill: #9E5A44 !important;
 }
 
-.multi-select-box-list-item label.radio .input-control-text {
+:has([name="Add_cust_style_dlb"]) .multi-select-box-list-item label.radio .input-control-text {
     font-size: 13px !important;
     color: #27272A !important;
     line-height: 1.4 !important;
@@ -354,32 +380,32 @@ p.description.SFC:not(.hidden) {
     white-space: normal !important;
 }
 
-span[name="ID Type Label"]:not(.hidden), 
-span[name="ID Number Label"]:not(.hidden), 
-span[name="Country Label"]:not(.hidden), 
-span[name="Full Name Label"]:not(.hidden), 
-span[name="Mobile Number Label"]:not(.hidden), 
-span[name="Email Address Label"]:not(.hidden), 
-span[name="Customer Type Label"]:not(.hidden), 
-.theme-entry .form span.SourceCode-Forms-Controls-Web-Label:not(.description):not(.hidden) {
+:has([name="Add_cust_style_dlb"]) span[name="ID Type Label"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) span[name="ID Number Label"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) span[name="Country Label"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) span[name="Full Name Label"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) span[name="Mobile Number Label"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) span[name="Email Address Label"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) span[name="Customer Type Label"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) .theme-entry .form span.SourceCode-Forms-Controls-Web-Label:not(.description):not(.hidden) {
     font-size: 12.5px !important;
     font-weight: 600 !important;
     color: #27272A !important;
     margin-bottom: 4px !important;
 }
 
-span[name="ID Type Label"]:not(.hidden)::after, 
-span[name="ID Number Label"]:not(.hidden)::after, 
-span[name="Country Label"]:not(.hidden)::after, 
-span[name="Full Name Label"]:not(.hidden)::after, 
-span[name="Mobile Number Label"]:not(.hidden)::after, 
-span[name="Email Address Label"]:not(.hidden)::after {
+:has([name="Add_cust_style_dlb"]) span[name="ID Type Label"]:not(.hidden)::after,
+:has([name="Add_cust_style_dlb"]) span[name="ID Number Label"]:not(.hidden)::after,
+:has([name="Add_cust_style_dlb"]) span[name="Country Label"]:not(.hidden)::after,
+:has([name="Add_cust_style_dlb"]) span[name="Full Name Label"]:not(.hidden)::after,
+:has([name="Add_cust_style_dlb"]) span[name="Mobile Number Label"]:not(.hidden)::after,
+:has([name="Add_cust_style_dlb"]) span[name="Email Address Label"]:not(.hidden)::after {
     content: " *" !important;
     color: #DC2626 !important;
     font-weight: 600 !important;
 }
 
-input.SourceCode-Forms-Controls-Web-TextBox:not(.hidden) {
+:has([name="Add_cust_style_dlb"]) input.SourceCode-Forms-Controls-Web-TextBox:not(.hidden) {
     height: 38px !important;
     line-height: 38px !important;
     padding: 0 12px !important;
@@ -393,12 +419,12 @@ input.SourceCode-Forms-Controls-Web-TextBox:not(.hidden) {
     outline: none !important;
 }
 
-input.SourceCode-Forms-Controls-Web-TextBox:focus {
+:has([name="Add_cust_style_dlb"]) input.SourceCode-Forms-Controls-Web-TextBox:focus {
     border-color: #9E5A44 !important;
     box-shadow: 0 0 0 3px rgba(158, 90, 68, 0.12) !important;
 }
 
-.input-control.select-box.dropdown-box:not(.hidden) {
+:has([name="Add_cust_style_dlb"]) .input-control.select-box.dropdown-box:not(.hidden) {
     height: 38px !important;
     border: 1.5px solid #E4E4E7 !important;
     border-radius: 0px !important;
@@ -407,29 +433,29 @@ input.SourceCode-Forms-Controls-Web-TextBox:focus {
     width: 100% !important;
 }
 
-.input-control.select-box.dropdown-box:focus-within {
+:has([name="Add_cust_style_dlb"]) .input-control.select-box.dropdown-box:focus-within {
     border-color: #9E5A44 !important;
     box-shadow: 0 0 0 3px rgba(158, 90, 68, 0.12) !important;
 }
 
-.input-control.select-box.dropdown-box a.input-control.styling-font {
+:has([name="Add_cust_style_dlb"]) .input-control.select-box.dropdown-box a.input-control.styling-font {
     font-size: 13px !important;
     color: #18181B !important;
     padding-left: 12px !important;
     line-height: 34px !important;
 }
 
-.input-control.select-box.dropdown-box a.input-control.styling-font span {
+:has([name="Add_cust_style_dlb"]) .input-control.select-box.dropdown-box a.input-control.styling-font span {
     color: #18181B !important;
     font-weight: 500 !important;
 }
 
-.input-control.select-box.dropdown-box.watermark a.input-control.styling-font span {
+:has([name="Add_cust_style_dlb"]) .input-control.select-box.dropdown-box.watermark a.input-control.styling-font span {
     color: #A1A1AA !important;
     font-weight: 400 !important;
 }
 
-.drop-menu.style-aware {
+:has([name="Add_cust_style_dlb"]) .drop-menu.style-aware {
     border-radius: 0px !important;
     border: 1px solid #E4E4E7 !important;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1) !important;
@@ -439,54 +465,59 @@ input.SourceCode-Forms-Controls-Web-TextBox:focus {
     overflow-y: auto !important;
 }
 
-.drop-menu.style-aware li[role="option"] {
+:has([name="Add_cust_style_dlb"]) .drop-menu.style-aware li[role="option"] {
     padding: 8px 12px !important;
 }
 
-.drop-menu.style-aware li[role="option"] a, .drop-menu.style-aware li[role="option"] a span {
+:has([name="Add_cust_style_dlb"]) .drop-menu.style-aware li[role="option"] a,
+:has([name="Add_cust_style_dlb"]) .drop-menu.style-aware li[role="option"] a span {
     color: #1F2937 !important;
     font-size: 13px !important;
     display: block !important;
     background: transparent !important;
 }
 
-.drop-menu.style-aware li[role="option"]:hover, .drop-menu.style-aware li[role="option"].selected {
+:has([name="Add_cust_style_dlb"]) .drop-menu.style-aware li[role="option"]:hover,
+:has([name="Add_cust_style_dlb"]) .drop-menu.style-aware li[role="option"].selected {
     background-color: #9E5A44 !important;
 }
 
-.drop-menu.style-aware li[role="option"]:hover a, .drop-menu.style-aware li[role="option"]:hover a span, .drop-menu.style-aware li[role="option"].selected a, .drop-menu.style-aware li[role="option"].selected a span {
+:has([name="Add_cust_style_dlb"]) .drop-menu.style-aware li[role="option"]:hover a,
+:has([name="Add_cust_style_dlb"]) .drop-menu.style-aware li[role="option"]:hover a span,
+:has([name="Add_cust_style_dlb"]) .drop-menu.style-aware li[role="option"].selected a,
+:has([name="Add_cust_style_dlb"]) .drop-menu.style-aware li[role="option"].selected a span {
     color: #FFFFFF !important;
     background: transparent !important;
 }
 
-p[name="ID Number Saudi Label"]:not(.hidden) {
+:has([name="Add_cust_style_dlb"]) p[name="ID Number Saudi Label"]:not(.hidden) {
     font-size: 11.5px !important;
     color: #71717A !important;
     margin-top: 3px !important;
     margin-bottom: 0px !important;
 }
 
-[name="CustomerJourney.AddCustomer.Form Area Item9"] .editor-cell {
+:has([name="Add_cust_style_dlb"]) [name="CustomerJourney.AddCustomer.Form Area Item9"] .editor-cell {
     padding: 10px 0 !important;
     border-bottom: 1px solid #F4F4F5 !important;
 }
 
-span[name="Name Label"]:not(.hidden), 
-span[name="Mobile Label"]:not(.hidden), 
-span[name="Email Label"]:not(.hidden), 
-span[name="National ID Label"]:not(.hidden), 
-span[name="Customer type Label"]:not(.hidden) {
+:has([name="Add_cust_style_dlb"]) span[name="Name Label"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) span[name="Mobile Label"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) span[name="Email Label"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) span[name="National ID Label"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) span[name="Customer type Label"]:not(.hidden) {
     font-size: 13px !important;
     color: #71717A !important;
     font-weight: 400 !important;
 }
 
-span[name="Name Data Label"]:not(.hidden), 
-span[name="Mobile Data Label"]:not(.hidden), 
-span[name="Email Data Label"]:not(.hidden), 
-span[name="National ID Data Label"]:not(.hidden), 
-span[name="Passport Data Label"]:not(.hidden), 
-span[name="Customer type Data Label"]:not(.hidden) {
+:has([name="Add_cust_style_dlb"]) span[name="Name Data Label"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) span[name="Mobile Data Label"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) span[name="Email Data Label"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) span[name="National ID Data Label"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) span[name="Passport Data Label"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) span[name="Customer type Data Label"]:not(.hidden) {
     font-size: 13px !important;
     color: #18181B !important;
     font-weight: 600 !important;
@@ -494,7 +525,7 @@ span[name="Customer type Data Label"]:not(.hidden) {
     display: block !important;
 }
 
-h4[name="Customer Info Label"]:not(.hidden) {
+:has([name="Add_cust_style_dlb"]) h4[name="Customer Info Label"]:not(.hidden) {
     background-color: #EBF7EE !important;
     color: #225936 !important;
     border-radius: 0px !important;
@@ -508,7 +539,7 @@ h4[name="Customer Info Label"]:not(.hidden) {
     align-items: center !important;
 }
 
-h4[name="Customer Info Label"]:not(.hidden)::before {
+:has([name="Add_cust_style_dlb"]) h4[name="Customer Info Label"]:not(.hidden)::before {
     content: "✓" !important;
     display: inline-flex !important;
     align-items: center !important;
@@ -524,7 +555,7 @@ h4[name="Customer Info Label"]:not(.hidden)::before {
     flex-shrink: 0 !important;
 }
 
-a.SourceCode-Forms-Controls-Web-Button:not(.hidden):not([style*="display: none"]):not([style*="display:none"]) {
+:has([name="Add_cust_style_dlb"]) a.SourceCode-Forms-Controls-Web-Button:not(.hidden):not([style*="display: none"]):not([style*="display:none"]) {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -540,44 +571,46 @@ a.SourceCode-Forms-Controls-Web-Button:not(.hidden):not([style*="display: none"]
     box-sizing: border-box !important;
 }
 
-a[name="Cancel Button"]:not(.hidden), a[name="Back Button"]:not(.hidden), a[name="Cancel this lead Button"]:not(.hidden) {
+:has([name="Add_cust_style_dlb"]) a[name="Cancel Button"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) a[name="Back Button"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) a[name="Cancel this lead Button"]:not(.hidden) {
     background-color: #FFFFFF !important;
     border: 1.5px solid #E4E4E7 !important;
     color: #27272A !important;
 }
 
-a[name="Cancel Button"]:not(.hidden):hover, a[name="Back Button"]:not(.hidden):hover {
+:has([name="Add_cust_style_dlb"]) a[name="Cancel Button"]:not(.hidden):hover,
+:has([name="Add_cust_style_dlb"]) a[name="Back Button"]:not(.hidden):hover {
     background-color: #F4F4F5 !important;
     border-color: #D4D4D8 !important;
     color: #18181B !important;
 }
 
-a[name="Continue Button"]:not(.hidden), 
-a[name="Add Customer Button"]:not(.hidden), 
-a[name="Review Button"]:not(.hidden), 
-a[name="First Payment Received Button"]:not(.hidden), 
-a[name="Ask the offer from Retal Button"]:not(.hidden), 
-a[name="Request the contact from Retal Button"]:not(.hidden), 
-a[name="Change this unit Button"]:not(.hidden), 
-a[name="Contact Received From Retal Button"]:not(.hidden), 
-a[name="Choose a Unit Button"]:not(.hidden), 
-a[name="Add this unit Button"]:not(.hidden) {
+:has([name="Add_cust_style_dlb"]) a[name="Continue Button"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) a[name="Add Customer Button"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) a[name="Review Button"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) a[name="First Payment Received Button"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) a[name="Ask the offer from Retal Button"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) a[name="Request the contact from Retal Button"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) a[name="Change this unit Button"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) a[name="Contact Received From Retal Button"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) a[name="Choose a Unit Button"]:not(.hidden),
+:has([name="Add_cust_style_dlb"]) a[name="Add this unit Button"]:not(.hidden) {
     background-color: #9E5A44 !important;
     border: 1.5px solid #9E5A44 !important;
     color: #FFFFFF !important;
     box-shadow: 0 2px 6px rgba(158, 90, 68, 0.2) !important;
 }
 
-a[name="Continue Button"]:not(.hidden):hover, 
-a[name="Add Customer Button"]:not(.hidden):hover, 
-a[name="Review Button"]:not(.hidden):hover {
+:has([name="Add_cust_style_dlb"]) a[name="Continue Button"]:not(.hidden):hover,
+:has([name="Add_cust_style_dlb"]) a[name="Add Customer Button"]:not(.hidden):hover,
+:has([name="Add_cust_style_dlb"]) a[name="Review Button"]:not(.hidden):hover {
     background-color: #874A37 !important;
     border-color: #874A37 !important;
     transform: translateY(-1px) !important;
 }
 
-/* --- Add Customer Wizard: Card Container & Centering Layout --- */
-.form .row:not(:has(.retal-custom-header-layout)):not(:has(a[name="Home btn"])) > .view:not(.hidden) {
+:has([name="Add_cust_style_dlb"]) .form .row:not(:has(.retal-custom-header-layout)):not(:has(a[name="Home btn"])) > .view:not(.hidden) {
     width: 100% !important;
     max-width: 900px !important;
     margin: 8px auto !important;
@@ -589,17 +622,15 @@ a[name="Review Button"]:not(.hidden):hover {
     box-sizing: border-box !important;
 }
 
-/* Ensure inner layout tables fill the centered container cleanly */
-.form .row:not(:has(.retal-custom-header-layout)):not(:has(a[name="Home btn"])) > .view:not(.hidden) .root-table {
+:has([name="Add_cust_style_dlb"]) .form .row:not(:has(.retal-custom-header-layout)):not(:has(a[name="Home btn"])) > .view:not(.hidden) .root-table {
     width: 100% !important;
     box-sizing: border-box !important;
 }
 
-/* --- Collapse Gap Between Wizard Card and Button Bar --- */
-.form .row:has(.view:not(.hidden) a[name="Continue Button"]) {
+:has([name="Add_cust_style_dlb"]) .form .row:has(.view:not(.hidden) a[name="Continue Button"]) {
     margin-top: -10px !important;
 }
 
-.form .row:has(.view:not(.hidden) a[name="Continue Button"]) > .view:not(.hidden) {
+:has([name="Add_cust_style_dlb"]) .form .row:has(.view:not(.hidden) a[name="Continue Button"]) > .view:not(.hidden) {
     margin-top: 0 !important;
 }
