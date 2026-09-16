@@ -1,12 +1,14 @@
-.form>.row:has(span[name="MyCustomer_List_Style_dlb"]),
-.view:has(span[name="MyCustomer_List_Style_dlb"]) {
+.form > .row:has(span[name="MyCustomer_List_Style_dlb"]),
+.view:has(span[name="MyCustomer_List_Style_dlb"]),
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) {
     box-sizing: border-box !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
     width: 100% !important;
 }
 
-.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid {
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid,
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) {
     width: 100% !important;
     background: #ffffff !important;
     border: 1px solid #e5ddd7 !important;
@@ -18,7 +20,8 @@
     box-sizing: border-box !important;
 }
 
-.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-toolbars {
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-toolbars,
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) .grid-toolbars {
     background: #ffffff !important;
     padding: 16px 20px 16px 0px !important;
     display: flex !important;
@@ -29,7 +32,8 @@
     margin-left: 0 !important;
 }
 
-.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-toolbars>* {
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-toolbars > *,
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) .grid-toolbars > * {
     float: none !important;
 }
 
@@ -37,12 +41,17 @@
 .view:has(span[name="MyCustomer_List_Style_dlb"]) a.toolbar-button,
 .view:has(span[name="MyCustomer_List_Style_dlb"]) a.Edit-row,
 .view:has(span[name="MyCustomer_List_Style_dlb"]) input[type="button"],
-.view:has(span[name="MyCustomer_List_Style_dlb"]) input[type="submit"] {
+.view:has(span[name="MyCustomer_List_Style_dlb"]) input[type="submit"],
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) a.SourceCode-Forms-Controls-Web-Button,
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) a.toolbar-button,
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) a.Edit-row {
     cursor: pointer !important;
     pointer-events: auto !important;
 }
 
-.view:has(span[name="MyCustomer_List_Style_dlb"]) input[name="Text Box Search"] {
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) input[name*="Search"],
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) input[name*="Search"] {
     width: 240px !important;
     height: 38px !important;
     padding: 0 12px !important;
@@ -56,9 +65,12 @@
     pointer-events: auto !important;
     vertical-align: middle !important;
     margin-left: 0 !important;
+    display: inline-block !important;
 }
 
-.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="ToolBarButton_Search"] {
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name*="Search"],
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) a[name*="Search"] {
     height: 38px !important;
     padding: 0 14px !important;
     display: inline-flex !important;
@@ -74,16 +86,43 @@
     box-sizing: border-box !important;
     white-space: nowrap !important;
     vertical-align: middle !important;
+    margin-left: 6px !important;
 }
 
-.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="ToolBarButton_Search"]:hover {
+.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name*="Search"]:hover,
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) a[name*="Search"]:hover {
     background: #956047 !important;
 }
+
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name*="Clear"],
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) a[name*="Clear"] {
+    height: 38px !important;
+    padding: 0 14px !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    background: #ffffff !important;
+    color: #967d6e !important;
+    border: 1px solid #e4d9d2 !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    text-decoration: none !important;
+    box-sizing: border-box !important;
+    vertical-align: middle !important;
+    margin-left: 6px !important;
+    border-radius: 4px !important;
+}
+
 
 .view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button All"],
 .view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button In Progress"],
 .view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button Need attention"],
-.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button Completed"] {
+.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button Completed"],
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button All"],
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button In Progress"],
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button Need attention"],
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button Completed"] {
     height: 38px !important;
     padding: 0 14px !important;
     display: inline-flex !important;
@@ -99,23 +138,25 @@
     vertical-align: middle !important;
 }
 
-.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button All"] {
+.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button All"],
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button All"] {
     border-radius: 20px 0 0 20px !important;
 }
 
-.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button Completed"] {
+.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button Completed"],
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button Completed"] {
     border-radius: 0 20px 20px 0 !important;
 }
 
-.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button All"].active,
-.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button In Progress"].active,
-.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button Need attention"].active,
-.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button Completed"].active {
+.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name^="Button "].active,
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) a[name^="Button "].active {
     background: #a96f52 !important;
     color: #ffffff !important;
 }
 
-.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="ToolBar Button Add a customer"] {
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name*="Add a customer"],
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) a[name*="Add a customer"] {
     height: 38px !important;
     padding: 0 16px !important;
     margin-left: auto !important;
@@ -135,30 +176,46 @@
     vertical-align: middle !important;
 }
 
-.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-toolbars:has(a[name="ToolBar Button Add a customer"]) {
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-toolbars:has(a[name*="Add a customer"]),
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) .grid-toolbars:has(a[name*="Add a customer"]) {
     display: flex !important;
     justify-content: flex-start !important;
 }
 
-.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="ToolBar Button Add a customer"]:hover {
+.view:has(span[name="MyCustomer_List_Style_dlb"]) a[name*="Add a customer"]:hover,
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) a[name*="Add a customer"]:hover {
     background: #956047 !important;
 }
+
 
 .view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-table,
 .view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table,
 .view:has(span[name="MyCustomer_List_Style_dlb"]) table.grid-content-table,
-.view:has(span[name="MyCustomer_List_Style_dlb"]) table.grid-header-table {
+.view:has(span[name="MyCustomer_List_Style_dlb"]) table.grid-header-table,
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) .grid-table,
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table,
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) table.grid-content-table,
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) table.grid-header-table {
     width: 100% !important;
     table-layout: fixed !important;
     border-collapse: collapse !important;
-    margin-left: 0 !important;
+    margin-left: 4px !important;
     padding-left: 0 !important;
+    background-color: #f6f1ee !important;
+    --list-item-hover-background-color: #ede1da !important;
+ 
 }
+
 
 .view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-header-table th,
 .view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-header-table td,
 .view:has(span[name="MyCustomer_List_Style_dlb"]) .grid thead th,
-.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-header-cell {
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-header-cell,
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) .grid-header-table th,
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) .grid-header-table td,
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) .grid thead th,
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) .grid-header-cell,
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) .grid-column-header-table td {
     padding: 14px 16px 14px 0px !important;
     text-align: left !important;
     font-size: 12px !important;
@@ -170,34 +227,42 @@
     vertical-align: middle !important;
 }
 
-.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-header-table th>*,
-.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-header-cell>*,
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-header-table th > *,
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-header-cell > *,
 .view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-header-cell-content,
 .view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-header-cell-label,
-.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-header-cell-text {
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-header-cell-text,
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) .grid-column-header-text,
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) .grid-column-header-cell-content {
+    color: #8C7C70 !important;
     margin: 0 !important;
     padding: 0 !important;
-    margin-left: 0 !important;
+    margin-left: 4px !important;
     padding-left: 0 !important;
     text-align: left !important;
     display: inline-flex !important;
     align-items: center !important;
 }
 
-.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody tr {
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody tr,
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody tr {
     height: 54px !important;
     background: #ffffff !important;
 }
 
-.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody tr:nth-child(even) {
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody tr:nth-child(even),
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody tr:nth-child(even) {
     background: #fbf7f4 !important;
 }
 
-.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody tr:hover {
-    background: #f4ece7 !important;
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody tr:hover,
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody tr:hover {
+    background: #f6f1ee !important;
 }
 
-.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody td {
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody td,
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody td {
     padding: 0 16px 0 0px !important;
     border-bottom: 1px solid #ebe3de !important;
     font-size: 13px !important;
@@ -207,33 +272,32 @@
     box-sizing: border-box !important;
 }
 
-.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody td>*,
-.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody td .SourceCode-Forms-Controls-Web-DataLabel,
-.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody td .SourceCode-Forms-Controls-Web-Label,
-.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody td .grid-content-cell-wrapper {
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody td > *,
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody td > * {
     margin: 0 !important;
     padding: 0 !important;
-    margin-left: 0 !important;
-    padding-left: 0 !important;
     text-align: left !important;
     display: inline-block !important;
     box-sizing: border-box !important;
 }
 
 .view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-header-table th:first-child,
-.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-header-cell:first-child,
-.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody td:first-child {
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody td:first-child,
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) .grid-column-header-table td:first-child,
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody td:first-child {
     padding-left: 0px !important;
 }
 
 .view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody td:last-child,
-.view:has(span[name="MyCustomer_List_Style_dlb"]) .grid-header-table th:last-child {
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) .grid-content-table tbody td:last-child {
     text-align: center !important;
     padding-left: 0 !important;
     padding-right: 0 !important;
 }
 
-.view:has(span[name="MyCustomer_List_Style_dlb"]) .unit-pill {
+
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .unit-pill,
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) .unit-pill {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -246,13 +310,15 @@
     letter-spacing: 0.3px !important;
 }
 
-.view:has(span[name="MyCustomer_List_Style_dlb"]) .days-urgent {
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .days-urgent,
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) .days-urgent {
     color: #D9381E !important;
     font-weight: 700 !important;
     font-size: 13px !important;
 }
 
-.view:has(span[name="MyCustomer_List_Style_dlb"]) .days-pill-completed {
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .days-pill-completed,
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) .days-pill-completed {
     display: inline-flex !important;
     align-items: center !important;
     justify-content: center !important;
@@ -262,13 +328,40 @@
     border-radius: 12px !important;
     font-size: 12px !important;
     font-weight: 600 !important;
-
 }
 
-
-.view:has(span[name="MyCustomer_List_Style_dlb"]) .days-muted {
+.view:has(span[name="MyCustomer_List_Style_dlb"]) .days-muted,
+.grid:has(span[name="MyCustomer_List_Style_dlb"]) .days-muted {
     color: #8C8C8C !important;
     font-size: 13px !important;
     font-weight: 400 !important;
+}
 
+.theme-entry .grid .grid-column-header-table,
+.theme-entry .grid .grid-column-header-table th,
+.theme-entry .grid .grid-column-header-table td {
+    background-color: #f6f1ee !important;
+}
+
+
+.theme-entry .view:has([name="header_name_label"]) .grid-toolbars, 
+.theme-entry .grid:has([name="header_name_label"]) .grid-toolbars {
+    background: #f6f1ee !important;
+    padding: 0px !important;
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    gap: 8px !important;
+    margin-left: 0 !important;
+}
+
+
+.theme-entry [name="header_name_label"] {
+    color: #765c4e !important;
+    font-size: 13px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+    margin: 0 !important;
 }
