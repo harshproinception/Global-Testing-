@@ -181,7 +181,7 @@ body,
         margin-inline-start: 250px !important;
         width: calc(100% - 250px) !important;
         box-sizing: border-box !important;
-        padding: 24px !important;
+        padding: 0px !important;
         margin-top: 90px !important;
 }
 
