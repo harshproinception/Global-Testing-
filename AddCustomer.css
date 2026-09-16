@@ -13,15 +13,6 @@ body:has([name="Add_cust_style_dlb"]),
     overflow-x: hidden !important;
 }
 
-/* Generic High Power Hide 
-html body .theme-entry .hidden,
-html body .theme-entry [style*="display: none"],
-html body .theme-entry [style*="display:none"],
-html body .theme-entry .input-control.hidden {
-    display: none !important;
-} */
-
-
 
 
 :has([name="Add_cust_style_dlb"]) .hidden,
@@ -647,5 +638,19 @@ html body .theme-entry .input-control.hidden {
 }
 
 :has([name="Add_cust_style_dlb"]) .form .row > .view:has([name="CustomerJourney.AddCustomer.Form Area Item9"].hidden) {
+    display: none !important;
+} 
+
+/* Generic High Power Hide */
+html body .theme-entry .hidden,
+html body .theme-entry [style*="display: none"],
+html body .theme-entry [style*="display:none"],
+html body .theme-entry .input-control.hidden {
+    display: none !important;
+}
+
+html body .theme-entry .view:has(> .innerpanel > .panel.hidden),
+html body .theme-entry .view:has(> .innerpanel > .panel[style*="display: none"]),
+html body .theme-entry .view:has(> .innerpanel > .panel[style*="display:none"]) {
     display: none !important;
 }
