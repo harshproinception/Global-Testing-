@@ -1,3 +1,14 @@
+/* Generic High Power Hide */
+html body .theme-entry .hidden,
+html body .theme-entry [style*="display: none"],
+html body .theme-entry [style*="display:none"],
+html body .theme-entry .input-control.hidden,
+html body .theme-entry .view:has(> .innerpanel > .panel.hidden),
+html body .theme-entry .view:has(> .innerpanel > .panel[style*="display: none"]),
+html body .theme-entry .view:has(> .innerpanel > .panel[style*="display:none"]){
+    display: none !important;
+}
+
 .theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) {
     font-family: Arial, Helvetica, sans-serif !important;
     color: #2d2522 !important;
