@@ -974,3 +974,9 @@
     box-sizing: border-box !important;
 }
 
+/* adding the border to the list header*/
+.theme-entry .grid .grid-column-headers {
+    background-color: var(--list-column-header-background-color);
+    border: 1px solid #e2c6c6 !important;
+}
+
