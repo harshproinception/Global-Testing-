@@ -13,13 +13,13 @@ body:has([name="Add_cust_style_dlb"]),
     overflow-x: hidden !important;
 }
 
-/* Generic High Power Hide */
+/* Generic High Power Hide 
 html body .theme-entry .hidden,
 html body .theme-entry [style*="display: none"],
 html body .theme-entry [style*="display:none"],
 html body .theme-entry .input-control.hidden {
     display: none !important;
-}
+} */
 
 
 
@@ -644,4 +644,8 @@ html body .theme-entry .input-control.hidden {
 
 :has([name="Add_cust_style_dlb"]) .form .row:has(.view:not(.hidden) a[name="Continue Button"]) > .view:not(.hidden) {
     margin-top: 0 !important;
+}
+
+:has([name="Add_cust_style_dlb"]) .form .row > .view:has([name="CustomerJourney.AddCustomer.Form Area Item9"].hidden) {
+    display: none !important;
 }
