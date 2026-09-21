@@ -190,6 +190,11 @@ body,
         
 }
 
+.theme-entry .form .row:not(:has(.retal-custom-header-layout)):not(:has(a[name="Home btn"])) ~ .row:not(:has(.retal-custom-header-layout)):not(:has(a[name="Home btn"])):has([name="Add_cust_style_dlb"]) {
+        margin-top: 0px !important;
+        padding: 0px !important;
+}
+
 .theme-entry .form .row:has(a[name="Home btn"]) .root-table {
     display: flex !important;
     flex-direction: column !important;
