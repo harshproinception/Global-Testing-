@@ -3,7 +3,7 @@
 body,
 .theme-entry,
 .runtime-form {
-    font-family: 'Plus Jakarta Sans', 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, sans-serif !important;
+    font-family: var(--font-body) !important;
     background-color: #f6f1ee !important;
     color: #1F2937 !important;
     -webkit-font-smoothing: antialiased;
