@@ -343,3 +343,17 @@ Home page Banner
     font-size: 14px !important;
     font-weight: 400 !important;
 }
+
+/*==============================
+Hiding the list buttons in the home page
+===============================*/
+body:has(span[name="card_style_dlb"]) .view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button All"],
+body:has(span[name="card_style_dlb"]) .view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button In Progress"],
+body:has(span[name="card_style_dlb"]) .view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button Need attention"],
+body:has(span[name="card_style_dlb"]) .view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button Completed"],
+body:has(span[name="card_style_dlb"]) .grid:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button All"],
+body:has(span[name="card_style_dlb"]) .grid:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button In Progress"],
+body:has(span[name="card_style_dlb"]) .grid:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button Need attention"],
+body:has(span[name="card_style_dlb"]) .grid:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button Completed"] {
+    display: none !important;
+}
