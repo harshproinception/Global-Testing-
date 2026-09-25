@@ -102,7 +102,7 @@
 .theme-entry a,
 .theme-entry span,
 .theme-entry div {
-    font-family: var(--font-body), Arial, sans-serif;
+    font-family: var(--font-body), Arial, sans-serif !important;
 }
 
 .theme-entry a {
