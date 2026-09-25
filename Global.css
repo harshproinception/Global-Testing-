@@ -222,6 +222,7 @@ body,
 
 
 .theme-entry .form .row:has(a[name="Home btn"]) a.SourceCode-Forms-Controls-Web-Button {
+    font-family: var(--font-body), Arial, sans-serif !important;
     display: flex !important;
     align-items: center !important;
     justify-content: flex-start !important;
