@@ -33,6 +33,7 @@ body, .theme-entry, .runtime-content, .runtime-view, .panel, .panel-body, .panel
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+    flex-shrink: 0 !important;
 }
 .theme-entry .banner-text-wrapper {
     display: flex !important;
@@ -47,12 +48,20 @@ body, .theme-entry, .runtime-content, .runtime-view, .panel, .panel-body, .panel
     font-size: 18px !important;
     font-weight: 700 !important;
 }
-
+.theme-entry .banner-title * {
+    color: #FFFFFF !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+.theme-entry span[name="NotificationDesc_label"] {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-size: 14px !important;
+}
 .theme-entry .custom-btn {
     background-color: #FFFFFF !important;
     color: #333333 !important;
     border: none !important;
-    border-radius: 0px !important;
+    border-radius: 8px !important;
     padding: 10px 20px !important;
     font-size: 14px !important;
     font-weight: 600 !important;
@@ -62,48 +71,81 @@ body, .theme-entry, .runtime-content, .runtime-view, .panel, .panel-body, .panel
     text-decoration: none !important;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important;
     transition: all 0.2s ease !important;
+    white-space: nowrap !important;
 }
 .theme-entry .custom-btn:hover {
     background-color: #F0F0F0 !important;
 }
 .theme-entry div[name="Table cards"] {
     display: flex !important;
-    gap: 24px !important;
+    gap: 20px !important;
     width: 100% !important;
+    box-sizing: border-box !important;
 }
-.theme-entry .custom-card {
-    background-color: #FFFFFF !important;
-    border-radius: 12px !important;
-    padding: 24px !important;
+.theme-entry div[name="Table cards"] > span,
+.theme-entry div[name="Table cards"] .editor-cell {
     display: flex !important;
     flex-direction: column !important;
     flex: 1 !important;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.03) !important;
+    min-width: 0 !important;
+}
+.theme-entry .custom-card {
+    background-color: #FFFFFF !important;
+    border-radius: 16px !important;
+    padding: 24px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03) !important;
     box-sizing: border-box !important;
+    cursor: pointer !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+.theme-entry .custom-card:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.06) !important;
 }
 .theme-entry .card-icon-wrapper {
-    width: 40px !important;
-    height: 40px !important;
-    border-radius: 8px !important;
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 10px !important;
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    margin-bottom: 24px !important;
+    margin-bottom: 20px !important;
+    flex-shrink: 0 !important;
 }
-.theme-entry .bg-gray { background-color: #F3F3F3 !important; }
-.theme-entry .bg-orange { background-color: #FEF4EB !important; }
-.theme-entry .bg-green { background-color: #EAF4EC !important; }
-.theme-entry .card-number {
-    font-family: 'Times New Roman', Times, serif !important;
+.theme-entry .bg-icon-0 { background-color: #F7EFE9 !important; }
+.theme-entry .bg-icon-1 { background-color: #FEF4EB !important; }
+.theme-entry .bg-icon-2 { background-color: #FDF3E7 !important; }
+.theme-entry .bg-icon-3 { background-color: #EAF4EC !important; }
+ 
+.theme-entry .custom-card a.SFC.SourceCode-Forms-Controls-Web-Button,
+.theme-entry .custom-card .card-number-btn {
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 0 8px 0 !important;
+    text-align: left !important;
+    text-decoration: none !important;
+    font-family: 'Georgia', 'Times New Roman', Times, serif !important;
     font-size: 32px !important;
     font-weight: 700 !important;
     color: #1A1A1A !important;
-    margin-bottom: 8px !important;
     display: block !important;
+    line-height: 1.2 !important;
+    cursor: pointer !important;
+    height: auto !important;
+    min-height: 0 !important;
+    width: auto !important;
 }
-.theme-entry .card-label {
+.theme-entry .custom-card .card-label {
     font-size: 13px !important;
     font-weight: 500 !important;
     color: #8C8C8C !important;
     display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.4 !important;
 }
