@@ -177,7 +177,7 @@ body, .theme-entry, .runtime-content, .runtime-view, .panel, .panel-body, .panel
 .view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"]) {
     display: grid !important;
     grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
-    grid-template-rows: 82px 58px auto !important;
+    grid-template-rows: 70px 58px auto !important;
     column-gap: 20px !important;
     row-gap: 0 !important;
     width: 100% !important;
