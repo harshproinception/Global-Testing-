@@ -1025,10 +1025,11 @@
     border: 1px solid #e2c6c6 !important;
 }
 
-
 /*==============================
-Giving the space to the any specific view 
+Converting textbox to the normal text 
 ===============================*/
-.view:has(span[name="space_style_dlb"]) {
-    margin-top: 90px !important;
+.theme-entry input[name="Broker Custm Det Text Box National ID"] {
+    padding-left: 0px !important;
+    padding-bottom: 20px !important;
+    border: none !important;
 }
