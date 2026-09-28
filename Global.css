@@ -357,3 +357,10 @@ body:has(span[name="card_style_dlb"]) .grid:has(span[name="MyCustomer_List_Style
 body:has(span[name="card_style_dlb"]) .grid:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button Completed"] {
     display: none !important;
 }
+
+/*==============================
+Giving the space to the any specific view 
+===============================*/
+.view:has(span[name="space_style_dlb"]) {
+    margin-top: 90px !important;
+}
