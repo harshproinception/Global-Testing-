@@ -1028,7 +1028,9 @@
 /*==============================
 Converting textbox to the normal text 
 ===============================*/
-.theme-entry input[name="Broker Custm Det Text Box National ID"] {
+.theme-entry input.SFC.SourceCode-Forms-Controls-Web-TextBox[name="Broker Custm Det Text Box National ID"],
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-TextBox[name="Broker Custm Det Text Box National ID"],
+.theme-entry .SFC.SourceCode-Forms-Controls-Web-Control-SpinBox[name="Broker Custm Det Text Box National ID"] {
     padding-left: 0px !important;
     padding-bottom: 20px !important;
     border: none !important;
