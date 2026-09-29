@@ -177,12 +177,21 @@ body,
 }
 
 
-.theme-entry .form .row:not(:has(.retal-custom-header-layout)):not(:has(a[name="Home btn"])) {
+/* .theme-entry .form .row:not(:has(.retal-custom-header-layout)):not(:has(a[name="Home btn"])) {
         margin-inline-start: 250px !important;
         width: calc(100% - 250px) !important;
         box-sizing: border-box !important;
         padding: 24px !important;
         margin-top: 90px !important;
+} */
+/* Adding one more condition CustomerLeadStyleDlb */
+
+.theme-entry .form .row:not(:has(.retal-custom-header-layout)):not(:has(a[name="Home btn"])):not(:has([name="CustomerLeadDetailsStyleDlb"])) {
+    margin-inline-start: 250px !important;
+    width: calc(100% - 250px) !important;
+    box-sizing: border-box !important;
+    padding: 24px !important;
+    margin-top: 90px !important;
 }
 
 .theme-entry .form .row:not(:has(.retal-custom-header-layout)):not(:has(a[name="Home btn"])) ~ .row:not(:has(.retal-custom-header-layout)):not(:has(a[name="Home btn"])) {
