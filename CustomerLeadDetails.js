@@ -45,15 +45,65 @@
     }
 
     function getCustomerHeaderRow() {
-        var header = document.querySelector(
-            '.theme-entry .panel[name="Header"]'
+
+        var marker = document.querySelector(
+            '.theme-entry [name="Data Label Customer Name"]'
         );
 
-        if (!header) {
+        if (!marker) {
             return null;
         }
 
-        return header.closest(".row");
+        return marker.closest(".row");
+    }
+
+    function ensureTabsVisible() {
+
+        var form = getMainRuntimeForm();
+
+        if (!form) {
+            return;
+        }
+
+        var tabs = form.querySelector(".form-tabs");
+
+        if (!tabs) {
+            return;
+        }
+
+        tabs.style.setProperty("display", "block", "important");
+        tabs.style.setProperty("visibility", "visible", "important");
+        tabs.style.setProperty("opacity", "1", "important");
+        tabs.style.setProperty("height", "auto", "important");
+        tabs.style.setProperty("min-height", "0", "important");
+        tabs.style.setProperty("overflow", "visible", "important");
+
+        var tabList = tabs.querySelector(".tab-box-tabs");
+
+        if (tabList) {
+            tabList.style.setProperty("display", "flex", "important");
+            tabList.style.setProperty("visibility", "visible", "important");
+            tabList.style.setProperty("opacity", "1", "important");
+            tabList.style.setProperty("height", "52px", "important");
+            tabList.style.setProperty("min-height", "52px", "important");
+            tabList.style.setProperty("overflow", "visible", "important");
+        }
+
+        var tabItems = tabs.querySelectorAll(".tab-box-tabs > li");
+
+        for (var i = 0; i < tabItems.length; i++) {
+            tabItems[i].style.setProperty("display", "block", "important");
+            tabItems[i].style.setProperty("visibility", "visible", "important");
+            tabItems[i].style.setProperty("opacity", "1", "important");
+        }
+
+        var tabLinks = tabs.querySelectorAll(".tab-box-tabs > li > a.tab");
+
+        for (var j = 0; j < tabLinks.length; j++) {
+            tabLinks[j].style.setProperty("display", "flex", "important");
+            tabLinks[j].style.setProperty("visibility", "visible", "important");
+            tabLinks[j].style.setProperty("opacity", "1", "important");
+        }
     }
 
     function moveHeaders() {
@@ -400,7 +450,9 @@
 
     function initialise() {
         markMainForm();
+        ensureTabsVisible();
         moveHeaders();
+        ensureTabsVisible();
         classifyProgress();
         classifyDetailTables();
         updatePopupState();
