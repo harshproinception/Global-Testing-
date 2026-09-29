@@ -372,3 +372,25 @@ Giving the space to the any specific view
 .view:has(span[name="space_style_dlb"]) {
     margin-top: 90px !important;
 }
+
+/* Code for bypassing the global margin and padding for the rest of three tabs in customer opportunity form */
+
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .tab-box-body .form .row {
+    margin-inline-start: 0 !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 0 !important;
+    margin-top: 0 !important;
+}
+
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .tab-box-body,
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .tab-box-body-m,
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .tab-box-body-m-c,
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .tab-box-body-wrapper,
+.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .scroll-wrapper {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    width: 100% !important;
+}
