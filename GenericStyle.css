@@ -947,7 +947,7 @@
 
 .theme-entry .detail-table > .editor-cell {
     min-height: 38px !important;
-    height: 38px !important;
+    height: auto !important;
     padding: 8px 14px !important;
     margin: 0 !important;
     border-bottom: 1px solid #eee8e5 !important;
