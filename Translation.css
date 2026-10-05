@@ -1,0 +1,120 @@
+/* ============================================================
+   CUSTOMER JOURNEY - TRANSLATION CSS
+   ============================================================ */
+
+
+/* ------------------------------------------------------------
+   GOOGLE TRANSLATE
+   Completely hide Google's default UI
+   ------------------------------------------------------------ */
+
+#google_translate_element,
+.goog-te-banner-frame,
+.goog-te-balloon-frame,
+.goog-tooltip,
+.goog-tooltip:hover {
+    display: none !important;
+}
+
+
+/* Google sometimes adds this to the body */
+body {
+    top: 0 !important;
+}
+
+
+/* ------------------------------------------------------------
+   LANGUAGE BUTTONS
+   ------------------------------------------------------------ */
+
+[name="btnArabic"],
+[name="btnEnglish"] {
+    cursor: pointer !important;
+}
+
+
+/* Active language */
+[name="btnArabic"].translation-active,
+[name="btnEnglish"].translation-active {
+    font-weight: 700 !important;
+}
+
+
+/* ------------------------------------------------------------
+   ARABIC MODE
+   ------------------------------------------------------------ */
+
+body.customer-journey-arabic {
+    direction: rtl !important;
+}
+
+
+/*
+ * K2 form
+ */
+.customer-journey-rtl {
+    direction: rtl !important;
+}
+
+
+/*
+ * Arabic text alignment
+ */
+.customer-journey-arabic .theme-entry,
+.customer-journey-rtl {
+    text-align: right;
+}
+
+
+/* ------------------------------------------------------------
+   ENGLISH MODE
+   ------------------------------------------------------------ */
+
+body.customer-journey-english {
+    direction: ltr !important;
+}
+
+
+.customer-journey-ltr {
+    direction: ltr !important;
+}
+
+
+/* ------------------------------------------------------------
+   K2 INPUTS
+   ------------------------------------------------------------ */
+
+.customer-journey-rtl input,
+.customer-journey-rtl textarea,
+.customer-journey-rtl select {
+    text-align: right;
+}
+
+
+/*
+ * Do NOT force direction on icons/images.
+ */
+.customer-journey-rtl img,
+.customer-journey-rtl svg,
+.customer-journey-rtl .fa,
+.customer-journey-rtl i {
+    direction: ltr;
+}
+
+
+/* ------------------------------------------------------------
+   K2 TABLES
+   ------------------------------------------------------------ */
+
+.customer-journey-rtl table {
+    direction: rtl;
+}
+
+
+/* ------------------------------------------------------------
+   K2 LABELS
+   ------------------------------------------------------------ */
+
+.customer-journey-rtl label {
+    text-align: right;
+}
