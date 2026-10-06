@@ -78,3 +78,43 @@ $(document).ready(function () {
     });
 
 });
+
+
+// Making the ops portal cards clickable
+
+(function () {
+    function makeCardsClickable() {
+        document.querySelectorAll('.custom-card').forEach(function (card) {
+
+            if (card.dataset.cardClickable === 'true') {
+                return;
+            }
+
+            let button = card.querySelector('.card-number-btn');
+
+            if (!button) {
+                return;
+            }
+
+            card.dataset.cardClickable = 'true';
+
+            card.addEventListener('click', function (e) {
+
+                if (e.target.closest('.card-number-btn')) {
+                    return;
+                }
+
+                button.click();
+            });
+        });
+    }
+
+    makeCardsClickable();
+
+    new MutationObserver(function () {
+        makeCardsClickable();
+    }).observe(document.body, {
+        childList: true,
+        subtree: true
+    });
+})();
