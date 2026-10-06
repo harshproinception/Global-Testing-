@@ -85,7 +85,7 @@ body,
     width: auto !important;
 }
 
-.theme-entry div.retal-custom-header-layout > span[name="Cell Cell2"] {
+.theme-entry div.retal-custom-header-layout > span[name="Cell middle section"] {
     display: flex !important;
     flex-direction: column !important;
     flex-grow: 1 !important;
