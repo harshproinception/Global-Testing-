@@ -452,3 +452,16 @@ body, .theme-entry, .runtime-content, .runtime-view, .panel, .panel-body, .panel
         gap: 14px !important;
     }
 }
+
+/* Code for making the ops portal whole card section clickable */
+.custom-card {
+    cursor: pointer !important;
+}
+
+.custom-card:hover {
+    cursor: pointer !important;
+}
+
+.custom-card .card-number-btn {
+    cursor: pointer !important;
+}
