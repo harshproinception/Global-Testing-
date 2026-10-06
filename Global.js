@@ -14,7 +14,7 @@ function initializeRetalGlobalLayout() {
 
         if (currentUrl.indexOf("customer") !== -1 && currentUrl.indexOf("add") !== -1) {
             activeButtonName = "Add custm btn";
-        } else if (currentUrl.indexOf("projects") !== -1  && currentUrl.indexOf("customerjourney.selectedbroker.form") !== -1) {
+        } else if (currentUrl.indexOf("projects") !== -1  || currentUrl.indexOf("customerjourney.selectedbroker.form") !== -1) {
             activeButtonName = "Project btn";
         } else if (currentUrl.indexOf("configuration") !== -1) {
             activeButtonName = "Configuration btn";
