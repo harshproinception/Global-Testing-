@@ -1025,28 +1025,27 @@
    RTL - K2 MESSAGE BOX
    ========================================================= */
 
-html[dir="rtl"] .theme-entry .lyt-messagebox-layout,
-body[dir="rtl"] .theme-entry .lyt-messagebox-layout {
+html[dir="rtl"] .popup .lyt-messagebox-layout,
+body[dir="rtl"] .popup .lyt-messagebox-layout {
     direction: rtl !important;
     grid-template-columns: minmax(0, 1fr) 32px !important;
+    grid-template-areas: "message icon" !important;
     column-gap: 16px !important;
     text-align: right !important;
 }
 
-html[dir="rtl"] .theme-entry .lyt-messagebox-layout .message,
-body[dir="rtl"] .theme-entry .lyt-messagebox-layout .message {
-    grid-column: 1 !important;
-    grid-row: 1 !important;
-    text-align: right !important;
+html[dir="rtl"] .popup .lyt-messagebox-layout .message,
+body[dir="rtl"] .popup .lyt-messagebox-layout .message {
+    grid-area: message !important;
     direction: rtl !important;
+    text-align: right !important;
 }
 
-html[dir="rtl"] .theme-entry .lyt-messagebox-layout .icon,
-body[dir="rtl"] .theme-entry .lyt-messagebox-layout .icon {
-    grid-column: 2 !important;
-    grid-row: 1 !important;
-    justify-self: end !important;
+html[dir="rtl"] .popup .lyt-messagebox-layout .icon,
+body[dir="rtl"] .popup .lyt-messagebox-layout .icon {
+    grid-area: icon !important;
     direction: ltr !important;
+    justify-self: end !important;
 }
 
 /* adding the border to the list header*/
