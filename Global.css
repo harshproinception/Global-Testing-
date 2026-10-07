@@ -394,3 +394,16 @@ Giving the space to the any specific view
     padding-right: 0 !important;
     width: 100% !important;
 }
+
+/* K2 Sub-View Popup */
+.popupManager {
+    position: fixed !important;
+    inset: 0 !important;
+    width: 100vw !important;
+    height: 100vh !important;
+    z-index: 3000 !important;
+}
+
+.popupManager .popup.maximized {
+    z-index: 3001 !important;
+}
