@@ -991,26 +991,30 @@
 
 
 /* Handeling the k2 default error message popup */
-.theme-entry .lyt-messagebox-layout {
-    display: grid !important;
-    grid-template-columns: 32px minmax(0, 1fr) !important;
-    column-gap: 16px !important;
-    align-items: start !important;
+/* K2 Message Box */
+.popup .lyt-messagebox-layout {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: flex-start !important;
     width: 100% !important;
     box-sizing: border-box !important;
+    gap: 16px !important;
     direction: ltr !important;
 }
 
-.theme-entry .lyt-messagebox-layout .icon {
+.popup .lyt-messagebox-layout .icon {
+    flex: 0 0 32px !important;
     width: 32px !important;
     min-width: 32px !important;
     height: 32px !important;
     margin: 0 !important;
     padding: 0 !important;
     box-sizing: border-box !important;
+    order: 1 !important;
 }
 
-.theme-entry .lyt-messagebox-layout .message {
+.popup .lyt-messagebox-layout .message {
+    flex: 1 1 auto !important;
     min-width: 0 !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -1018,40 +1022,30 @@
     white-space: normal !important;
     overflow-wrap: anywhere !important;
     box-sizing: border-box !important;
+    order: 2 !important;
 }
 
 
-/* =========================================================
-   RTL - K2 MESSAGE BOX
-   ========================================================= */
-
+/* RTL */
 html[dir="rtl"] .popup .lyt-messagebox-layout,
 body[dir="rtl"] .popup .lyt-messagebox-layout {
     direction: rtl !important;
-    grid-template-columns: minmax(0, 1fr) 32px !important;
-    grid-template-areas: "message icon" !important;
-    column-gap: 16px !important;
-    text-align: right !important;
-}
-
-html[dir="rtl"] .popup .lyt-messagebox-layout .message,
-body[dir="rtl"] .popup .lyt-messagebox-layout .message {
-    grid-area: message !important;
-    direction: rtl !important;
+    flex-direction: row !important;
     text-align: right !important;
 }
 
 html[dir="rtl"] .popup .lyt-messagebox-layout .icon,
 body[dir="rtl"] .popup .lyt-messagebox-layout .icon {
-    grid-area: icon !important;
+    order: 2 !important;
     direction: ltr !important;
-    justify-self: end !important;
+    margin: 0 !important;
 }
 
-/* adding the border to the list header*/
-.theme-entry .grid .grid-column-headers {
-    background-color: var(--list-column-header-background-color);
-    border: 1px solid #e2c6c6 !important;
+html[dir="rtl"] .popup .lyt-messagebox-layout .message,
+body[dir="rtl"] .popup .lyt-messagebox-layout .message {
+    order: 1 !important;
+    direction: rtl !important;
+    text-align: right !important;
 }
 
 /*==============================
