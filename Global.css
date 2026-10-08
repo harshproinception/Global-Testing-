@@ -399,10 +399,10 @@ Giving the space to the any specific view
    /* K2 SUB-VIEW POPUP - STACKING FIX */
    
 
-.popupManager {
+/* .popupManager {
     z-index: 3000 !important;
 }
 
 .popupManager .popup {
     z-index: 3001 !important;
-}
+} */
