@@ -406,3 +406,13 @@ Giving the space to the any specific view
 .popupManager .popup {
     z-index: 3001 !important;
 } */
+
+
+/* =========================================================
+   K2 SUB-VIEW POPUP - APPLICATION ONLY
+   Uses the Global Header as the identifying marker
+   ========================================================= */
+
+body:has(.runtime-form [name="Header_style_dbl"]) .popupManager {
+    z-index: 3000 !important;
+}
