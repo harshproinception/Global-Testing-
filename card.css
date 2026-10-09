@@ -152,21 +152,177 @@ body, .theme-entry, .runtime-content, .runtime-view, .panel, .panel-body, .panel
 
 /* Ops portal cards css code */
 
-.view:has(span[name="Ops_cards_style_dlb"]) {
+.theme-entry .form .row { margin: 0 !important; }
+.theme-entry .form .row > .view > * { margin: 0 !important; }
+.theme-entry .form .view { margin: 0 !important; padding: 0 !important; }
+.runtime-content { margin-top: -18px !important; }
+body, .theme-entry, .runtime-content, .runtime-view, .panel, .panel-body, .panel-body-wrapper, .scroll-contents {
+    background-color: #F8F6F2 !important;
+    background-image: none !important;
+    border: none !important;
+    box-shadow: none !important;
+    font-family: var(--font-body) !important;
+}
+.theme-entry span[name="Cell Notification"] {
+    background-color: #8D624B !important;
+    border-radius: 16px !important;
+    padding: 24px 32px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    margin-bottom: 24px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+.banner-left-group {
+    display: flex !important;
+    align-items: center !important;
+    gap: 20px !important;
+}
+.theme-entry .banner-icon-wrapper {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    border-radius: 12px !important;
+    width: 48px !important;
+    height: 48px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-shrink: 0 !important;
+}
+.theme-entry .banner-text-wrapper {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 4px !important;
+}
+.theme-entry .banner-title {
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    color: #FFFFFF !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+.theme-entry .banner-title * {
+    color: #FFFFFF !important;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+.theme-entry span[name="NotificationDesc_label"] {
+    color: rgba(255, 255, 255, 0.85) !important;
+    font-size: 14px !important;
+}
+.theme-entry .custom-btn {
+    background-color: #FFFFFF !important;
+    color: #333333 !important;
+    border: none !important;
+    border-radius: 8px !important;
+    padding: 10px 20px !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    display: flex !important;
+    align-items: center !important;
+    cursor: pointer !important;
+    text-decoration: none !important;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05) !important;
+    transition: all 0.2s ease !important;
+    white-space: nowrap !important;
+}
+.theme-entry .custom-btn:hover {
+    background-color: #F0F0F0 !important;
+}
+.theme-entry div[name="Table cards"] {
+    display: flex !important;
+    gap: 20px !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+}
+.theme-entry div[name="Table cards"] > span,
+.theme-entry div[name="Table cards"] .editor-cell {
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 1 !important;
+    min-width: 0 !important;
+}
+.theme-entry .custom-card {
+    background-color: #FFFFFF !important;
+    border-radius: 16px !important;
+    padding: 24px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03) !important;
+    box-sizing: border-box !important;
+    cursor: pointer !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease !important;
+}
+.theme-entry .custom-card:hover {
+    transform: translateY(-2px) !important;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.06) !important;
+}
+.theme-entry .card-icon-wrapper {
+    width: 44px !important;
+    height: 44px !important;
+    border-radius: 10px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    margin-bottom: 20px !important;
+    flex-shrink: 0 !important;
+}
+.theme-entry .bg-icon-0 { background-color: #F7EFE9 !important; }
+.theme-entry .bg-icon-1 { background-color: #FEF4EB !important; }
+.theme-entry .bg-icon-2 { background-color: #FDF3E7 !important; }
+.theme-entry .bg-icon-3 { background-color: #EAF4EC !important; }
+ 
+.theme-entry .custom-card a.SFC.SourceCode-Forms-Controls-Web-Button,
+.theme-entry .custom-card .card-number-btn {
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    box-shadow: none !important;
+    padding: 0 !important;
+    margin: 0 0 8px 0 !important;
+    text-align: left !important;
+    text-decoration: none !important;
+    font-family: var(--font-body) !important;
+    font-size: 32px !important;
+    font-weight: 700 !important;
+    color: #1A1A1A !important;
+    display: block !important;
+    line-height: 1.2 !important;
+    cursor: pointer !important;
+    height: auto !important;
+    min-height: 0 !important;
+    width: auto !important;
+}
+.theme-entry .custom-card .card-label {
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    color: #8C8C8C !important;
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 1.4 !important;
+}
+/* =========================================
+   OPS DASHBOARD CARDS
+   Scoped to Ops_cards_style_dlb
+========================================= */
+
+.theme-entry .view:has(span[name="Ops_cards_style_dlb"]) {
     background: #F8F6F2 !important;
-    padding: 28px 36px !important;
+    /* padding: 28px 36px !important; */
     box-sizing: border-box !important;
 }
 
-.view:has(span[name="Ops_cards_style_dlb"]) .panel-toolbars,
-.view:has(span[name="Ops_cards_style_dlb"]) .toolbar {
+.theme-entry .view:has(span[name="Ops_cards_style_dlb"]) .panel-toolbars,
+.theme-entry .view:has(span[name="Ops_cards_style_dlb"]) .toolbar {
     display: none !important;
 }
 
-.view:has(span[name="Ops_cards_style_dlb"]) .panel-body,
-.view:has(span[name="Ops_cards_style_dlb"]) .panel-body-m,
-.view:has(span[name="Ops_cards_style_dlb"]) .panel-body-m-c,
-.view:has(span[name="Ops_cards_style_dlb"]) .panel-body-wrapper {
+.theme-entry .view:has(span[name="Ops_cards_style_dlb"]) .panel-body,
+.theme-entry .view:has(span[name="Ops_cards_style_dlb"]) .panel-body-m,
+.theme-entry .view:has(span[name="Ops_cards_style_dlb"]) .panel-body-m-c,
+.theme-entry .view:has(span[name="Ops_cards_style_dlb"]) .panel-body-wrapper {
     margin: 0 !important;
     padding: 0 !important;
     background: transparent !important;
@@ -174,12 +330,12 @@ body, .theme-entry, .runtime-content, .runtime-view, .panel, .panel-body, .panel
     box-shadow: none !important;
 }
 
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"]) {
+/* Cards table */
+.theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+.detail-table[name="Dashboard_cards_table"] {
     display: grid !important;
     grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
-    grid-template-rows: 70px 58px auto !important;
-    column-gap: 20px !important;
-    row-gap: 0 !important;
+    gap: 20px !important;
     width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -188,278 +344,187 @@ body, .theme-entry, .runtime-content, .runtime-view, .panel, .panel-body, .panel
     box-sizing: border-box !important;
 }
 
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell {
-    min-width: 0 !important;
-    margin: 0 !important;
-    box-sizing: border-box !important;
-}
-
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell:has(span[name="Customer Registered Data Label"],
-    span[name="In Progress Data Label"],
-    span[name="Expiring Within15days Data Label"],
-    span[name="Sale Complete Data Label"],
-    span[name="Cancelled or Expired Data Label"]) {
-    display: none !important;
-}
-
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell[name^="svg"] {
+/* Individual card */
+.theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+.detail-table[name="Dashboard_cards_table"] > .editor-cell {
     display: flex !important;
-    align-items: center !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
     justify-content: flex-start !important;
     position: relative !important;
-    height: 82px !important;
-    min-height: 82px !important;
+    min-width: 0 !important;
+    min-height: 208px !important;
     margin: 0 !important;
-    padding: 18px 24px 10px !important;
-    background: #FFFFFF !important;
-    border: 0 !important;
-    border-radius: 16px 16px 0 0 !important;
+    /* padding: 28px 28px 24px !important; */
+    /* background: #FFFFFF !important; */
+    border: 1px solid #F0EBE6 !important;
+    border-radius: 20px !important;
+    /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.035) !important; */
     box-sizing: border-box !important;
-    z-index: 2 !important;
+    overflow: hidden !important;
+    transition: box-shadow 0.25s ease, transform 0.25s ease !important;
 }
 
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell[name="svgcustomerregistered"] {
-    grid-column: 1 !important;
-    grid-row: 1 !important;
+/* Hover effect */
+.theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+.detail-table[name="Dashboard_cards_table"] > .editor-cell:hover {
+    box-shadow: 0 8px 22px rgba(91, 62, 44, 0.10) !important;
+    transform: translateY(-2px) !important;
 }
 
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell[name="svgcustomerlead"] {
-    grid-column: 2 !important;
-    grid-row: 1 !important;
-}
-
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell[name="svgcustomerexpiringsoon"] {
-    grid-column: 3 !important;
-    grid-row: 1 !important;
-}
-
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell[name="svgcustmleadcompleted"] {
-    grid-column: 4 !important;
-    grid-row: 1 !important;
-}
-
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell[name="svgcustmexpired"] {
-    grid-column: 5 !important;
-    grid-row: 1 !important;
-}
-
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell[name^="svg"]::before {
+/* Icon container */
+.theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+.detail-table[name="Dashboard_cards_table"] > .editor-cell::before {
     content: "" !important;
     display: block !important;
-    width: 44px !important;
-    height: 44px !important;
-    flex-shrink: 0 !important;
-    border-radius: 10px !important;
+    width: 52px !important;
+    height: 52px !important;
+    min-width: 52px !important;
+    margin: 0 0 24px 0 !important;
+    border-radius: 13px !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
-    background-size: 24px 24px !important;
+    background-size: 26px 26px !important;
     box-sizing: border-box !important;
 }
 
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell[name="svgcustomerregistered"]::before {
+/* Card 1 - Registered customers */
+.theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+.detail-table[name="Dashboard_cards_table"] > .editor-cell:nth-child(1)::before {
     background-color: #F7EFE9 !important;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238D624B' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2'/%3E%3Ccircle cx='10' cy='7' r='4'/%3E%3Cpath d='M21 21v-2a4 4 0 0 0-3-3.87'/%3E%3Cpath d='M16 3.13a4 4 0 0 1 0 7.75'/%3E%3C/svg%3E") !important;
 }
 
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell[name="svgcustomerlead"]::before {
+/* Card 2 - Accounts created */
+.theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+.detail-table[name="Dashboard_cards_table"] > .editor-cell:nth-child(2)::before {
     background-color: #FEF4EB !important;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C47B35' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpolyline points='12 6 12 12 16 14'/%3E%3C/svg%3E") !important;
 }
 
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell[name="svgcustomerexpiringsoon"]::before {
+/* Card 3 - Expiring soon */
+.theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+.detail-table[name="Dashboard_cards_table"] > .editor-cell:nth-child(3)::before {
     background-color: #FDF3E7 !important;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D97706' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10.3 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.7 3.86a2 2 0 0 0-3.4 0Z'/%3E%3Cline x1='12' y1='9' x2='12' y2='13'/%3E%3Cline x1='12' y1='17' x2='12.01' y2='17'/%3E%3C/svg%3E") !important;
 }
 
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell[name="svgcustmleadcompleted"]::before {
+/* Card 4 - Sales complete */
+.theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+.detail-table[name="Dashboard_cards_table"] > .editor-cell:nth-child(4)::before {
     background-color: #EAF4EC !important;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2350935A' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E") !important;
 }
 
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell[name="svgcustmexpired"]::before {
+/* Card 5 - Expired or cancelled */
+.theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+.detail-table[name="Dashboard_cards_table"] > .editor-cell:nth-child(5)::before {
     background-color: #F9ECEA !important;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23B86557' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='18' y1='6' x2='6' y2='18'/%3E%3Cline x1='6' y1='6' x2='18' y2='18'/%3E%3C/svg%3E") !important;
 }
 
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell:has(a[name^="Button "]) {
-    display: flex !important;
-    align-items: flex-start !important;
-    justify-content: flex-start !important;
-    height: 58px !important;
-    min-height: 58px !important;
-    margin: 0 !important;
-    padding: 8px 24px 0 !important;
-    background: #FFFFFF !important;
-    border: 0 !important;
-    box-sizing: border-box !important;
-    z-index: 2 !important;
-}
-
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell:has(a[name="Button Customer Registered"]) {
-    grid-column: 1 !important;
-    grid-row: 2 !important;
-}
-
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell:has(a[name="Button In Progress"]) {
-    grid-column: 2 !important;
-    grid-row: 2 !important;
-}
-
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell:has(a[name="Button Expiring Within15days "]) {
-    grid-column: 3 !important;
-    grid-row: 2 !important;
-}
-
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell:has(a[name="Button Sale Complete "]) {
-    grid-column: 4 !important;
-    grid-row: 2 !important;
-}
-
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell:has(a[name="Button Cancelled or Expired "]) {
-    grid-column: 5 !important;
-    grid-row: 2 !important;
-}
-
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell:has(a[name^="Button "]) a {
+/* Count button */
+.theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+.detail-table[name="Dashboard_cards_table"] > .editor-cell > a[name^="Button "] {
     display: block !important;
     width: auto !important;
-    height: auto !important;
     min-height: 0 !important;
-    margin: 0 !important;
+    margin: 0 0 14px 0 !important;
     padding: 0 !important;
     background: transparent !important;
     border: 0 !important;
     outline: 0 !important;
     box-shadow: none !important;
-    color: #1A1A1A !important;
-    font-family: var(--font-body) !important;
-    font-size: 32px !important;
+    color: #111111 !important;
+    font-family: var(--font-body), "Segoe UI", sans-serif !important;
+    font-size: 36px !important;
     font-weight: 700 !important;
-    line-height: 1 !important;
+    line-height: 1.1 !important;
     text-align: left !important;
     text-decoration: none !important;
-    white-space: nowrap !important;
+    cursor: pointer !important;
     box-sizing: border-box !important;
 }
 
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell:has([name="Customer Registered Label"]),
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell:has([name="Label In Progress"]),
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell:has([name="Label Expiring Within15days "]),
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell:has([name="Label Sale Complete "]),
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell:has([name="Label Cancelled or Expired "]) {
-    display: flex !important;
-    align-items: flex-start !important;
-    height: 52px !important;
-    min-height: 52px !important;
-    margin: 0 !important;
-    padding: 0 24px 20px !important;
-    background: #FFFFFF !important;
-    border: 0 !important;
-    border-radius: 0 0 16px 16px !important;
-    box-sizing: border-box !important;
-    z-index: 2 !important;
-}
-
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell:has([name="Customer Registered Label"]) {
-    grid-column: 1 !important;
-    grid-row: 3 !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.035) !important;
-}
-
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell:has([name="Label In Progress"]) {
-    grid-column: 2 !important;
-    grid-row: 3 !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.035) !important;
-}
-
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell:has([name="Label Expiring Within15days "]) {
-    grid-column: 3 !important;
-    grid-row: 3 !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.035) !important;
-}
-
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell:has([name="Label Sale Complete "]) {
-    grid-column: 4 !important;
-    grid-row: 3 !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.035) !important;
-}
-
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell:has([name="Label Cancelled or Expired "]) {
-    grid-column: 5 !important;
-    grid-row: 3 !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.035) !important;
-}
-
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell:has([name="Customer Registered Label"]) span,
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell:has([name="Label In Progress"]) span,
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell:has([name="Label Expiring Within15days "]) span,
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell:has([name="Label Sale Complete "]) span,
-.view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell:has([name="Label Cancelled or Expired "]) span {
+/* Card label */
+.theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+.detail-table[name="Dashboard_cards_table"] > .editor-cell > span.SFC.SourceCode-Forms-Controls-Web-Label {
     display: block !important;
     width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
-    color: #8C8C8C !important;
-    font-family: var(--font-body) !important;
-    font-size: 13px !important;
+    color: #858585 !important;
+    font-family: var(--font-body), "Segoe UI", sans-serif !important;
+    font-size: 14px !important;
     font-weight: 500 !important;
-    line-height: 1.4 !important;
+    line-height: 1.5 !important;
     text-align: left !important;
     white-space: normal !important;
+    overflow-wrap: anywhere !important;
     box-sizing: border-box !important;
 }
 
+/* Keep hidden count data labels hidden */
+.theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+.detail-table[name="Dashboard_cards_table"] > .editor-cell > .SFC.SourceCode-Forms-Controls-Web-DataLabel.hidden {
+    display: none !important;
+}
+
+/* Tablet */
 @media (max-width: 1100px) {
-    .view:has(span[name="Ops_cards_style_dlb"]) {
+    .theme-entry .view:has(span[name="Ops_cards_style_dlb"]) {
         padding: 24px !important;
     }
 
-    .view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"]) {
-        column-gap: 16px !important;
-    }
-}
-
-@media (max-width: 850px) {
-    .view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"]) {
-        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-        grid-template-rows: auto !important;
+    .theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+    .detail-table[name="Dashboard_cards_table"] {
         gap: 16px !important;
     }
 
-    .view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell[name="svgcustomerregistered"],
-    .view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell[name="svgcustomerlead"],
-    .view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell[name="svgcustomerexpiringsoon"],
-    .view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell[name="svgcustmleadcompleted"],
-    .view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell[name="svgcustmexpired"],
-    .view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell:has(a[name^="Button "]),
-    .view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell:has([name*="Label"]) {
-        grid-column: auto !important;
-        grid-row: auto !important;
-    }
-
-    .view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"])>.editor-cell[name^="svg"] {
-        border-radius: 16px 16px 0 0 !important;
+    .theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+    .detail-table[name="Dashboard_cards_table"] > .editor-cell {
+        padding: 24px 20px !important;
     }
 }
 
+/* Smaller screens */
+@media (max-width: 850px) {
+    .theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+    .detail-table[name="Dashboard_cards_table"] {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        gap: 16px !important;
+    }
+
+    .theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+    .detail-table[name="Dashboard_cards_table"] > .editor-cell {
+        min-height: 190px !important;
+    }
+}
+
+/* Mobile */
 @media (max-width: 520px) {
-    .view:has(span[name="Ops_cards_style_dlb"]) {
+    .theme-entry .view:has(span[name="Ops_cards_style_dlb"]) {
         padding: 16px !important;
     }
 
-    .view:has(span[name="Ops_cards_style_dlb"]) .root-table:has(.editor-cell[name="svgcustomerregistered"]) {
+    .theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+    .detail-table[name="Dashboard_cards_table"] {
         grid-template-columns: 1fr !important;
         gap: 14px !important;
     }
+
+    .theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+    .detail-table[name="Dashboard_cards_table"] > .editor-cell {
+        min-height: 180px !important;
+        padding: 24px !important;
+    }
 }
 
-/* Code for making the ops portal whole card section clickable */
-.custom-card {
-    cursor: pointer !important;
-}
-
-.custom-card:hover {
-    cursor: pointer !important;
+/* Fix: make the first dashboard card match the other cards */
+.theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+.detail-table[name="Dashboard_cards_table"] > .editor-cell:first-child {
+    background-color: #FFFFFF !important;
+    width: auto !important;
 }
 
 .custom-card .card-number-btn {
