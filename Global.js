@@ -12,7 +12,10 @@ function initializeRetalGlobalLayout() {
         var currentUrl = window.location.href.toLowerCase();
         var activeButtonName = "Home btn";
 
-        if (currentUrl.indexOf("customer") !== -1 && currentUrl.indexOf("add") !== -1) {
+        if (currentUrl.indexOf("opsteam.customerdetail.form") !== -1) {
+            activeButtonName = null;
+        }
+        else if (currentUrl.indexOf("customer") !== -1 && currentUrl.indexOf("add") !== -1) {
             activeButtonName = "Add custm btn";
         } else if (currentUrl.indexOf("projects") !== -1  || currentUrl.indexOf("customerjourney.selectedbroker.form") !== -1) {
             activeButtonName = "Project btn";
