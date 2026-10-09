@@ -524,7 +524,7 @@ body, .theme-entry, .runtime-content, .runtime-view, .panel, .panel-body, .panel
 .theme-entry .view:has(span[name="Ops_cards_style_dlb"])
 .detail-table[name="Dashboard_cards_table"] > .editor-cell:first-child {
     background-color: #FFFFFF !important;
-    width: auto !important;
+    width: 225px !important;
 }
 
 .custom-card .card-number-btn {
