@@ -55,29 +55,29 @@ $(document).ajaxComplete(function () {
 
 
 // Adding this function for custom adding of class for the inconsistent views which are made in grid layout
-$(document).ready(function () {
+// $(document).ready(function () {
 
-    function applyDetailTableClass() {
+//     function applyDetailTableClass() {
 
-        $('[name="project_may_broker_lbl"]').each(function () {
+//         $('[name="project_may_broker_lbl"]').each(function () {
 
-            $(this)
-                .closest('.Grid-Layout')
-                .addClass('detail-table');
+//             $(this)
+//                 .closest('.Grid-Layout')
+//                 .addClass('detail-table');
 
-        });
+//         });
 
-    }
+//     }
 
-    applyDetailTableClass();
+//     applyDetailTableClass();
 
-    var observer = new MutationObserver(function () {
-        applyDetailTableClass();
-    });
+//     var observer = new MutationObserver(function () {
+//         applyDetailTableClass();
+//     });
 
-    observer.observe(document.body, {
-        childList: true,
-        subtree: true
-    });
+//     observer.observe(document.body, {
+//         childList: true,
+//         subtree: true
+//     });
 
-});
+// });
