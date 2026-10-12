@@ -57,6 +57,17 @@
         return marker.closest(".row");
     }
 
+    // PERF: only write inline styles when they differ - avoids repeated
+    // style invalidation on every pass.
+    function setImportant(el, prop, value) {
+        if (
+            el.style.getPropertyValue(prop) !== value ||
+            el.style.getPropertyPriority(prop) !== "important"
+        ) {
+            el.style.setProperty(prop, value, "important");
+        }
+    }
+
     function ensureTabsVisible() {
 
         var form = getMainRuntimeForm();
@@ -71,38 +82,38 @@
             return;
         }
 
-        tabs.style.setProperty("display", "block", "important");
-        tabs.style.setProperty("visibility", "visible", "important");
-        tabs.style.setProperty("opacity", "1", "important");
-        tabs.style.setProperty("height", "auto", "important");
-        tabs.style.setProperty("min-height", "0", "important");
-        tabs.style.setProperty("overflow", "visible", "important");
+        setImportant(tabs, "display", "block");
+        setImportant(tabs, "visibility", "visible");
+        setImportant(tabs, "opacity", "1");
+        setImportant(tabs, "height", "auto");
+        setImportant(tabs, "min-height", "0");
+        setImportant(tabs, "overflow", "visible");
 
         var tabList = tabs.querySelector(".tab-box-tabs");
 
         if (tabList) {
-            tabList.style.setProperty("display", "flex", "important");
-            tabList.style.setProperty("visibility", "visible", "important");
-            tabList.style.setProperty("opacity", "1", "important");
-            tabList.style.setProperty("height", "52px", "important");
-            tabList.style.setProperty("min-height", "52px", "important");
-            tabList.style.setProperty("overflow", "visible", "important");
+            setImportant(tabList, "display", "flex");
+            setImportant(tabList, "visibility", "visible");
+            setImportant(tabList, "opacity", "1");
+            setImportant(tabList, "height", "52px");
+            setImportant(tabList, "min-height", "52px");
+            setImportant(tabList, "overflow", "visible");
         }
 
         var tabItems = tabs.querySelectorAll(".tab-box-tabs > li");
 
         for (var i = 0; i < tabItems.length; i++) {
-            tabItems[i].style.setProperty("display", "block", "important");
-            tabItems[i].style.setProperty("visibility", "visible", "important");
-            tabItems[i].style.setProperty("opacity", "1", "important");
+            setImportant(tabItems[i], "display", "block");
+            setImportant(tabItems[i], "visibility", "visible");
+            setImportant(tabItems[i], "opacity", "1");
         }
 
         var tabLinks = tabs.querySelectorAll(".tab-box-tabs > li > a.tab");
 
         for (var j = 0; j < tabLinks.length; j++) {
-            tabLinks[j].style.setProperty("display", "flex", "important");
-            tabLinks[j].style.setProperty("visibility", "visible", "important");
-            tabLinks[j].style.setProperty("opacity", "1", "important");
+            setImportant(tabLinks[j], "display", "flex");
+            setImportant(tabLinks[j], "visibility", "visible");
+            setImportant(tabLinks[j], "opacity", "1");
         }
     }
 
@@ -258,6 +269,11 @@
 
             var table = tables[i];
 
+            // PERF: already classified - skip the per-table subtree queries.
+            if (table.hasAttribute("data-cj-detail")) {
+                continue;
+            }
+
             if (
                 table.querySelector(
                     ".SourceCode-Forms-Controls-Web-ControlPack-ProgressControl"
@@ -311,6 +327,8 @@
                     "detail-table"
                 );
 
+                table.setAttribute("data-cj-detail", "1");
+
                 var panel = table.closest(
                     ".panel"
                 );
@@ -362,71 +380,37 @@
         }
     }
 
+    // PERF: was getComputedStyle + getBoundingClientRect per popup (forced
+    // synchronous layout on every DOM mutation). getClientRects().length is 0
+    // for display:none elements and offsetWidth/Height cover zero-size cases.
+    function isVisible(el) {
+        if (!el || !el.getClientRects().length) {
+            return false;
+        }
+        if (el.offsetWidth === 0 || el.offsetHeight === 0) {
+            return false;
+        }
+        return window.getComputedStyle(el).visibility !== "hidden";
+    }
+
     function isPopupOpen() {
 
-        var popups = document.querySelectorAll(
-            ".popup.dialog"
-        );
+        var popups = document.querySelectorAll(".popup.dialog");
 
         for (var i = 0; i < popups.length; i++) {
-
-            var popup = popups[i];
-
-            if (
-                popup.closest(
-                    ".main-customer-form"
-                )
-            ) {
+            if (popups[i].closest(".main-customer-form")) {
                 continue;
             }
-
-            var style = window.getComputedStyle(
-                popup
-            );
-
-            var rect = popup.getBoundingClientRect();
-
-            if (
-                style.display !== "none" &&
-                style.visibility !== "hidden" &&
-                rect.width > 0 &&
-                rect.height > 0
-            ) {
+            if (isVisible(popups[i])) {
                 return true;
             }
         }
 
-        var iframes =
-            document.querySelectorAll(
-                "iframe.runtime-popup"
-            );
+        var iframes = document.querySelectorAll("iframe.runtime-popup");
 
         for (var j = 0; j < iframes.length; j++) {
-
-            var iframe = iframes[j];
-
-            var parent = iframe.closest(
-                ".popup"
-            );
-
-            if (!parent) {
-                continue;
-            }
-
-            var iframeStyle =
-                window.getComputedStyle(
-                    parent
-                );
-
-            var iframeRect =
-                parent.getBoundingClientRect();
-
-            if (
-                iframeStyle.display !== "none" &&
-                iframeStyle.visibility !== "hidden" &&
-                iframeRect.width > 0 &&
-                iframeRect.height > 0
-            ) {
+            var parent = iframes[j].closest(".popup");
+            if (parent && isVisible(parent)) {
                 return true;
             }
         }
@@ -442,67 +426,64 @@
             return;
         }
 
-        form.classList.toggle(
-            "cj-popup-open",
-            isPopupOpen()
-        );
+        var open = isPopupOpen();
+
+        if (form.classList.contains("cj-popup-open") !== open) {
+            form.classList.toggle("cj-popup-open", open);
+        }
     }
 
     function initialise() {
-        markMainForm();
-        ensureTabsVisible();
+        var form = markMainForm();
+
+        if (!form) {
+            return;
+        }
+
+        // PERF: popup check (a layout read) happens BEFORE any style writes,
+        // so the browser is not forced into a synchronous reflow mid-pass.
+        updatePopupState();
+
         moveHeaders();
+
         ensureTabsVisible();
         classifyProgress();
         classifyDetailTables();
-        updatePopupState();
+    }
+
+    // PERF: was called synchronously for every mutation batch AND every 200 ms
+    // (100 times). Now coalesced: at most one pass per 100 ms burst.
+    var pending = null;
+
+    function schedule() {
+        if (pending) {
+            return;
+        }
+        pending = setTimeout(function () {
+            pending = null;
+            initialise();
+        }, 100);
     }
 
     function start() {
 
         initialise();
 
-        var attempts = 0;
-        var maxAttempts = 100;
-
-        var timer = setInterval(
-            function () {
-
-                attempts++;
-
-                initialise();
-
-                if (attempts >= maxAttempts) {
-                    clearInterval(timer);
-                }
-
-            },
-            200
-        );
-
         if (window.MutationObserver) {
 
-            var observer =
-                new MutationObserver(
-                    function () {
-                        initialise();
-                    }
-                );
+            // childList only - attribute/style changes made by this script
+            // do not re-trigger it. Kept alive (cheap when debounced) so the
+            // popup state also works for popups opened after 30 s.
+            new MutationObserver(schedule).observe(document.body, {
+                childList: true,
+                subtree: true
+            });
 
-            observer.observe(
-                document.body,
-                {
-                    childList: true,
-                    subtree: true
-                }
-            );
-
-            setTimeout(
-                function () {
-                    observer.disconnect();
-                },
-                30000
-            );
+        } else {
+            // Legacy fallback: a few delayed passes instead of 100 polls.
+            setTimeout(initialise, 500);
+            setTimeout(initialise, 1500);
+            setTimeout(initialise, 4000);
         }
     }
 
