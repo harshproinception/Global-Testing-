@@ -1,18 +1,20 @@
-:has([name="Add_cust_style_dlb"]) .form .row {
+/* PERF: ".pi-has-*" classes replace ":has(marker)" selectors - set by Global.js.
+   ":is(*, span)" / ":is(*, a)" always match; they only keep the original specificity. */
+body.pi-has-add-cust .form .row {
     display: flex !important;
     width: 100% !important;
     margin: 0 !important;
 }
 
 
-:has([name="Add_cust_style_dlb"]) [name="CustomerJourney.AddCustomer.Form Area Item"] .root-table {
+body.pi-has-add-cust [name="CustomerJourney.AddCustomer.Form Area Item"] .root-table {
     grid-template-columns: 1fr 1fr !important;
     width: 100% !important;
 }
 
-:has([name="Add_cust_style_dlb"]) p[name="Decision Info Label"]:not(.hidden),
-:has([name="Add_cust_style_dlb"]) p[name="Info Label"]:not(.hidden),
-:has([name="Add_cust_style_dlb"]) p.description.SFC:not(.hidden) {
+body.pi-has-add-cust p[name="Decision Info Label"]:not(.hidden),
+body.pi-has-add-cust p[name="Info Label"]:not(.hidden),
+body.pi-has-add-cust p.description.SFC:not(.hidden) {
     font-size: 13px !important;
     color: #71717A !important;
     margin: 0 0 14px 0 !important;
@@ -24,12 +26,12 @@
 }
 
 
-:has([name="Add_cust_style_dlb"]) .control-group-container,
-:has([name="Add_cust_style_dlb"]) .control-group-container *,
-:has([name="Add_cust_style_dlb"]) .input-control.control-group-container .input-control-m-c,
-:has([name="Add_cust_style_dlb"]) .input-control.control-group-container .input-control-m,
-:has([name="Add_cust_style_dlb"]) .input-control.control-group-container .input-control-t,
-:has([name="Add_cust_style_dlb"]) .input-control.control-group-container .input-control-b {
+body.pi-has-add-cust .control-group-container,
+body.pi-has-add-cust .control-group-container *,
+body.pi-has-add-cust .input-control.control-group-container .input-control-m-c,
+body.pi-has-add-cust .input-control.control-group-container .input-control-m,
+body.pi-has-add-cust .input-control.control-group-container .input-control-t,
+body.pi-has-add-cust .input-control.control-group-container .input-control-b {
     border: none !important;
     border-width: 0 !important;
     background: transparent !important;
@@ -37,7 +39,7 @@
 }
 
 
-:has([name="Add_cust_style_dlb"]) .multi-select-box-list-item {
+body.pi-has-add-cust .multi-select-box-list-item {
     margin-bottom: 8px !important;
     width: 100% !important;
     box-sizing: border-box !important;
@@ -45,7 +47,7 @@
 }
 
 
-:has([name="Add_cust_style_dlb"]) .multi-select-box-list-item label.radio {
+body.pi-has-add-cust .multi-select-box-list-item label.radio {
     display: flex !important;
     align-items: flex-start !important;
     padding: 12px 16px !important;
@@ -60,14 +62,14 @@
 }
 
 
-:has([name="Add_cust_style_dlb"]) .multi-select-box-list-item label.radio:has(input:checked) {
+body.pi-has-add-cust .multi-select-box-list-item label.radio:has(input:checked) {
     border-color: #9E5A44 !important;
     background-color: #FBF4F0 !important;
 }
 
 
 
-:has([name="Add_cust_style_dlb"]) .multi-select-box-list-item label.radio svg {
+body.pi-has-add-cust .multi-select-box-list-item label.radio svg {
     margin-top: 2px !important;
     margin-right: 10px !important;
     flex-shrink: 0 !important;
@@ -76,12 +78,12 @@
 }
 
 
-:has([name="Add_cust_style_dlb"]) .multi-select-box-list-item label.radio:has(input:checked) .svg-radio-btn-checked {
+body.pi-has-add-cust .multi-select-box-list-item label.radio:has(input:checked) .svg-radio-btn-checked {
     fill: #9E5A44 !important;
 }
 
 
-:has([name="Add_cust_style_dlb"]) .multi-select-box-list-item label.radio .input-control-text {
+body.pi-has-add-cust .multi-select-box-list-item label.radio .input-control-text {
     font-size: 13px !important;
     color: #27272A !important;
     line-height: 1.4 !important;
@@ -91,33 +93,33 @@
 
 
 
-:has([name="Add_cust_style_dlb"]) input.SourceCode-Forms-Controls-Web-TextBox:focus {
+body.pi-has-add-cust input.SourceCode-Forms-Controls-Web-TextBox:focus {
     border-color: #9E5A44 !important;
     box-shadow: 0 0 0 3px rgba(158, 90, 68, 0.12) !important;
 }
 
 
-:has([name="Add_cust_style_dlb"]) .input-control.select-box.dropdown-box.watermark a.input-control.styling-font span {
+body.pi-has-add-cust .input-control.select-box.dropdown-box.watermark a.input-control.styling-font span {
     color: #A1A1AA !important;
     font-weight: 400 !important;
 }
 
 
-:has([name="Add_cust_style_dlb"]) .drop-menu.style-aware li[role="option"]:hover,
-:has([name="Add_cust_style_dlb"]) .drop-menu.style-aware li[role="option"].selected {
+body.pi-has-add-cust .drop-menu.style-aware li[role="option"]:hover,
+body.pi-has-add-cust .drop-menu.style-aware li[role="option"].selected {
     background-color: #9E5A44 !important;
 }
 
 
-:has([name="Add_cust_style_dlb"]) .drop-menu.style-aware li[role="option"]:hover a,
-:has([name="Add_cust_style_dlb"]) .drop-menu.style-aware li[role="option"]:hover a span,
-:has([name="Add_cust_style_dlb"]) .drop-menu.style-aware li[role="option"].selected a,
-:has([name="Add_cust_style_dlb"]) .drop-menu.style-aware li[role="option"].selected a span {
+body.pi-has-add-cust .drop-menu.style-aware li[role="option"]:hover a,
+body.pi-has-add-cust .drop-menu.style-aware li[role="option"]:hover a span,
+body.pi-has-add-cust .drop-menu.style-aware li[role="option"].selected a,
+body.pi-has-add-cust .drop-menu.style-aware li[role="option"].selected a span {
     color: #FFFFFF !important;
     background: transparent !important;
 }
 
-:has([name="Add_cust_style_dlb"]) .form .row:not(:has(.retal-custom-header-layout)):not(:has(a[name="Home btn"]))>.view:not(.hidden) {
+body.pi-has-add-cust .form .row:not(.pi-has-header-layout):not(.pi-has-home-btn:is(*, a)) > .view:not(.hidden) {
     width: 100% !important;
     max-width: 900px !important;
     margin: 8px auto !important;
@@ -129,15 +131,15 @@
     box-sizing: border-box !important;
 }
 
-:has([name="Add_cust_style_dlb"]) .form .row:has(.view:not(.hidden) a[name="Continue Button"]) {
+body.pi-has-add-cust .form .row:has(.view:not(.hidden) a[name="Continue Button"]) {
     margin-top: -10px !important;
 }
 
-:has([name="Add_cust_style_dlb"]) .form .row:has(.view:not(.hidden) a[name="Continue Button"])>.view:not(.hidden) {
+body.pi-has-add-cust .form .row:has(.view:not(.hidden) a[name="Continue Button"]) > .view:not(.hidden) {
     margin-top: 0 !important;
 }
 
-:has([name="Add_cust_style_dlb"]) .form .row>.view:has([name="CustomerJourney.AddCustomer.Form Area Item9"].hidden) {
+body.pi-has-add-cust .form .row > .view:has([name="CustomerJourney.AddCustomer.Form Area Item9"].hidden) {
     display: none !important;
 }
 
@@ -164,36 +166,36 @@ html body .theme-entry .view:has(> .innerpanel > .panel[style*="display:none"]) 
 
 
 
-:has([name="Add_cust_style_dlb"]) .control-group-container,
-:has([name="Add_cust_style_dlb"]) .control-group-container *,
-:has([name="Add_cust_style_dlb"]) .input-control.control-group-container .input-control-m-c,
-:has([name="Add_cust_style_dlb"]) .input-control.control-group-container .input-control-m,
-:has([name="Add_cust_style_dlb"]) .input-control.control-group-container .input-control-t,
-:has([name="Add_cust_style_dlb"]) .input-control.control-group-container .input-control-b {
+body.pi-has-add-cust .control-group-container,
+body.pi-has-add-cust .control-group-container *,
+body.pi-has-add-cust .input-control.control-group-container .input-control-m-c,
+body.pi-has-add-cust .input-control.control-group-container .input-control-m,
+body.pi-has-add-cust .input-control.control-group-container .input-control-t,
+body.pi-has-add-cust .input-control.control-group-container .input-control-b {
     border: none !important;
     box-shadow: none !important;
 }
 
-:has([name="Add_cust_style_dlb"]) .multi-select-box-list-item {
+body.pi-has-add-cust .multi-select-box-list-item {
     margin-bottom: 8px !important;
     width: 100% !important;
     box-sizing: border-box !important;
     padding: 0 !important;
 }
 
-:has([name="Add_cust_style_dlb"]) .control-group-container,
-:has([name="Add_cust_style_dlb"]) .control-group-container *,
-:has([name="Add_cust_style_dlb"]) .input-control.control-group-container .input-control-m-c,
-:has([name="Add_cust_style_dlb"]) .input-control.control-group-container .input-control-m,
-:has([name="Add_cust_style_dlb"]) .input-control.control-group-container .input-control-t,
-:has([name="Add_cust_style_dlb"]) .input-control.control-group-container .input-control-b {
+body.pi-has-add-cust .control-group-container,
+body.pi-has-add-cust .control-group-container *,
+body.pi-has-add-cust .input-control.control-group-container .input-control-m-c,
+body.pi-has-add-cust .input-control.control-group-container .input-control-m,
+body.pi-has-add-cust .input-control.control-group-container .input-control-t,
+body.pi-has-add-cust .input-control.control-group-container .input-control-b {
     border: none !important;
     border-width: 0 !important;
     background: transparent !important;
     box-shadow: none !important;
 }
 
-:has([name="Add_cust_style_dlb"]) .multi-select-box-list-item label.radio {
+body.pi-has-add-cust .multi-select-box-list-item label.radio {
     display: flex !important;
     align-items: flex-start !important;
     padding: 12px 16px !important;
@@ -207,23 +209,22 @@ html body .theme-entry .view:has(> .innerpanel > .panel[style*="display:none"]) 
     margin: 0 !important;
 }
 
-:has([name="Add_cust_style_dlb"]) .multi-select-box-list-item label.radio:has(input:checked) .svg-radio-btn-circle {
+body.pi-has-add-cust .multi-select-box-list-item label.radio:has(input:checked) .svg-radio-btn-circle {
     stroke: #9E5A44 !important;
 }
 
-:has([name="Add_cust_style_dlb"]) .drop-menu.style-aware li[role="option"]:hover,
-:has([name="Add_cust_style_dlb"]) .drop-menu.style-aware li[role="option"].selected {
+body.pi-has-add-cust .drop-menu.style-aware li[role="option"]:hover,
+body.pi-has-add-cust .drop-menu.style-aware li[role="option"].selected {
     background-color: #9E5A44 !important;
 }
 
 
 
-:has([name="Add_cust_style_dlb"]) .control-group-container,
-:has([name="Add_cust_style_dlb"]) .control-group-container *,
-:has([name="Add_cust_style_dlb"]) .input-control.control-group-container .input-control-m-c,
-:has([name="Add_cust_style_dlb"]) .input-control.control-group-container .input-control-m,
-:has([name="Add_cust_style_dlb"]) .input-control.control-group-container .input-control-t,
-:has([name="Add_cust_style_dlb"]) .input-control.control-group-container .input-control-b Specificity: (0, 4, 0) {
+body.pi-has-add-cust .control-group-container,
+body.pi-has-add-cust .control-group-container *,
+body.pi-has-add-cust .input-control.control-group-container .input-control-m-c,
+body.pi-has-add-cust .input-control.control-group-container .input-control-m,
+body.pi-has-add-cust .input-control.control-group-container .input-control-t,
+body.pi-has-add-cust .input-control.control-group-container .input-control-b {
     border: none !important;
-
 }
