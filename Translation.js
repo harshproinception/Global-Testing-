@@ -7,7 +7,7 @@
         arabicButton: '[name="btnArabic"]',
         englishButton: '[name="btnEnglish"]',
         retryCount: 0,
-        maxRetries: 10
+        maxRetries: 20
     };
 
     var state = {
@@ -75,6 +75,9 @@
     }
 
     window.translateToArabic = function () {
+        // PERF: Google Translate script is now loaded on demand
+        initGoogleTranslate();
+
         var combo = getGoogleSelector();
 
         if (!combo) {
@@ -266,7 +269,11 @@
 
         state.initialized = true;
 
-        initGoogleTranslate();
+        // PERF: only download Google Translate (~external script + widget DOM)
+        // when the page is already in Arabic; otherwise load it on first click.
+        if (isArabic()) {
+            initGoogleTranslate();
+        }
         bindLanguageButtons();
         observeK2();
 
