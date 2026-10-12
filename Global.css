@@ -1,3 +1,5 @@
+/* PERF: ".pi-has-*" classes replace ":has(marker)" selectors - set by Global.js.
+   ":is(*, span)" / ":is(*, a)" always match; they only keep the original specificity. */
 /* @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap'); */
 
 body,
@@ -40,7 +42,7 @@ body,
 }
 
 
-.theme-entry .form .row:has(.retal-custom-header-layout) {
+.theme-entry .form .row.pi-has-header-layout {
     position: fixed !important;
     top: 0 !important;
     inset-inline-start: 0 !important;
@@ -54,7 +56,7 @@ body,
     box-sizing: border-box !important;
 }
 
-.theme-entry .form .row:has(.retal-custom-header-layout) > .view {
+.theme-entry .form .row.pi-has-header-layout > .view {
     width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -154,7 +156,7 @@ body,
 }
 
 
-.theme-entry .form .row:has(a[name="Home btn"]) {
+.theme-entry .form .row.pi-has-home-btn:is(*, a) {
     position: fixed !important;
     top: 90px !important;
     inset-inline-start: 0 !important;
@@ -169,7 +171,7 @@ body,
     margin: 0 !important;
 }
 
-.theme-entry .form .row:has(a[name="Home btn"]) > .view {
+.theme-entry .form .row.pi-has-home-btn:is(*, a) > .view {
     width: 100% !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -177,34 +179,34 @@ body,
 }
 
 
-.theme-entry .form .row:not(:has(.retal-custom-header-layout)):not(:has(a[name="Home btn"])) {
-        margin-inline-start: 250px !important;
-        width: calc(100% - 250px) !important;
-        box-sizing: border-box !important;
-        padding: 24px !important;
-        margin-top: 90px !important;
+.theme-entry .form .row:not(.pi-has-header-layout):not(.pi-has-home-btn:is(*, a)) {
+    margin-inline-start: 250px !important;
+    width: calc(100% - 250px) !important;
+    box-sizing: border-box !important;
+    padding: 24px !important;
+    margin-top: 90px !important;
 }
 /* Adding one more condition CustomerLeadStyleDlb */
 
-.theme-entry .form:has([name="CustomerLeadDetailsStyleDlb"]) .row:not(:has(.retal-custom-header-layout)):not(:has(a[name="Home btn"])) {
+.theme-entry .form.pi-has-cld-style .row:not(.pi-has-header-layout):not(.pi-has-home-btn:is(*, a)) {
     margin-inline-start: 0 !important;
     width: 100% !important;
     padding: 0 !important;
     margin-top: 0 !important;
 }
 
-.theme-entry .form .row:not(:has(.retal-custom-header-layout)):not(:has(a[name="Home btn"])) ~ .row:not(:has(.retal-custom-header-layout)):not(:has(a[name="Home btn"])) {
-        margin-top: 0px !important;
-        padding-top: 0px !important;
-        padding-bottom: 0px !important;
+.theme-entry .form .row:not(.pi-has-header-layout):not(.pi-has-home-btn:is(*, a)) ~ .row:not(.pi-has-header-layout):not(.pi-has-home-btn:is(*, a)) {
+    margin-top: 0px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
 }
 
 /*
-.theme-entry .form .row:not(:has(.retal-custom-header-layout)):not(:has(a[name="Home btn"])) ~ .row:not(:has(.retal-custom-header-layout)):not(:has(a[name="Home btn"])):has([name="Add_cust_style_dlb"]) {
-        padding: 0px !important;
+.theme-entry .form .row:not(.pi-has-header-layout):not(.pi-has-home-btn:is(*, a)) ~ .row:not(.pi-has-header-layout):not(.pi-has-home-btn:is(*, a)).pi-has-add-cust {
+    padding: 0px !important;
 } */
 
-.theme-entry .form .row:has(a[name="Home btn"]) .root-table {
+.theme-entry .form .row.pi-has-home-btn:is(*, a) .root-table {
     display: flex !important;
     flex-direction: column !important;
     padding: 0 !important;
@@ -214,7 +216,7 @@ body,
     width: 100% !important;
 }
 
-.theme-entry .form .row:has(a[name="Home btn"]) .editor-cell {
+.theme-entry .form .row.pi-has-home-btn:is(*, a) .editor-cell {
     display: block !important;
     width: 100% !important;
     padding: 0 !important;
@@ -229,7 +231,7 @@ body,
 }
 
 
-.theme-entry .form .row:has(a[name="Home btn"]) a.SourceCode-Forms-Controls-Web-Button {
+.theme-entry .form .row.pi-has-home-btn:is(*, a) a.SourceCode-Forms-Controls-Web-Button {
     font-family: var(--font-body), Arial, sans-serif !important;
     display: flex !important;
     align-items: center !important;
@@ -253,18 +255,18 @@ body,
     text-align: start !important;
 }
 
-.form .row:has(a[name="Home btn"]) a.SourceCode-Forms-Controls-Web-Button:hover {
+.form .row.pi-has-home-btn:is(*, a) a.SourceCode-Forms-Controls-Web-Button:hover {
     background-color: #464646 !important;
     color: #FFFFFF !important;
 }
 
-.form .row:has(a[name="Home btn"]) a.SourceCode-Forms-Controls-Web-Button.active-nav {
+.form .row.pi-has-home-btn:is(*, a) a.SourceCode-Forms-Controls-Web-Button.active-nav {
     background-color: #8C583F !important;
     color: #FFFFFF !important;
     font-weight: 600 !important;
 }
 
-.form .row:has(a[name="Home btn"]) a.SourceCode-Forms-Controls-Web-Button::before {
+.form .row.pi-has-home-btn:is(*, a) a.SourceCode-Forms-Controls-Web-Button::before {
     content: "" !important;
     display: inline-block !important;
     width: 20px !important;
@@ -355,27 +357,27 @@ Home page Banner
 /*==============================
 Hiding the list buttons in the home page
 ===============================*/
-body:has(span[name="card_style_dlb"]) .view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button All"],
-body:has(span[name="card_style_dlb"]) .view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button In Progress"],
-body:has(span[name="card_style_dlb"]) .view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button Need attention"],
-body:has(span[name="card_style_dlb"]) .view:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button Completed"],
-body:has(span[name="card_style_dlb"]) .grid:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button All"],
-body:has(span[name="card_style_dlb"]) .grid:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button In Progress"],
-body:has(span[name="card_style_dlb"]) .grid:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button Need attention"],
-body:has(span[name="card_style_dlb"]) .grid:has(span[name="MyCustomer_List_Style_dlb"]) a[name="Button Completed"] {
+body.pi-has-card-style:is(*, span) .view.pi-has-mycust-list:is(*, span) a[name="Button All"],
+body.pi-has-card-style:is(*, span) .view.pi-has-mycust-list:is(*, span) a[name="Button In Progress"],
+body.pi-has-card-style:is(*, span) .view.pi-has-mycust-list:is(*, span) a[name="Button Need attention"],
+body.pi-has-card-style:is(*, span) .view.pi-has-mycust-list:is(*, span) a[name="Button Completed"],
+body.pi-has-card-style:is(*, span) .grid.pi-has-mycust-list:is(*, span) a[name="Button All"],
+body.pi-has-card-style:is(*, span) .grid.pi-has-mycust-list:is(*, span) a[name="Button In Progress"],
+body.pi-has-card-style:is(*, span) .grid.pi-has-mycust-list:is(*, span) a[name="Button Need attention"],
+body.pi-has-card-style:is(*, span) .grid.pi-has-mycust-list:is(*, span) a[name="Button Completed"] {
     display: none !important;
 }
 
 /*==============================
 Giving the space to the any specific view 
 ===============================*/
-.view:has(span[name="space_style_dlb"]) {
+.view.pi-has-space-style:is(*, span) {
     margin-top: 90px !important;
 }
 
 /* Code for bypassing the global margin and padding for the rest of three tabs in customer opportunity form */
 
-.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .tab-box-body .form .row {
+.theme-entry .runtime-form.pi-has-cld-style .tab-box-body .form .row {
     margin-inline-start: 0 !important;
     width: 100% !important;
     box-sizing: border-box !important;
@@ -383,11 +385,11 @@ Giving the space to the any specific view
     margin-top: 0 !important;
 }
 
-.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .tab-box-body,
-.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .tab-box-body-m,
-.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .tab-box-body-m-c,
-.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .tab-box-body-wrapper,
-.theme-entry .runtime-form:has([name="CustomerLeadDetailsStyleDlb"]) .scroll-wrapper {
+.theme-entry .runtime-form.pi-has-cld-style .tab-box-body,
+.theme-entry .runtime-form.pi-has-cld-style .tab-box-body-m,
+.theme-entry .runtime-form.pi-has-cld-style .tab-box-body-m-c,
+.theme-entry .runtime-form.pi-has-cld-style .tab-box-body-wrapper,
+.theme-entry .runtime-form.pi-has-cld-style .scroll-wrapper {
     margin-left: 0 !important;
     margin-right: 0 !important;
     padding-left: 0 !important;
@@ -413,6 +415,6 @@ Giving the space to the any specific view
    Uses the Global Header as the identifying marker
    ========================================================= */
 
-body:has(.runtime-form [name="Header_style_dbl"]) .popupManager {
+body.pi-has-header-style:is(*, span) .popupManager {
     z-index: 3000 !important;
 }
