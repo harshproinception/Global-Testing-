@@ -1,3 +1,5 @@
+/* PERF: ".pi-has-*" classes replace ":has(marker)" selectors - set by Global.js.
+   ":is(*, span)" / ":is(*, a)" always match; they only keep the original specificity. */
 .theme-entry .form .row { margin: 0 !important; }
 .theme-entry .form .row > .view > * { margin: 0 !important; }
 .theme-entry .form .view { margin: 0 !important; padding: 0 !important; }
@@ -308,21 +310,21 @@ body, .theme-entry, .runtime-content, .runtime-view, .panel, .panel-body, .panel
    Scoped to Ops_cards_style_dlb
 ========================================= */
 
-.theme-entry .view:has(span[name="Ops_cards_style_dlb"]) {
+.theme-entry .view.pi-has-ops-cards:is(*, span) {
     background: #F8F6F2 !important;
     /* padding: 28px 36px !important; */
     box-sizing: border-box !important;
 }
 
-.theme-entry .view:has(span[name="Ops_cards_style_dlb"]) .panel-toolbars,
-.theme-entry .view:has(span[name="Ops_cards_style_dlb"]) .toolbar {
+.theme-entry .view.pi-has-ops-cards:is(*, span) .panel-toolbars,
+.theme-entry .view.pi-has-ops-cards:is(*, span) .toolbar {
     display: none !important;
 }
 
-.theme-entry .view:has(span[name="Ops_cards_style_dlb"]) .panel-body,
-.theme-entry .view:has(span[name="Ops_cards_style_dlb"]) .panel-body-m,
-.theme-entry .view:has(span[name="Ops_cards_style_dlb"]) .panel-body-m-c,
-.theme-entry .view:has(span[name="Ops_cards_style_dlb"]) .panel-body-wrapper {
+.theme-entry .view.pi-has-ops-cards:is(*, span) .panel-body,
+.theme-entry .view.pi-has-ops-cards:is(*, span) .panel-body-m,
+.theme-entry .view.pi-has-ops-cards:is(*, span) .panel-body-m-c,
+.theme-entry .view.pi-has-ops-cards:is(*, span) .panel-body-wrapper {
     margin: 0 !important;
     padding: 0 !important;
     background: transparent !important;
@@ -331,7 +333,7 @@ body, .theme-entry, .runtime-content, .runtime-view, .panel, .panel-body, .panel
 }
 
 /* Cards table */
-.theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+.theme-entry .view.pi-has-ops-cards:is(*, span)
 .detail-table[name="Dashboard_cards_table"] {
     display: grid !important;
     grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
@@ -345,7 +347,7 @@ body, .theme-entry, .runtime-content, .runtime-view, .panel, .panel-body, .panel
 }
 
 /* Individual card */
-.theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+.theme-entry .view.pi-has-ops-cards:is(*, span)
 .detail-table[name="Dashboard_cards_table"] > .editor-cell {
     display: flex !important;
     flex-direction: column !important;
@@ -366,14 +368,14 @@ body, .theme-entry, .runtime-content, .runtime-view, .panel, .panel-body, .panel
 }
 
 /* Hover effect */
-.theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+.theme-entry .view.pi-has-ops-cards:is(*, span)
 .detail-table[name="Dashboard_cards_table"] > .editor-cell:hover {
     box-shadow: 0 8px 22px rgba(91, 62, 44, 0.10) !important;
     transform: translateY(-2px) !important;
 }
 
 /* Icon container */
-.theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+.theme-entry .view.pi-has-ops-cards:is(*, span)
 .detail-table[name="Dashboard_cards_table"] > .editor-cell::before {
     content: "" !important;
     display: block !important;
@@ -389,42 +391,42 @@ body, .theme-entry, .runtime-content, .runtime-view, .panel, .panel-body, .panel
 }
 
 /* Card 1 - Registered customers */
-.theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+.theme-entry .view.pi-has-ops-cards:is(*, span)
 .detail-table[name="Dashboard_cards_table"] > .editor-cell:nth-child(1)::before {
     background-color: #F7EFE9 !important;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%238D624B' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2'/%3E%3Ccircle cx='10' cy='7' r='4'/%3E%3Cpath d='M21 21v-2a4 4 0 0 0-3-3.87'/%3E%3Cpath d='M16 3.13a4 4 0 0 1 0 7.75'/%3E%3C/svg%3E") !important;
 }
 
 /* Card 2 - Accounts created */
-.theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+.theme-entry .view.pi-has-ops-cards:is(*, span)
 .detail-table[name="Dashboard_cards_table"] > .editor-cell:nth-child(2)::before {
     background-color: #FEF4EB !important;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23C47B35' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cpolyline points='12 6 12 12 16 14'/%3E%3C/svg%3E") !important;
 }
 
 /* Card 3 - Expiring soon */
-.theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+.theme-entry .view.pi-has-ops-cards:is(*, span)
 .detail-table[name="Dashboard_cards_table"] > .editor-cell:nth-child(3)::before {
     background-color: #FDF3E7 !important;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D97706' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M10.3 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.7 3.86a2 2 0 0 0-3.4 0Z'/%3E%3Cline x1='12' y1='9' x2='12' y2='13'/%3E%3Cline x1='12' y1='17' x2='12.01' y2='17'/%3E%3C/svg%3E") !important;
 }
 
 /* Card 4 - Sales complete */
-.theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+.theme-entry .view.pi-has-ops-cards:is(*, span)
 .detail-table[name="Dashboard_cards_table"] > .editor-cell:nth-child(4)::before {
     background-color: #EAF4EC !important;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2350935A' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E") !important;
 }
 
 /* Card 5 - Expired or cancelled */
-.theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+.theme-entry .view.pi-has-ops-cards:is(*, span)
 .detail-table[name="Dashboard_cards_table"] > .editor-cell:nth-child(5)::before {
     background-color: #F9ECEA !important;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23B86557' stroke-width='1.8' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='18' y1='6' x2='6' y2='18'/%3E%3Cline x1='6' y1='6' x2='18' y2='18'/%3E%3C/svg%3E") !important;
 }
 
 /* Count button */
-.theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+.theme-entry .view.pi-has-ops-cards:is(*, span)
 .detail-table[name="Dashboard_cards_table"] > .editor-cell > a[name^="Button "] {
     display: block !important;
     width: auto !important;
@@ -447,7 +449,7 @@ body, .theme-entry, .runtime-content, .runtime-view, .panel, .panel-body, .panel
 }
 
 /* Card label */
-.theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+.theme-entry .view.pi-has-ops-cards:is(*, span)
 .detail-table[name="Dashboard_cards_table"] > .editor-cell > span.SFC.SourceCode-Forms-Controls-Web-Label {
     display: block !important;
     width: 100% !important;
@@ -465,23 +467,23 @@ body, .theme-entry, .runtime-content, .runtime-view, .panel, .panel-body, .panel
 }
 
 /* Keep hidden count data labels hidden */
-.theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+.theme-entry .view.pi-has-ops-cards:is(*, span)
 .detail-table[name="Dashboard_cards_table"] > .editor-cell > .SFC.SourceCode-Forms-Controls-Web-DataLabel.hidden {
     display: none !important;
 }
 
 /* Tablet */
 @media (max-width: 1100px) {
-    .theme-entry .view:has(span[name="Ops_cards_style_dlb"]) {
+    .theme-entry .view.pi-has-ops-cards:is(*, span) {
         padding: 24px !important;
     }
 
-    .theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+    .theme-entry .view.pi-has-ops-cards:is(*, span)
     .detail-table[name="Dashboard_cards_table"] {
         gap: 16px !important;
     }
 
-    .theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+    .theme-entry .view.pi-has-ops-cards:is(*, span)
     .detail-table[name="Dashboard_cards_table"] > .editor-cell {
         padding: 24px 20px !important;
     }
@@ -489,13 +491,13 @@ body, .theme-entry, .runtime-content, .runtime-view, .panel, .panel-body, .panel
 
 /* Smaller screens */
 @media (max-width: 850px) {
-    .theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+    .theme-entry .view.pi-has-ops-cards:is(*, span)
     .detail-table[name="Dashboard_cards_table"] {
         grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
         gap: 16px !important;
     }
 
-    .theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+    .theme-entry .view.pi-has-ops-cards:is(*, span)
     .detail-table[name="Dashboard_cards_table"] > .editor-cell {
         min-height: 190px !important;
     }
@@ -503,17 +505,17 @@ body, .theme-entry, .runtime-content, .runtime-view, .panel, .panel-body, .panel
 
 /* Mobile */
 @media (max-width: 520px) {
-    .theme-entry .view:has(span[name="Ops_cards_style_dlb"]) {
+    .theme-entry .view.pi-has-ops-cards:is(*, span) {
         padding: 16px !important;
     }
 
-    .theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+    .theme-entry .view.pi-has-ops-cards:is(*, span)
     .detail-table[name="Dashboard_cards_table"] {
         grid-template-columns: 1fr !important;
         gap: 14px !important;
     }
 
-    .theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+    .theme-entry .view.pi-has-ops-cards:is(*, span)
     .detail-table[name="Dashboard_cards_table"] > .editor-cell {
         min-height: 180px !important;
         padding: 24px !important;
@@ -521,7 +523,7 @@ body, .theme-entry, .runtime-content, .runtime-view, .panel, .panel-body, .panel
 }
 
 /* Fix: make the first dashboard card match the other cards */
-.theme-entry .view:has(span[name="Ops_cards_style_dlb"])
+.theme-entry .view.pi-has-ops-cards:is(*, span)
 .detail-table[name="Dashboard_cards_table"] > .editor-cell:first-child {
     background-color: #FFFFFF !important;
     width: 225px !important;
