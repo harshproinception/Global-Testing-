@@ -52,7 +52,7 @@
 
 .view:has(span[name="MyCustomer_List_Style_dlb"]) input[name*="Search"],
 .grid:has(span[name="MyCustomer_List_Style_dlb"]) input[name*="Search"] {
-    width: 240px !important;
+    width: 320px !important;
     height: 38px !important;
     padding: 0 12px !important;
     background: #ffffff !important;
