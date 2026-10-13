@@ -155,3 +155,30 @@ function initializeRetalGlobalLayout() {
 //         subtree: true
 //     });
 // });
+$(document).ready(function () {
+    function applyDetailTableClass() {
+        var nodes = document.querySelectorAll('[name="project_may_broker_lbl"]');
+        for (var i = 0; i < nodes.length; i++) {
+            var grid = nodes[i].closest('.Grid-Layout');
+            if (grid && !grid.classList.contains('detail-table')) {
+                grid.classList.add('detail-table');
+            }
+        }
+    }
+ 
+    applyDetailTableClass();
+ 
+    if (window.MutationObserver) {
+        var domTimer = null;
+        new MutationObserver(function () {
+            if (domTimer) return;
+            domTimer = setTimeout(function () {
+                domTimer = null;
+                applyDetailTableClass();
+            }, 150); // Batches multiple mutations into a single execution
+        }).observe(document.body, {
+            childList: true,
+            subtree: true
+        });
+    }
+});
