@@ -13,6 +13,7 @@
     var state = {
         initialized: false,
         googleLoaded: false,
+        autoTranslateOnLoad: false,
         clickBound: false,
         observer: null,
         observerTimer: null,
@@ -51,7 +52,13 @@
 
                 state.googleLoaded = true;
 
-                setTimeout(applyLanguageLayout, 500);
+                // PERF & UX: If user clicked before the script was ready, run translation immediately
+                if (state.autoTranslateOnLoad) {
+                    state.autoTranslateOnLoad = false;
+                    setTimeout(window.translateToArabic, 250);
+                } else {
+                    setTimeout(applyLanguageLayout, 500);
+                }
             } catch (error) {
                 console.error("[Translation] Initialization failed:", error);
             }
@@ -75,21 +82,23 @@
     }
 
     window.translateToArabic = function () {
-        // PERF: Google Translate script is now loaded on demand
-        initGoogleTranslate();
+        // PERF: Lazy-load script on first click if not already loaded
+        if (!state.googleLoaded) {
+            state.autoTranslateOnLoad = true;
+            initGoogleTranslate();
+            return;
+        }
 
         var combo = getGoogleSelector();
 
         if (!combo) {
             if (config.retryCount < config.maxRetries) {
                 config.retryCount++;
-
-                setTimeout(window.translateToArabic, 500);
+                setTimeout(window.translateToArabic, 250);
             } else {
                 config.retryCount = 0;
                 console.error("[Translation] Google Translate is not ready.");
             }
-
             return;
         }
 
