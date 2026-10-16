@@ -6,57 +6,41 @@
         scriptId: "google_translate_script",
         arabicButton: '[name="btnArabic"]',
         englishButton: '[name="btnEnglish"]',
-        maxWidgetChecks: 40,
-        widgetCheckInterval: 150
+        retryCount: 0,
+        maxRetries: 20
     };
 
     var state = {
         initialized: false,
-        scriptLoading: false,
-        widgetCreated: false,
         googleLoaded: false,
-        translationRequested: false,
         clickBound: false,
         observer: null,
         observerTimer: null,
-        widgetPollActive: false,
         applyingLayout: false
     };
 
     function createGoogleContainer() {
         if (document.getElementById(config.containerId)) return;
 
-        var container = document.createElement("div");
-        container.id = config.containerId;
-        container.style.display = "none";
-        document.body.appendChild(container);
-    }
-
-    function getGoogleSelector() {
-        return document.querySelector(".goog-te-combo");
+        var div = document.createElement("div");
+        div.id = config.containerId;
+        div.style.display = "none";
+        document.body.appendChild(div);
     }
 
     function initGoogleTranslate() {
-        if (state.googleLoaded || state.scriptLoading) return;
-
-        if (state.widgetCreated) {
-            waitForTranslateWidget(0);
-            return;
-        }
+        if (state.googleLoaded) return;
 
         createGoogleContainer();
-        state.scriptLoading = true;
+
+        if (document.getElementById(config.scriptId)) return;
 
         window.googleTranslateElementInit = function () {
             if (
-                !window.google ||
+                typeof google === "undefined" ||
                 !google.translate ||
                 !google.translate.TranslateElement
-            ) {
-                state.scriptLoading = false;
-                console.error("[Translation] Google Translate API is unavailable.");
-                return;
-            }
+            ) return;
 
             try {
                 new google.translate.TranslateElement({
@@ -65,118 +49,70 @@
                     autoDisplay: false
                 }, config.containerId);
 
-                state.widgetCreated = true;
-                waitForTranslateWidget(0);
+                state.googleLoaded = true;
+
+                setTimeout(applyLanguageLayout, 500);
             } catch (error) {
-                state.scriptLoading = false;
                 console.error("[Translation] Initialization failed:", error);
             }
         };
 
-        var script = document.getElementById(config.scriptId);
-
-        if (script) {
-            if (
-                window.google &&
-                google.translate &&
-                google.translate.TranslateElement
-            ) {
-                window.googleTranslateElementInit();
-            } else {
-                state.scriptLoading = false;
-                console.error(
-                    "[Translation] Script exists but Google Translate is not ready."
-                );
-            }
-            return;
-        }
-
-        script = document.createElement("script");
+        var script = document.createElement("script");
         script.id = config.scriptId;
         script.src =
             "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit";
         script.async = true;
 
         script.onerror = function () {
-            state.scriptLoading = false;
             console.error("[Translation] Failed to load Google Translate.");
         };
 
         document.body.appendChild(script);
     }
 
-    function waitForTranslateWidget(startAttempt) {
-        if (state.widgetPollActive) return;
-
-        state.widgetPollActive = true;
-        var attempts = startAttempt || 0;
-
-        function check() {
-            var combo = getGoogleSelector();
-
-            if (combo) {
-                state.widgetPollActive = false;
-                state.googleLoaded = true;
-                state.scriptLoading = false;
-
-                if (state.translationRequested) {
-                    applyArabicSelection();
-                } else {
-                    setTimeout(applyLanguageLayout, 500);
-                }
-                return;
-            }
-
-            if (attempts < config.maxWidgetChecks) {
-                attempts++;
-                setTimeout(check, config.widgetCheckInterval);
-            } else {
-                state.widgetPollActive = false;
-                state.scriptLoading = false;
-
-                console.error(
-                    "[Translation] Google Translate widget did not become ready."
-                );
-            }
-        }
-
-        check();
-    }
-
-    function applyArabicSelection() {
-        var combo = getGoogleSelector();
-
-        if (!combo) {
-            waitForTranslateWidget(0);
-            return;
-        }
-
-        state.translationRequested = false;
-
-        combo.value = "ar";
-        combo.dispatchEvent(new Event("change", {
-            bubbles: true
-        }));
-
-        setTimeout(applyLanguageLayout, 800);
+    function getGoogleSelector() {
+        return document.querySelector(".goog-te-combo");
     }
 
     window.translateToArabic = function () {
-        state.translationRequested = true;
+        // 1. Start loading the Google Translate script
+        initGoogleTranslate();
 
-        if (!state.googleLoaded) {
-            initGoogleTranslate();
-            return;
+        // 2. Wait for the dropdown to exist in the DOM
+        function checkAndTranslate() {
+            var combo = getGoogleSelector();
+
+            if (combo) {
+                // The dropdown is ready! Trigger the translation.
+                config.retryCount = 0;
+                try {
+                    combo.value = "ar";
+                    combo.dispatchEvent(new Event("change", { bubbles: true }));
+
+                    setTimeout(applyLanguageLayout, 800);
+                } catch (error) {
+                    console.error("[Translation] Arabic translation failed:", error);
+                }
+            } else {
+                // Not ready yet, keep checking every 200ms
+                if (config.retryCount < config.maxRetries) {
+                    config.retryCount++;
+                    setTimeout(checkAndTranslate, 200);
+                } else {
+                    config.retryCount = 0;
+                    console.error("[Translation] Google Translate is not ready after max retries.");
+                }
+            }
         }
 
-        applyArabicSelection();
+        // 3. Start the checking process
+        checkAndTranslate();
     };
 
     function clearTranslationCookie() {
         var host = location.hostname;
-        var parts = host.split(".");
-        var domain = parts.length > 2
-            ? "." + parts.slice(-2).join(".")
+        var domain = host.split(".").length > 2
+            ? "." + host.split(".").slice(-2).join(".")
             : host;
 
         document.cookie =
@@ -203,14 +139,8 @@
         );
 
         document.documentElement.style.direction = "ltr";
-
-        document.body.style.setProperty(
-            "direction", "ltr", "important"
-        );
-
-        document.body.style.setProperty(
-            "text-align", "left", "important"
-        );
+        document.body.style.setProperty("direction", "ltr", "important");
+        document.body.style.setProperty("text-align", "left", "important");
 
         setTimeout(function () {
             window.location.reload();
@@ -238,19 +168,25 @@
             var forms = document.querySelectorAll(".theme-entry .form");
 
             document.documentElement.setAttribute(
-                "dir", arabic ? "rtl" : "ltr"
+                "dir",
+                arabic ? "rtl" : "ltr"
             );
 
             document.documentElement.setAttribute(
-                "lang", arabic ? "ar" : "en"
+                "lang",
+                arabic ? "ar" : "en"
             );
 
             document.body.style.setProperty(
-                "direction", arabic ? "rtl" : "ltr", "important"
+                "direction",
+                arabic ? "rtl" : "ltr",
+                "important"
             );
 
             document.body.style.setProperty(
-                "text-align", arabic ? "right" : "left", "important"
+                "text-align",
+                arabic ? "right" : "left",
+                "important"
             );
 
             if (arabic) {
@@ -288,7 +224,10 @@
             if (event.target.closest(config.arabicButton)) {
                 event.preventDefault();
                 window.translateToArabic();
-            } else if (event.target.closest(config.englishButton)) {
+                return;
+            }
+
+            if (event.target.closest(config.englishButton)) {
                 event.preventDefault();
                 window.translateToEnglish();
             }
@@ -309,7 +248,7 @@
             var changed = mutations.some(function (mutation) {
                 return (
                     mutation.type === "childList" &&
-                    mutation.addedNodes.length > 0
+                    mutation.addedNodes.length
                 );
             });
 
@@ -334,10 +273,11 @@
 
         state.initialized = true;
 
+        // PERF: only download Google Translate (~external script + widget DOM)
+        // when the page is already in Arabic; otherwise load it on first click.
         if (isArabic()) {
             initGoogleTranslate();
         }
-
         bindLanguageButtons();
         observeK2();
 
@@ -345,9 +285,7 @@
     }
 
     if (document.readyState === "loading") {
-        document.addEventListener("DOMContentLoaded", init, {
-            once: true
-        });
+        document.addEventListener("DOMContentLoaded", init);
     } else {
         init();
     }
