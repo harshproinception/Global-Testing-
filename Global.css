@@ -415,6 +415,16 @@ Giving the space to the any specific view
    Uses the Global Header as the identifying marker
    ========================================================= */
 
-body.pi-has-header-style:is(*, span) .popupManager {
+/* body.pi-has-header-style:is(*, span) .popupManager {
     z-index: 3000 !important;
+} */
+
+
+ /* K2 SUB-VIEW POPUP - While maximizing the pop-up */
+body.theme-entry:has(> form > .runtime-content .runtime-form) > .popupManager {
+    z-index: 3000 !important;
+}
+
+body.theme-entry:has(> form > .runtime-content .runtime-form) > .popupManager > .popup {
+    z-index: 3001 !important;
 }
