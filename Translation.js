@@ -74,17 +74,19 @@
         return document.querySelector(".goog-te-combo");
     }
 
-    window.translateToArabic = function () {
+window.translateToArabic = function () {
         // 1. Start loading the Google Translate script
         initGoogleTranslate();
 
-        // 2. Wait for the dropdown to exist in the DOM
+        // 2. Wait for the dropdown AND its options to exist
         function checkAndTranslate() {
             var combo = getGoogleSelector();
 
-            if (combo) {
-                // The dropdown is ready! Trigger the translation.
+            // FIX: Ensure combo exists AND Google has finished populating it with languages
+            if (combo && combo.options && combo.options.length > 0) {
+                
                 config.retryCount = 0;
+                
                 try {
                     combo.value = "ar";
                     combo.dispatchEvent(new Event("change", { bubbles: true }));
@@ -95,12 +97,12 @@
                 }
             } else {
                 // Not ready yet, keep checking every 200ms
-                if (config.retryCount < config.maxRetries) {
+                if (config.retryCount < 30) { // Increased to 30 (6 seconds) to be safe on slow networks
                     config.retryCount++;
                     setTimeout(checkAndTranslate, 200);
                 } else {
                     config.retryCount = 0;
-                    console.error("[Translation] Google Translate is not ready after max retries.");
+                    console.error("[Translation] Google Translate options did not load in time.");
                 }
             }
         }
