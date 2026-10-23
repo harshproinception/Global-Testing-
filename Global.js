@@ -13,7 +13,8 @@
         [".retal-custom-header-layout", "pi-has-header-layout"],
         ["span[name=\"space_style_dlb\"]", "pi-has-space-style"],
         ["[name=\"header_name_label\"]", "pi-has-header-name"],
-        ["[name=\"Header_style_dbl\"]", "pi-has-header-style"]
+        ["[name=\"Header_style_dbl\"]", "pi-has-header-style"],
+        ["[name=\"PortalSelectionStyleDlb\"]", "pi-has-portal-selection"]
     ];
 
     function sync() {
