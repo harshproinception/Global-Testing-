@@ -127,8 +127,12 @@ function initializeRetalGlobalLayout() {
             if (!$row.find('a[name="Home btn"]').length) {
                 return;
             }
-            $row.find('a.SourceCode-Forms-Controls-Web-Button').removeClass('active-nav');
-            $(this).addClass('active-nav');
+            
+            // Only change the active states IF the clicked button is NOT "Retal_Cat_Btn"
+            if ($(this).attr('name') !== 'Retal_Cat_Btn') {
+                $row.find('a.SourceCode-Forms-Controls-Web-Button').removeClass('active-nav');
+                $(this).addClass('active-nav');
+            }
         });
     });
 
